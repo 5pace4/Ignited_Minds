@@ -1,6 +1,6 @@
 # Ignited_Minds
 
-    This is a undergrade team-project.
+    This is an undergrade team-project.
  
  ## About our Projects-
  
