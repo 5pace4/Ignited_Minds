@@ -49,3 +49,13 @@ faqs.forEach(faq => {
         function closeModal() {
             document.getElementById("signupModal").style.display = "none";
         }
+
+        // Math Modal 1
+        function openModal() {
+            document.getElementById("m_modal1").style.display = "block";
+        }
+    
+        // Close the modal
+        function closeModal() {
+            document.getElementById("m_modal1").style.display = "none";
+        }
