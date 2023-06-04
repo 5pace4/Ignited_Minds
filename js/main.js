@@ -48,6 +48,7 @@ faqs.forEach(faq => {
         // Close the modal
         function closeModal() {
             document.getElementById("signupModal").style.display = "none";
+            
         }
 
         // Math Modal 1
@@ -59,3 +60,24 @@ faqs.forEach(faq => {
         function closeModal() {
             document.getElementById("m_modal1").style.display = "none";
         }
+        function openModal1() {
+            document.getElementById("tech1").style.display = "block";
+        }
+        
+        // Close the modal
+        function closeModal1() {
+            document.getElementById("tech1").style.display = "none";
+        }
+
+        function openPopup() {
+            document.getElementById("popup").style.display = "block";
+        }
+        
+        // Close the modal
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+
+
+    
