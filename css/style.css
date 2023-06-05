@@ -1415,7 +1415,8 @@ ul{
 
     }
     .tech-modal-container .tech-modal .tech-modal-content img{
-        max-width: 320px;
+        margin-top: 52px;
+        max-width: 420px;
         float: right;
         border: 3px solid #fff;
         border-radius: 10px;
@@ -1453,8 +1454,6 @@ ul{
         cursor: pointer;
         color: #333;
     }
-
-
     /* pop up message  start*/
 
     .popup {

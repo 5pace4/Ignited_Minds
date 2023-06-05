@@ -60,6 +60,8 @@ faqs.forEach(faq => {
         function closeModal() {
             document.getElementById("m_modal1").style.display = "none";
         }
+
+        //technology start
         function openModal1() {
             document.getElementById("tech1").style.display = "block";
         }
@@ -69,6 +71,16 @@ faqs.forEach(faq => {
             document.getElementById("tech1").style.display = "none";
         }
 
+        function openModaltech2() {
+            document.getElementById("tech2").style.display = "block";
+        }
+        
+        // Close the modal
+        function closeModaltech2() {
+            document.getElementById("tech2").style.display = "none";
+        }
+
+        // popup
         function openPopup() {
             document.getElementById("popup").style.display = "block";
         }
