@@ -76,7 +76,7 @@ faqs.forEach(faq => {
             }
             else if(password != confirm_pass){
                 text1.innerHTML = "Password didn't match.";
-                text1.style.color = "green";
+                text1.style.color = "red";
                 return false;
             }
             else if(password == confirm_pass){
