@@ -135,6 +135,26 @@ faqs.forEach(faq => {
         function closePopup() {
             document.getElementById("popup").style.display = "none";
         }
+        const parentContainer = document.querySelector('.career_exploration_section1');
+        parentContainer.addEventListener('click', event=>{
+            const current = event.target;
+            const isReadMoreBtn = current.className.includes('Read_more');
+            if(!isReadMoreBtn) return;
+            const currentText = event.target.parentNode.querySelector('.see-more-text');
+            currentText.classList.toggle('see-more-text--show');
+            current.textContent = current.textContent.includes('Read More..')?
+            "Read More..": "Read Less..";
+        })
+        const parentContainer1 = document.querySelector('.career_exploration_section2');
+        parentContainer1.addEventListener('click', event=>{
+            const current = event.target;
+            const isReadMoreBtn = current.className.includes('Read_more');
+            if(!isReadMoreBtn) return;
+            const currentText = event.target.parentNode.querySelector('.see-more-text');
+            currentText.classList.toggle('see-more-text--show');
+            current.textContent = current.textContent.includes('Read More..')?
+            "Read More..": "Read Less..";
+        })
 
 
 
