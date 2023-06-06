@@ -950,6 +950,10 @@ ul{
 .form-control::placeholder{
     color: var(--black-70);
 }
+.modal-content span{
+    margin-bottom: 8px;
+    float: right;
+}
 
 /* About Us Page Styling */
 

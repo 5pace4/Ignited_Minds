@@ -108,21 +108,25 @@
         <span class="close" onclick="closeModal_s()">&times;</span>
         <h3 class="form-title">Sign Up Form</h3>
         <p class="sub-title" style="text-align:center; color: hsl(0%, 0%, 70%); margin-bottom: 20px;">-Register Yourself-</p>
-        <form class="signup-form" action="/signup" method="post">
+        <form class="signup-form" action="#" method="post" id="form">
             <label for="username">Name</label>
             <input type="text" id="name" name="username" placeholder="Your Name" required>
             <label for="username">User Name:</label>
             <input type="text" id="username" name="username" placeholder="Username" required>
+            <span id="text" class="text"></span>
             <label for="username">E-mail Address:</label>
-            <input type="text" id="email" name="email" placeholder="Your E-Mail Address" required>
-
+            <input type="text" id="email" name="email" placeholder="Your E-Mail Address" oninput = "validation()" required>
+            
+            
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" class="password" name="password" required>
 
             <label for="password">Confirm Password:</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" class="confirmpassword" name="password" oninput="passfunction()" required>
+            <span id="text1" class="text1"></span>
 
             <button type="submit" class="btn btn-theme btn-block">Sign Up</button>
+
         </form>
     </div>
 
