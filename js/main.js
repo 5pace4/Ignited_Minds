@@ -41,12 +41,12 @@ faqs.forEach(faq => {
 
 
         // Open the modal
-        function openModal() {
+        function openModal_s() {
             document.getElementById("signupModal").style.display = "block";
         }
     
         // Close the modal
-        function closeModal() {
+        function closeModal_s() {
             document.getElementById("signupModal").style.display = "none";
         }
 

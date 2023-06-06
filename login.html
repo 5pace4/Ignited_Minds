@@ -91,7 +91,7 @@
                                 <div class="d-flex mb-2 justify-content-end"><a href="#">*Forgot Password?</a></div>
                             </div>
                             <button class="btn btn-theme btn-block">Sign In</button>
-                            <p class="text-center mt-4 mb-0">Don't have an account ?&nbsp;<a href="#" onclick="openModal()">Sign Up</a></p>
+                            <p class="text-center mt-4 mb-0">Don't have an account ?&nbsp;<a href="#signupModal" onclick="openModal_s()">Sign Up</a></p>
                         </form>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
 
     <!-- Modal content -->
     <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
+        <span class="close" onclick="closeModal_s()">&times;</span>
         <h3 class="form-title">Sign Up Form</h3>
         <p class="sub-title" style="text-align:center; color: hsl(0%, 0%, 70%); margin-bottom: 20px;">-Register Yourself-</p>
         <form class="signup-form" action="/signup" method="post">
@@ -117,6 +117,9 @@
             <input type="text" id="email" name="email" placeholder="Your E-Mail Address" required>
 
             <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="password">Confirm Password:</label>
             <input type="password" id="password" name="password" required>
 
             <button type="submit" class="btn btn-theme btn-block">Sign Up</button>
