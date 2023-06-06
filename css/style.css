@@ -527,6 +527,9 @@ ul{
     0%{
         transform: rotate(0deg);
     }
+    50%{
+        transform: rotate(-230deg);
+    }
     100%{
         transform: rotate(360deg);
     }
@@ -946,6 +949,10 @@ ul{
 
 .form-control::placeholder{
     color: var(--black-70);
+}
+.modal-content span{
+    margin-bottom: 8px;
+    float: right;
 }
 
 /* About Us Page Styling */
