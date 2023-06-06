@@ -757,6 +757,71 @@ ul{
 
 /* contact section end here */
 
+   /* pop up message  start*/
+
+   .popup {
+    width: 400px;
+    background: #ffffff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -80%); /* for center position -50% -50% */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px 30px;
+    /* margin-top: 30px; */
+    display: none;
+    transition: transform 0.4s;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+}
+.popup button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: hsl(0, 84%, 80%);
+    border: 0;
+    outline: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius:4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.popup button:hover {
+    color: black;
+}
+.correct {
+    box-sizing: border-box;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background:hsl(0, 84%, 80%);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 5px rgba(0, 0, 0.2, 0.2);
+}
+.fa-check{
+    position:absolute;
+    top:20%;
+    left:25%;
+    color: white;
+}
+
+
+/* popup message end here */
+
 /* Footer Section Styling */
 .footer-top{
     padding: 50px 0 20px;
@@ -1263,3 +1328,201 @@ ul{
 }
 
 /* Math Section Ends Here */
+
+/* tech section start here */
+/* .tech{
+    margin: 30px 30px;
+    justify-content: center;
+} */
+.tech .heading h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: hsl(0, 84%, 80%);
+    justify-content: center;
+    text-align: center;
+}
+.tech .heading p{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black-90);
+    justify-content: center;
+    text-align: center;
+}
+    .tech{
+    width: 100%;
+    height: 100%;
+    background: hsl(0, 63%, 97%);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+   }
+   .tech-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+   }
+  .tech-card {
+    position: relative;
+    width: 250px;
+    height: 290px;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 3px 4px 4px hsla(0, 0%, 0%, 0.4);
+    perspective: 100em;
+    background-color: var(--WHITE);
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+   }
+    .tech-cover {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transform-origin: left;
+        transition: transform 1s;
+        border-radius: 0px 10px 10px  0px;
+    }
+    .tech-card:hover .tech-cover {
+        transform: rotateY(-120deg);
+    }
+    .tech-coverFront {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .tech-coverFront, .tech-coverBack {
+        background: #f4f4f4;
+        text-align: center;
+        border-radius: 0px 10px 10px 0px;
+        color: red;
+    }
+    .tech-coverBack {
+        background:#685f78;
+        border-radius: 10px 0px 0px 10px;
+        transform: rotateY(180deg);
+
+    }
+    .sh_img {
+        width: 100px;
+        height: 100px;
+    }
+    .sh_btn {
+        font-size: 14px;
+        font-weight: 500;
+        border: 0px;
+        background:hsl(0, 84%, 80%);
+        border-radius: 5px;
+        padding: 10px 20px;
+        color: #ffffff;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .sh_btn:hover {
+        color: black;
+    }
+
+
+    /* tech-modal */
+
+    .tech-modal-container {
+        display: none;
+        align-items: center;
+        justify-self: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        background: rgba(0, 0, 0, .3);
+        /* transform: scale(0); */
+        /* overflow: auto; */
+        z-index: 1;
+        /* visibility: none; */
+
+    }
+
+    .tech-modal-container .tech-modal {
+        align-items: center;
+        justify-self: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #ffffff;
+        border-radius: 5px;
+        text-align: center;
+        overflow-y: auto;
+
+    }
+    .tech-modal-container .tech-modal .tech-modal-heading {
+        margin-top: 30px;
+        padding-top: 20px;
+    }
+    .tech-modal-container .tech-modal .tech-modal-content .content-text h3 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .tech-modal-container .tech-modal .tech-modal-content .content-text{
+        text-align: left;
+        font-size: 18px;
+        margin-top: 50px;
+        padding: 10px;
+        line-break: loose;
+    }
+    .tech-modal-container .tech-modal .tech-modal-content {
+        margin: 10px auto;
+        width: 90%;
+
+    }
+    .tech-modal-container .tech-modal .tech-modal-content img{
+        margin-top: 52px;
+        max-width: 420px;
+        float: right;
+        border: 3px solid #fff;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+    .tech-modal-container .tech-modal h3 {
+        color: #333;
+        font-size: 25px;
+    }
+    .tech-modal-container .tech-modal p{
+        color: #666;
+        margin: 25px;
+
+    }
+    .tech-modal-container .tech-modal button {
+        height: 35px;
+        width: 120px;
+        background: #333;
+        color: #fff;
+        outline: none;
+        border: none;
+        border-radius: 50px;
+        font-size: 17px;
+        cursor: pointer;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, .3);
+    }
+    .tech-modal-container .tech-modal button:hover {
+        color: black;
+    }
+    .tech-modal-container .tech-modal .fa-times{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 20px;
+        cursor: pointer;
+        color: #333;
+    }

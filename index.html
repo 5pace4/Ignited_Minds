@@ -71,7 +71,7 @@
               <h3 class="mb-3">An investment in knowledge pays the best interest.</h3>
               <h2 class="mb-3"><b>Online STEM Learning Platform For Kids</b></h1>
               <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nisi dolor, posuere id neque eu, consequat hendrerit justo. Curabitur blandit rutrum elit, semper porta nunc consequat eu. Mauris suscipit diam sed blandit faucibus. Curabitur convallis mauris ante, vel tristique dolor eleifend eget.</p>
-              <a href="#" class="btn btn-theme">Get Started</a>
+              <a href="login.html" class="btn btn-theme">Get Started</a>
             </div>
           </div>
           <div class="col-md-6" data-aos="zoom-in-left" data-aos-delay="500" data-aos-duration="1000">
@@ -295,7 +295,7 @@
       </div>
       <div class="row">
         <div class="col-12 text-center mt-3">
-          <a href="#" class="btn btn-theme">View all courses</a>
+          <a href="h_stem.html" class="btn btn-theme">View all courses</a>
         </div>
       </div>
     </div>
@@ -525,11 +525,25 @@
 
                 </div>
                 <div class="inputbox">
-                    <input type="submit" name="" value="send" style="float: right;">
+                    <input type="submit" name="" value="send" style="float: right;" onclick="openPopup()">
 
                 </div>
+
+                <!-- pop-up message here -->
+                <div class="popup" id="popup">
+                  <div class="correct">
+                    <div class="tik-icon">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                  </div>
+                  <h2>Thank You!</h2>
+                  <p>Your details has been successfully submitted. Thanks!</p>
+                  <button type="button" onclick="closePopup()">OK</button>
+                </div>
+                
             </form>
         </div>
+        
     </div>
   </section>
 
