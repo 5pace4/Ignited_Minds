@@ -754,6 +754,71 @@ ul{
 
 /* contact section end here */
 
+   /* pop up message  start*/
+
+   .popup {
+    width: 400px;
+    background: #ffffff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -80%); /* for center position -50% -50% */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px 30px;
+    /* margin-top: 30px; */
+    display: none;
+    transition: transform 0.4s;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+}
+.popup button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: hsl(0, 84%, 80%);
+    border: 0;
+    outline: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius:4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.popup button:hover {
+    color: black;
+}
+.correct {
+    box-sizing: border-box;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background:hsl(0, 84%, 80%);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 5px rgba(0, 0, 0.2, 0.2);
+}
+.fa-check{
+    position:absolute;
+    top:20%;
+    left:25%;
+    color: white;
+}
+
+
+/* popup message end here */
+
 /* Footer Section Styling */
 .footer-top{
     padding: 50px 0 20px;
@@ -1289,6 +1354,7 @@ ul{
     display: flex;
     flex-direction: column;
     min-height: 90vh;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
    }
    .tech-cards {
     display: flex;
@@ -1348,15 +1414,18 @@ ul{
         height: 100px;
     }
     .sh_btn {
+        font-size: 14px;
+        font-weight: 500;
         border: 0px;
         background:hsl(0, 84%, 80%);
         border-radius: 5px;
         padding: 10px 20px;
         color: #ffffff;
         cursor: pointer;
+        transition: all 0.3s ease;
     }
     .sh_btn:hover {
-        transform: scale(1.1);
+        color: black;
     }
 
 
@@ -1454,67 +1523,3 @@ ul{
         cursor: pointer;
         color: #333;
     }
-    /* pop up message  start*/
-
-    .popup {
-        width: 400px;
-        background: #ffffff;
-        border-radius: 6px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-80%, -80%); /* for center position -50% -50% */
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        padding: 0 30px 30px;
-        /* margin-top: 30px; */
-        display: none;
-        transition: transform 0.4s;
-        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-    }
-    .popup h2 {
-        font-size: 38px;
-        font-weight: 500;
-    }
-    .popup button {
-        width: 100%;
-        margin-top: 20px;
-        padding: 10px 0;
-        background-color: hsl(0, 84%, 80%);
-        border: 0;
-        outline: none;
-        color: #ffffff;
-        font-size: 18px;
-        font-weight: 500;
-        border-radius:4px;
-        cursor: pointer;
-        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-    }
-    .popup button:hover {
-        color: black;
-    }
-    .correct {
-        box-sizing: border-box;
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        background:hsl(0, 84%, 80%);
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        font-size: 60px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        box-shadow: 0 5px 5px rgba(0, 0, 0.2, 0.2);
-    }
-    .fa-check{
-        position:absolute;
-        top:20%;
-        left:25%;
-        color: white;
-    }
-
-
-    /* popup message end here */
