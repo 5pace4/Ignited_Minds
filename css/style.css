@@ -224,10 +224,16 @@ ul{
     bottom: 0;
     border-radius: 50%;
 }
-
 .circular-img img{
     position: relative;
     z-index: 1;
+}
+
+.banner-img img{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
 }
 
 /* Button Style */
