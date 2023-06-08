@@ -584,7 +584,7 @@ ul{
     gap: 1.4rem;
     cursor: pointer;
     height: fit-content;
-    background-color:hsl(22, 85%, 80%);
+    background-color: var(--orange-light);
     border-radius: 15px;
 }
 
