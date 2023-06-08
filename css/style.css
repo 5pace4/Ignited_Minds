@@ -1532,7 +1532,7 @@ ul{
     }
     .career_exploration_section1{
         display: flex;
-        padding: 40px 13%;
+        padding: 40px 9%;
     }
     .career_exploration_section1_para{
         width: 50%;
@@ -1548,11 +1548,11 @@ ul{
         flex-direction: column;
     }
     .career_exploration_section1_img{
-        margin-left: 80px;
+        margin-left: 180px;
     }
     .career_exploration_section1_img1{
         height: 300px;
-        width: 320px;
+        width: 300px;
         border: 3px solid white;
         border-radius: 50%;
         background-color: #FF6347;
@@ -1568,7 +1568,7 @@ ul{
     }
     .career_exploration_section2{
         display: flex;
-        padding: 100px 13%;
+        padding: 100px 9%;
     }
     .career_exploration_section2_para{
         width: 50%;
@@ -1584,11 +1584,11 @@ ul{
         flex-direction: column;
     }
     .career_exploration_section2_para{
-        margin-left: 80px;
+        margin-left: 180px;
     }
     .career_exploration_section2_img1{
         height: 300px;
-        width: 320px;
+        width: 300px;
         border: 3px solid white;
         border-radius: 50%;
         background-color: #FF6347;
