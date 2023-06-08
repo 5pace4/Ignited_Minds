@@ -1,34 +1,35 @@
-/* Testimonial Slider */
+    // Home Page Section Styling Starts Here
+    /* Testimonial Slider */
 
-function testimonialSlider(){
-    const carouselOne = document.getElementById('carouselOne');
-    if(carouselOne){
-        carouselOne.addEventListener('slid.bs.carousel', function() {
-            const activeItem = this.querySelector(".active");
-            document.querySelector(".js-testimonial-img").src =
-            activeItem.getAttribute("data-js-testimonial-img");
-        })
+    function testimonialSlider(){
+        const carouselOne = document.getElementById('carouselOne');
+        if(carouselOne){
+            carouselOne.addEventListener('slid.bs.carousel', function() {
+                const activeItem = this.querySelector(".active");
+                document.querySelector(".js-testimonial-img").src =
+                activeItem.getAttribute("data-js-testimonial-img");
+            })
+        }
     }
-}
-testimonialSlider();
+    testimonialSlider();
 
-/* Faq Functionality */
-const faqs = document.querySelectorAll('.faq');
-faqs.forEach(faq => {
-    faq.addEventListener('click', () => {
-        faq.classList.toggle('open');
+    /* Faq Functionality */
+    const faqs = document.querySelectorAll('.faq');
+    faqs.forEach(faq => {
+        faq.addEventListener('click', () => {
+            faq.classList.toggle('open');
 
-        // For changing Icon
-        const icon = faq.querySelector('.faq_icon i');
-        if(icon.className === 'fas fa-plus'){
-            icon.className = "fas fa-minus"
-        }
-        else{
-            icon.className = "fas fa-plus"
-        }
-    })
-});
-
+            // For changing Icon
+            const icon = faq.querySelector('.faq_icon i');
+            if(icon.className === 'fas fa-plus'){
+                icon.className = "fas fa-minus"
+            }
+            else{
+                icon.className = "fas fa-plus"
+            }
+        })
+    });
+    // Home Page Section Styling Ends Here
 
 
     // $(window).scroll(function(){
@@ -39,6 +40,18 @@ faqs.forEach(faq => {
     //     }
     // });
 
+
+        /* Sign Up Modal Styling Starts */
+        // Open the modal
+        function openModal_s() {
+            document.getElementById("signupModal").style.display = "block";
+        }
+    
+        // Close the modal
+        function closeModal_s() {
+            document.getElementById("signupModal").style.display = "none";
+            
+        }
 
         // Sign Up Verification
         function validation(){
@@ -86,17 +99,9 @@ faqs.forEach(faq => {
             }
         }
 
-        // Open the modal
-        function openModal_s() {
-            document.getElementById("signupModal").style.display = "block";
-        }
-    
-        // Close the modal
-        function closeModal_s() {
-            document.getElementById("signupModal").style.display = "none";
-            
-        }
+        /* Sign Up Modal Styling Ends */
 
+        /* Home_Course Section Modal Styling Starts */
         // Math Modal 1
         function openModal() {
             document.getElementById("m_modal1").style.display = "block";
@@ -135,6 +140,12 @@ faqs.forEach(faq => {
         function closePopup() {
             document.getElementById("popup").style.display = "none";
         }
+        /* Home_Course Section Modal Styling Ends */
+
+
+        // Career Exploration Functionality Starts Here
+
+        // Content Functionality Starts
         const parentContainer = document.querySelector('.career_exploration_section1');
         parentContainer.addEventListener('click', event=>{
             const current = event.target;

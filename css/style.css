@@ -1530,68 +1530,241 @@ ul{
         cursor: pointer;
         color: #333;
     }
+
+
+    /* Career Exploration Section Styling Starts Here */
     .career_exploration_section1{
-        display: flex;
-        padding: 40px 13%;
+        padding: 20px;
     }
-    .career_exploration_section1_para{
-        width: 50%;
-        font-size: 12;
-        text-align: justify;
-        background-color: white;
-        border:1px solid white;
-        border-radius: 10px;
-        padding: 10px;
-        box-sizing: border-box;
-        box-shadow: 2px 2px 2px rgb(85, 83, 83);
-        display: flex;
-        flex-direction: column;
-    }
-    .career_exploration_section1_img{
-        margin-left: 80px;
-    }
-    .career_exploration_section1_img1{
-        height: 300px;
-        width: 320px;
-        border: 3px solid white;
-        border-radius: 50%;
-        background-color: #FF6347;
-    }
-    .Read_more{
-        color:#0984e3;
-    }
-    .see-more-text{
-        display: none;
-    }
-    .see-more-text--show{
-        display: inline;
-    }
-    .career_exploration_section2{
-        display: flex;
-        padding: 100px 13%;
-    }
-    .career_exploration_section2_para{
-        width: 50%;
-        font-size: 16px;
-        text-align: justify;
-        background-color: white;
-        border:1px solid white;
-        border-radius: 10px;
-        padding: 10px;
-        box-sizing: border-box;
-        box-shadow: 2px 2px 2px rgb(85, 83, 83);
-        display: flex;
-        flex-direction: column;
-    }
-    .career_exploration_section2_para{
-        margin-left: 80px;
-    }
-    .career_exploration_section2_img1{
-        height: 300px;
-        width: 320px;
-        border: 3px solid white;
-        border-radius: 50%;
-        background-color: #FF6347;
+    .career_exploration_section1 .heading{
         text-align: center;
-        
+        padding: 10px;
+        margin-top: 5px;
+    }
+    .career_exploration_section1 .heading h2{
+        font-weight: 700;
+        font-size: 24px;
+        color: hsl(0, 74%, 61%);
+    }
+    .career_exploration_section1 .heading p{
+        font-weight: 300;
+        color: var(--black-90);
+        font-size: 14px;
+    }
+    .career-container{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        gap: 3rem;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    
+    .career_exploration_section1_para{
+        font-size: 14px;
+        text-align: justify;
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .career-container .career_left{
+        margin-left: 82px;
+    }
+    .career_left .newspaper{
+        font-size: 12px;
+        font-weight: 600;
+        color: hsl(0, 84%, 80%);
+        cursor: pointer;
+    }
+    .career-container .career_right{
+        margin-right: 82px;
+    }
+
+    .career-container .career_right .career_exploration_section1_img img{
+        border-radius: 8px;
+        width: 85%;
+    }
+    .career-container .career_right .career_exploration_section1_img h5{
+        color: var(--main-color);
+        margin-top: 8px;
+    }
+    .career-container .career_right .career_exploration_section1_img .designation{
+        color: var(--main-color);
+        font-size: 10px;
+    }
+
+    /* Second Paragraph Styling */
+    .career-container1{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .career_exploration_section2_para{
+        font-size: 14px;
+        text-align: justify;
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        margin-bottom: 60px;
+        flex-direction: column;
+    }
+    .career-container1 .career_left1{
+        margin-left: 110px;
+    }
+    .career_right1 .newspaper{
+        font-size: 12px;
+        font-weight: 600;
+        color: hsl(0, 84%, 80%);
+        cursor: pointer;
+    }
+    .career-container1 .career_right1{
+        margin-right: 110px;
+    }
+
+    .career-container1 .career_left1 .career_exploration_section2_img img{
+        border-radius: 8px;
+        width: 85%;
+    }
+    .career-container1 .career_left1 .career_exploration_section2_img h5{
+        color: var(--main-color);
+        margin-top: 8px;
+    }
+    .career-container1 .career_left1 .career_exploration_section2_img .designation{
+        color: var(--main-color);
+        font-size: 10px;
+    }
+
+    /* Slide Section */
+    .slide{
+        margin-bottom: 60px;
+    }
+    .bg-slider{
+        margin-top: 12px;
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+    }
+    .bg-slider .swiper-slide{
+        position: relative;
+        width: 82%;
+        text-align: center;
+        height: 100vh;
+    }
+    .bg-slider .swiper-slide img{
+        width: 82%;
+        height: 100vh;
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+        pointer-events: none;
+        border-radius: 10px;
+        border: 5px outset;
+    }
+
+    .dark-layer:before{
+        content:' ';
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: rbga(0,0,0,0.2);
+    }
+    .swiper-slide .text-content{
+        position: absolute;
+        top: 25%;
+        text-align: left;
+        margin: 0 200px;
+        color: var(--white);
+    }
+
+    .swiper-slide .text-content .title{
+        color: var(--WHITE);
+        font-size: 24px;
+        font-weight: 700;
+        text-shadow: 1px var(--shadow);
+        margin-bottom: 5px;
+        background-color: rgba(255,255,255,0.1);
+        backdrop-filter: blur(5px);
+        text-shadow: 2px var(--black-70);
+        border-radius: 10px;
+        padding-left: 20px;
+        padding-bottom: 8px;
+        padding-top: 8px;
+    }
+    .swiper-slide .text-content span{
+        font-size: 14px;
+    }
+    .swiper-slide .text-content p{
+        max-width: 500px;
+        background-color: rgba(255,255,255,0.1);
+        backdrop-filter: blur(5px);
+        text-shadow: 2px var(--black-70);
+        text-align: justify;
+        padding: 20px;
+        font-size: 14px;
+        border-radius: 10px;
+        color: var(--white);
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        border-right: 1px solid rgba(255,255,255,0.1);
+    }
+    .swiper-slide .text-content .btn{
+        color: var(--black-90);
+        background-color: var(--white);
+        border-radius: 8px;
+        padding: 14px;
+        width: 25%;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .swiper-slide .text-content .btn:hover{
+        color: var(--white);
+        background-color: var(--black-90);
+    }
+    
+    /* For thumbs container styling */
+    
+    .bg-slider-thumbs{
+        z-index: 777;
+        position: absolute;
+        bottom: -40px;
+        left: 42%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease;
+    }
+    
+    .bg-slider-thumbs .thumbs-container{
+        width: 50px;
+        height: 35px;
+        margin: 0.5px;
+        cursor: pointer;
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .bg-slider-thumbs .thumbs-container img{
+        border-radius: 8px;
+    }
+    .bg-slider-thumbs .thumbs-container img:hover{
+        border-bottom: 2px solid var(--white);
+        padding: 5px;
+    }
+
+    /* Xplore Button Styling */
+    .x_btn{
+        background-color: hsl(0, 74%, 61%);
+        color: var(--white);
+        font-size: 14px;
+        padding: 10px;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    .x_btn:hover{
+        color: hsl(0, 74%, 61%);
+        background-color: var(--white);
+        border: 1px solid var(--main-color);
     }
