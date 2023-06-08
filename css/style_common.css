@@ -168,3 +168,75 @@ ul{
     display: none;
 }
 
+/* Footer Section Styling */
+.footer-top{
+    padding: 50px 0 20px;
+    border-top: 1px solid hsl(0, 0%, 90%);
+}
+
+.footer-item{
+    margin: 0 0 30px;
+}
+
+.footer-item h3{
+    margin: 0 0 20px;
+    font-size: 25px;
+}
+
+.footer-item h3:hover{
+    color: hsl(0, 74%, 61%);
+    transition: all 0.3s ease;
+}
+
+.footer-item .footer-logo{
+    color: var(--black-90);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.footer-logo span{
+    color: hsl(0, 74%, 61%);
+    font-weight: 700;
+}
+
+.footer-item ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-item ul a{
+    color: var(--black-70);
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.footer-item ul a:hover,
+.footer-item ul a .social-icon{
+    color: hsl(0, 74%, 61%);
+}
+.footer-item ul a .social-icon{
+    margin-right: 5px;
+}
+
+.footer-item ul a::before{
+    content: ' ';
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    width: 0%;
+    height: 1.2px;
+    transition: width 0.3s ease;
+    background-color: hsl(0, 84%, 80%);
+}
+
+.footer-item ul a:hover::before{
+    width: 100%;
+}
+
+.footer-bottom{
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--black-70);
+    font-size: 14px;
+}
+
+/* Footer Styling Ends Here */
