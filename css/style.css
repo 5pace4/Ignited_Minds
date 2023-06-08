@@ -178,6 +178,10 @@ ul{
     padding: 80px 0;
     min-height: 680px;
 }
+.banner-text p{
+    text-align: justify;
+    max-width: 520px;
+}
 
 .banner-text h2{
     font-size: 35px;
@@ -314,6 +318,7 @@ ul{
 }
 
 .categories_left p{
+    text-align: justify;
     margin: 1rem 0 3rem;
 }
 .categories_right{
@@ -327,7 +332,7 @@ ul{
     padding: 2rem;
     border-radius: 2rem;
     transition: all 0.3s ease;
-    background-color:hsl(44, 95%, 85%)
+    background-color:hsl(44, 95%, 85%);
 }
 
 .category:hover{
