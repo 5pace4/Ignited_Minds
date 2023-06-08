@@ -497,14 +497,6 @@ ul{
 }
 
 .testimonials-section .decoration-imgs-item:nth-child(2){
-    left: 90%;
-    top: 70%;
-    height: 50px;
-    width: 50px;
-    background-color: hsl(0, 74%, 61%);
-}
-
-.testimonials-section .decoration-imgs-item:nth-child(3){
     left: 45%;
     top: 75%;
     height: 30px;
@@ -512,7 +504,7 @@ ul{
     background-color: hsl(0, 74%, 61%);
 }
 
-.testimonials-section .decoration-imgs-item:nth-child(4){
+.testimonials-section .decoration-imgs-item:nth-child(3){
     left: 5%;
     top: 40%;
     height: 70px;
@@ -520,7 +512,7 @@ ul{
     background-color: hsl(0, 74%, 61%);
 }
 
-.testimonials-section .decoration-imgs-item:nth-child(5){
+.testimonials-section .decoration-imgs-item:nth-child(4){
     right: 15%;
     top: 20%;
     height: 40px;
@@ -995,7 +987,7 @@ ul{
 }
 
 .achievement_card:hover{
-    box-shadow: 0 0.8rem 0.8rem var(--black-90);
+    box-shadow: 0 0.2rem 0.2rem var(--black-90);
     background: hsl(0, 0%, 100%);
 }
 
