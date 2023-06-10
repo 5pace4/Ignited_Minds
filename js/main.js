@@ -1,6 +1,5 @@
     // Home Page Section Styling Starts Here
     /* Testimonial Slider */
-
     function testimonialSlider(){
         const carouselOne = document.getElementById('carouselOne');
         if(carouselOne){
@@ -76,6 +75,78 @@
         }
     }
     themecolor();
+
+    /* Dark Theme Functionality */
+    function darkTheme(){
+        const darkMode = document.querySelector(".js-dark-mode");
+
+        darkMode.addEventListener("click", function(){
+            if(this.checked){
+                localStorage.setItem("dark-theme", "true");
+            }
+            else{
+                localStorage.setItem("dark-theme", "false");
+            }
+            themeMode();
+        });
+
+        function themeMode(){
+            if(localStorage.getItem("dark-theme") === "true"){
+                document.body.classList.add("dark");
+            }
+            else{
+                document.body.classList.remove("dark");
+            }
+        }
+        /* For null value-See the change in console->application->localstorage */
+        if(localStorage.getItem("dark-theme") !== null){
+            themeMode();
+        }
+        /* Reload and check remains */
+        if(document.body.classList.contains("dark")){
+            darkMode.checked = true;
+        }
+    }
+    darkTheme();
+
+    /* Dark Theme Functionality Ends Here */
+
+    /* Glass effect Functionality Starts Here */
+    
+    function glassEffect(){
+        const glassChecker = document.querySelector(".js-glass-effect"),
+        glassStyle = document.querySelector(".js-glass-style");
+
+        glassChecker.addEventListener("click", function(){
+            if(this.checked){
+                localStorage.setItem("glass-effect", "true");
+            }
+            else{
+                localStorage.setItem("glass-effect", "false");
+            }
+            glass_function();
+        });
+
+        function glass_function(){
+            if(localStorage.getItem("glass-effect") === "true"){
+                glassStyle.removeAttribute("disabled");
+            }
+            else{
+                glassStyle.disabled = true;
+            }
+        }
+        if(localStorage.getItem("glass-effect") !== null){
+            glass_function();
+        }
+        if(!glassStyle.hasAttribute("disabled")){
+            glassChecker.checked = true;
+        }
+    }
+    glassEffect();
+
+    /* Glass effect functionality Ends Here */
+
+
     // Home Page Section Styling Ends Here
 
 

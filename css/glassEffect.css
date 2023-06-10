@@ -1,0 +1,47 @@
+html::before,
+html::after{
+    content: '';
+    position: fixed;
+    z-index: -5;
+    border-radius: 50%;
+}
+html::before{
+    height: 100px;
+    width: 100px;
+    top: 20%;
+    left: calc(50% - 650px);
+    background-image: linear-gradient(to right bottom, var(--decoration-bg-color-1), var(--white));
+}
+html::after{
+    height: 150px;
+    width: 150px;
+    bottom: 15%;
+    right: calc(50% - 640px);
+    background-image: linear-gradient(to left bottom, var(--decoration-bg-color-2), var(--white));
+}
+
+body{
+    padding: 40px 0;
+    --white: hsla(0, 0%, 100%, 0.25);
+    --border-color-2: hsla(0, 0%, 100%, 0.4);
+    --shadow: none;
+    --border-color-1: hsla(0, 0%, 0%, 0.1);
+    background-image: linear-gradient(to right, var(--body-gradient-bg-color-1), var(--body-gradient-bg-color-2));
+    background-attachment: fixed;
+}
+
+.main-wraper{
+    max-width: 1200px;
+    background-color: var(--white);
+    border: 1px solid var(--border-color-2);
+    margin: auto;
+    border-radius: 20px;
+}
+
+/* for dark glass effect */
+body.dark{
+    --border-color-1: hsl(0, 0%, 100%, 0.15);
+    --border-color-2: hsla(0, 0%, 100%, 0.07);
+    --white: hsla(0, 0%, 100%, 0.05);
+    --shadow: none;
+}
