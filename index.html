@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" class="js-color-style" href="css/colors/color-1.css">
+  <link rel="stylesheet" class="js-color-style" href="css/colors/color-2.css">
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
@@ -34,7 +34,7 @@
               <i class="fas fa-times"></i>
             </button>
               <ul class="menu">
-                <li class="menu-item menu-item-has-children"><a href="index.html" style="color: hsl(0, 74%, 61%);">Home</a></li>
+                <li class="menu-item menu-item-has-children"><a href="index.html" style="color: var(--main-color);">Home</a></li>
                 <li class="menu-item menu-item-has-children">
                   <a href="h_stem.html">STEM <i class="fas fa-chevron-down"></i></a>
                   <ul class="sub-menu js-sub-menu">
@@ -69,7 +69,7 @@
           <div class="col-md-6">
             <div class="banner-text" data-aos="zoom-in-right" data-aos-delay="500" data-aos-duration="1000">
               <h3 class="mb-3">Empowering the Heroes of Tomorrow: Discover STEM Excellence!</h3>
-              <h2 class="mb-3"><b><span style="color:hsl(0, 74%, 61%); font-size: 50px;">O</span>nline STEM Learning Platform For Kids</b></h1>
+              <h2 class="mb-3"><b><span style="color:var(--main-color); font-size: 50px;">O</span>nline STEM Learning Platform For Kids</b></h1>
               <p class="mb-4">At our STEM learning platform, we are dedicated to empowering the heroes of tomorrow 
                 by providing them with a comprehensive and engaging educational experience. This platform is designed to 
                 cultivate a passion for Science, Technology, Engineering, and Mathematics (STEM) 
@@ -128,7 +128,7 @@
   <section class="categories">
     <div class="container categories_container">
       <div class="categories_left" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-        <h1> <span style="color:hsl(0, 74%, 61%); font-size: 50px;">W</span>hy Choose Us? </h1>
+        <h1> <span style="color:var(--main-color); font-size: 50px;">W</span>hy Choose Us? </h1>
         <p>
           By believing that every student has the potential to be a hero in the world of STEM.
           By offering a wide range of interactive and immersive learning materials, 
@@ -502,7 +502,7 @@
 
   <section class="contact" id = "contact">
     <div class="content " data-aos="zoom-in-up" data-aos-delay="500" data-aos-duration="1000">
-        <h2>Contact Us</h2>
+        <h2 style="color: var(--main-color);">Contact Us</h2>
         <p>If you have any questions, feedback, or need assistance with <br> our STEM learning platform, 
           please don't hesitate to reach out to us. 
           Our friendly and <br> knowledgeable customer support team is here to help.</p>
@@ -653,6 +653,38 @@
 </div>  
 <!--Main Wrapper Ends Here-->
 
+<!--Style Switcher Starts Here-->
+<div class="style-switcher js-style-switcher">
+  <div class="style-switcher-toggler js-style-switcher-toggler">
+    <i class="fas fa-cog"></i>
+  </div>
+  <h4 style="color: var(--main-color);">-Style Switcher-</h4>
+  <div class="style-switcher-item">
+    <p class="mb-2">Choose Your Theme</p>
+    <div class="theme-color js-theme-colors">
+      <button type="button" data-js-theme-color="color-1" class="js-theme-color-item color-1"></button>
+      <button type="button" data-js-theme-color="color-2" class="js-theme-color-item color-2"></button>
+      <button type="button" data-js-theme-color="color-3" class="js-theme-color-item color-3"></button>
+      <button type="button" data-js-theme-color="color-4" class="js-theme-color-item color-4"></button>
+      <button type="button" data-js-theme-color="color-5" class="js-theme-color-item color-5"></button>
+    </div>
+  </div>
+  <div class="style-switcher-item">
+    <div class="form-check form-switch">
+      <input type="checkbox" class="form-check-input js-dark-mode" role="switch" id="dark-mode">
+      <label for="dark-mode" class="form-check-label"><span style="color: var(--main-color); font-size: 16px;font-weight: 600;">D</span>ark Mode</label>
+    </div>
+  </div>
+  <div class="style-switcher-item">
+    <div class="form-check form-switch">
+      <input type="checkbox" class="form-check-input js-dark-mode" role="switch" id="glass-effect">
+      <label for="glass-effect" class="form-check-label"><span style="color: var(--main-color); font-size: 16px; font-weight: 600;">G</span>lass Effect</label>
+    </div>
+  </div>
+</div>
+<!--Style switcher ends here-->
+
+
 <!--Script File Link-->
 <script src="js/bootstrap.bundle.min.js"></script>  
 <script src="js/main.js"></script>
@@ -662,5 +694,3 @@
 
 </body>
 </html>
-
-

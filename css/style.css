@@ -18,12 +18,27 @@
     --border-color-1: hsl(0, 0%, 90%);
 }
 
+body.dark{
+    --body-bg-color: hsl(240, 10%, 19%);
+    --black-70: hsl(0, 0%, 87%);
+    --black-90:hsl(0, 0%, 100%);
+    --shadow: 0 0 10px hsla(0, 0%, 0%, 0.08);
+    --white: hsl(240, 8%, 21%);
+    --WHITE: hsl(240, 8%, 21%);
+    --select-box-bg-color: hsl(240, 8%, 21%);
+    --border-color-1: hsl(240, 9%, 25%);
+    --border-color-2:  hsl(240, 9%, 30%);
+    --red-light:hsl(240, 6%, 16%);
+    --yellow-light:hsl(240, 6%, 16%);
+    --orange-light: hsl(240, 6%, 16%);
+}
+
 html{
     scroll-behavior: smooth;
 }
 
 body{
-    background-color: hsl(0, 63%, 97%);
+    background-color: var(--body-bg-color);
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -36,12 +51,12 @@ h1, h2, h3, h4, h5, h6{
     line-height: 1.4;
 }
 a{
-    color: hsl(0, 74%, 61%);
+    color: var(--main-color);
     text-decoration: none;
 }
 
 a:hover{
-    color: hsl(0, 74%, 61%);
+    color: var(--main-color);
 }
 
 img{
@@ -54,13 +69,115 @@ ul{
 }
 
 ::selection{
-    color: (--WHITE);
+    color: var(--WHITE);
     background-color: var(--main-color);
 }
 
+/*Style Switcher Toggler Styling */
+.style-switcher{
+    width: 250px;
+    height: 50%;
+    top: 25%;
+    bottom: 25%;
+    right: -250px;
+    padding: 20px;
+    background: var(--white);
+    box-shadow: var(--shadow);
+    z-index: 10;
+    position: fixed;
+    border-radius: 10px 0 0 10px;
+    transition: right 0.3s ease;
+}
+.style-switcher.open{
+    right: 0;
+}
+.style-switcher-toggler{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 40%;
+    left: -45px;
+    background-color: var(--main-color);
+    color: var(--white);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: spin1 10s linear infinite;
+}
+@keyframes spin1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+.style-switcher h4{
+    color: var(--main-color);
+    font-size: 18px;
+    padding: 0 0 10px;
+}
+.style-switcher p{
+    font-size: 14px;
+}
+
+.style-switcher-item{
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color-1);
+}
+.style-switcher-item .theme-color button{
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 50%;
+    vertical-align: middle;
+    position: relative;
+}
+.theme-color button::before{
+    content: "\f00c";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--WHITE);
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+.theme-color button.active::before{
+    opacity: 1;
+}
+
+.theme-color{
+    padding: 0 0 15px 0;
+}
+.theme-color .color-1{
+    background-color: hsl(0, 74%, 61%);
+}
+.theme-color .color-2{
+    background-color: hsl(230, 74%, 61%);
+}
+.theme-color .color-3{
+    background-color: hsl(36, 74%, 61%);
+}
+.theme-color .color-4{
+    background-color: hsl(277, 74%, 61%);
+}
+.theme-color .color-5{
+    background-color: hsl(189, 74%, 61%);
+}
+
+
 /* Header */
 .header{
-    border-bottom: 1px solid hsl(var(--hue-value-1), 40%, 93%);
+    border-bottom: 1px solid var(--shadow);
 }
 
 .header-menu{
@@ -279,7 +396,7 @@ ul{
 .fun-facts-item:hover,
 .fun-facts-item h2:hover{
     transition: color 0.4s ease;
-    color: hsl(0, 74%, 61%);
+    color: var(--main-color);
 }
 
 .fun-facts-item h2{
@@ -309,7 +426,7 @@ ul{
     margin-bottom: 20px;
 }
 .categories_container .btn{
-    background-color: hsl(0, 74%, 61%);
+    background-color: var(--main-color);
     color: var(--WHITE);
 }
 .categories_container .btn:hover{
@@ -332,11 +449,11 @@ ul{
     padding: 2rem;
     border-radius: 2rem;
     transition: all 0.3s ease;
-    background-color:hsl(44, 95%, 85%);
+    background-color:var(--yellow-light);
 }
 
 .category:hover{
-    box-shadow: 0 0 10px hsl(0, 84%, 80%);
+    box-shadow: 0 0 10px var(--main-color);
 }
 
 .category_icon{
@@ -353,7 +470,7 @@ ul{
 }
 .section-title .title{
     font-size: 20px;
-    color: hsl(0, 74%, 61%);
+    color: var(--main-color);
     font-weight: 500;
     text-transform: capitalize;
 }
@@ -386,7 +503,7 @@ ul{
     transition: color 0.3s ease;
 }
 .courses-item .title:hover{
-    color: hsl(0, 84%, 80%);
+    color: var(--main-color);
     font-weight: 700;
 }
 .courses-item .instructor{
@@ -396,16 +513,16 @@ ul{
     font-size: 16px;
 }
 .courses-item .average-rating{
-    color: var(--orange);
+    color: var(--main-color);
     font-weight: 600;
 }
 .courses-item .average-stars i{
-    color: var(--orange);
+    color: var(--main-color);
 }
 .courses-item .price{
     position: absolute;
     color: var(--white);
-    background-color: hsl(0, 84%, 80%);
+    background-color: var(--main-color);
     font-weight: 600;
     border-radius: 8px;
     padding: 4px 8px;
@@ -459,7 +576,7 @@ ul{
     position: relative;
     width: 35px;
     height: 35px;
-    background-color: hsl(0, 84%, 80%);
+    background-color: var(--main-color);
     display: inline-block;
     border-radius: 50%;
     margin: 0 5px;
@@ -477,7 +594,7 @@ ul{
 
 .testimonials-item h3:hover, 
 .testimonials-item .text-2:hover{
-    color: hsl(0, 74%, 61%);
+    color: var(--main-color);
 }
 .testimonials-item .text-2{
     margin: 0;
@@ -498,7 +615,7 @@ ul{
     top: 20%;
     height: 50px;
     width: 50px;
-    background-color: hsl(0, 74%, 61%);
+    background-color: var(--main-color);
 }
 
 .testimonials-section .decoration-imgs-item:nth-child(2){
@@ -506,7 +623,7 @@ ul{
     top: 75%;
     height: 30px;
     width: 30px;
-    background-color: hsl(0, 74%, 61%);
+    background-color: var(--main-color);
 }
 
 .testimonials-section .decoration-imgs-item:nth-child(3){
@@ -514,7 +631,7 @@ ul{
     top: 40%;
     height: 70px;
     width: 70px;
-    background-color: hsl(0, 74%, 61%);
+    background-color: var(--main-color);
 }
 
 .testimonials-section .decoration-imgs-item:nth-child(4){
@@ -522,7 +639,7 @@ ul{
     top: 20%;
     height: 40px;
     width: 40px;
-    background-color: hsl(0, 74%, 61%);
+    background-color: var(--main-color);
 }
 
 /* Animation Style */
@@ -555,7 +672,7 @@ ul{
 /* FAQ Section Styling */
 
 .faqs{
-    box-shadow: 0 0 5px hsl(22, 85%, 80%);
+    box-shadow: 0 0 5px var(--main-color);
     border: 1px solid var(--white);
     padding: 70px;
 }
@@ -569,7 +686,7 @@ ul{
 
 .faqs h2:hover{
     transition: all 0.5s ease-in;
-    color: hsl(0, 74%, 61%);
+    color: var(--main-color);
     font-weight: 700;
 }
 
@@ -623,7 +740,7 @@ ul{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: hsl(0, 63%, 97%);
+    background-color: var(--body-bg-color);
     background-size: cover;
 }
 .contact .content {
@@ -662,12 +779,12 @@ ul{
    min-width: 60px;
    height: 60px;
    display: flex;
-   background:  #ffffff;
+   background: var(--WHITE);
    justify-content: center;
    align-items: center;
    border-radius: 50%;
    font-size: 22px;
-
+    color: var(--main-color);
 }
 .contact-container .contactinfo .contact-box .text {
     display: flex;
@@ -678,12 +795,12 @@ ul{
 }
 .contact-container .contactinfo .contact-box .text h3 {
     font-weight: 500;
-    color:hsl(0, 74%, 61%);
+    color:var(--main-color);
 }
 .contact-form{
     width: 40%;
     padding: 40px;
-    background-color: #ffffff;
+    background-color: white;
     border-radius: 4%;
     /* animation-name: example;
     animation-duration: 4s;
@@ -712,7 +829,7 @@ ul{
     font-size: 16px;
     margin: 10px 0;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--black-70);
     outline: none;
     resize: none;
 }
@@ -732,14 +849,14 @@ ul{
 .contact-form .inputbox textarea:focus ~ span,
 .contact-form .inputbox textarea:valid ~ span
 {
-  color:hsl(0, 74%, 61%);
+  color:var(--main-color);
   font-size: 12px;
   transform: translateY(-20px);
 }
 .contact-form .inputbox input[type="submit"] {
     width: 100px;
-    background: hsl(0, 74%, 61%);
-    color: #fff;
+    background: var(--main-color);
+    color: var(--white);
     border: none;
     border-radius: 50px 50px 50px 50px;
     cursor: pointer;
@@ -764,7 +881,7 @@ ul{
 
    .popup {
     width: 400px;
-    background: #ffffff;
+    background: var(--white);
     border-radius: 6px;
     position: absolute;
     top: 50%;
@@ -777,7 +894,7 @@ ul{
     /* margin-top: 30px; */
     display: none;
     transition: transform 0.4s;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 5px var(--shadow);
 }
 .popup h2 {
     font-size: 38px;
@@ -787,25 +904,25 @@ ul{
     width: 100%;
     margin-top: 20px;
     padding: 10px 0;
-    background-color: hsl(0, 84%, 80%);
+    background-color: var(--main-color);
     border: 0;
     outline: none;
-    color: #ffffff;
+    color: var(--white);
     font-size: 18px;
     font-weight: 500;
     border-radius:4px;
     cursor: pointer;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 5px var(--shadow);
 }
 .popup button:hover {
-    color: black;
+    color: var(--black-70);
 }
 .correct {
     box-sizing: border-box;
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    background:hsl(0, 84%, 80%);
+    background:var(--main-color);
     align-items: center;
     justify-content: center;
     position: relative;
@@ -819,7 +936,7 @@ ul{
     position:absolute;
     top:20%;
     left:25%;
-    color: white;
+    color: var(--WHITE);
 }
 
 
@@ -841,7 +958,7 @@ ul{
 }
 
 .footer-item h3:hover{
-    color: hsl(0, 74%, 61%);
+    color: var(--main-color);
     transition: all 0.3s ease;
 }
 
@@ -852,7 +969,7 @@ ul{
 }
 
 .footer-logo span{
-    color: hsl(0, 74%, 61%);
+    color: var(--main-color);
     font-weight: 700;
 }
 
@@ -868,7 +985,7 @@ ul{
 
 .footer-item ul a:hover,
 .footer-item ul a .social-icon{
-    color: hsl(0, 74%, 61%);
+    color: var(--main-color);
 }
 .footer-item ul a .social-icon{
     margin-right: 5px;
@@ -882,7 +999,7 @@ ul{
     width: 0%;
     height: 1.2px;
     transition: width 0.3s ease;
-    background-color: hsl(0, 84%, 80%);
+    background-color: var(--main-color);
 }
 
 .footer-item ul a:hover::before{
@@ -984,7 +1101,7 @@ ul{
 
 .achievement_card{
     padding: 30px;
-    background-color: hsl(158, 68%, 75%);
+    background-color: var(--card-color);
     text-align: center;
     border-radius: 16px;
     transition: all 0.5s ease;
@@ -993,7 +1110,7 @@ ul{
 
 .achievement_card:hover{
     box-shadow: 0 0.2rem 0.2rem var(--black-90);
-    background: hsl(0, 0%, 100%);
+    background: var(--white);
 }
 
 .achievement_card > h3, 
@@ -1006,7 +1123,7 @@ ul{
 .achievement_card > p:hover,
 .achievement_icon:hover{
      font-weight: 600;
-     color: hsl(0, 84%, 80%);
+     color: var(--main-color);
 }
 .achievement_icon{
     padding: 10px;
@@ -1027,7 +1144,7 @@ ul{
     font-size: 25px;
     font-weight: 600;
     text-align: center;
-    color: hsl(0, 74%, 61%);
+    color: var(--main-color);
     padding: 12px;
 }
 .team_container{
@@ -1037,7 +1154,7 @@ ul{
 }
 
 .team_member{
-    background: hsl(0, 63%, 97%);
+    background: var(--body-bg-color);
     padding: 12px;
     border: 1px solid transparent unset;
     border-radius: 16px;
@@ -1072,7 +1189,7 @@ ul{
 .team_member-socials i{
     font-size: 20px;
     padding: 12px;
-    color: white;
+    color: var(--white);
 }
 .team_member-socials{
     position: absolute;
@@ -1086,7 +1203,7 @@ ul{
     padding: 5px;
     right: 0;
     transition: all 0.5s ease-in;
-    background-color: hsl(0, 84%, 80%);
+    background-color: var(--red-light);
 }
 
 .team-member-socials a{
@@ -1118,7 +1235,7 @@ ul{
 
 .modal-content .form-title{
     font-weight: 600;
-    color: hsl(0, 74%, 61%);
+    color: var(--main-color);
 }
 .modal-content .sub-title{
     font-weight: 300;
@@ -1127,7 +1244,7 @@ ul{
 
 /* Close button */
 .close {
-    color: hsl(0, 74%, 61%);
+    color: var(--main-color);
     text-align: right;
     font-size: 28px;
     font-weight: bold;
@@ -1158,8 +1275,8 @@ ul{
 }
 
 .signup-form button {
-    background-color: hsl(0, 74%, 61%);
-    color: white;
+    background-color: var(--main-color);
+    color: var(--WHITE);
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -1186,7 +1303,7 @@ ul{
 .math .heading h2{
     font-size: 24px;
     font-weight: 700;
-    color: hsl(0, 84%, 80%);
+    color: var(--main-color);
     justify-content: center;
     text-align: center;
 }
@@ -1222,7 +1339,7 @@ ul{
 }
 .btn-theme1{
     color: var(--white);
-    background-color: hsl(0, 84%, 80%);
+    background-color: var(--main-color);
     border-radius: 8px;
     font-size: 14px;
 }
@@ -1230,7 +1347,7 @@ ul{
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 18px;
-    color: hsl(0, 84%, 80%);
+    color: var(--main-color);
 }
 
 .card-content p{
@@ -1269,7 +1386,7 @@ ul{
 }
 .cover_front h5{
     text-align: center;
-    color: hsl(0, 84%, 80%);
+    color: var(--main-color);
 }
 .cover_back{
     border-radius: 10px 0px 0px 10px;
@@ -1285,14 +1402,14 @@ ul{
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: transparent; /* Black w/ opacity */
 }
 
 .modal-content-m {
-    background-color: #fefefe;
+    background-color: var(--white);
     margin: 5% auto;
-    padding: 40px;
-    border: 1px solid #888;
+    padding: 40px 40px 100px 40px;
+    border: 1px solid var(--black-70);
     border-radius: 8px;
     width: 100%; /* Width of the modal */
     display: grid;
@@ -1301,7 +1418,7 @@ ul{
 
 .modal-content-m .left h2{
     font-size: 18px;
-    color: hsl(0, 84%, 80%);
+    color: var(--main-color);
     font-weight: 700;
 }
 
@@ -1314,7 +1431,7 @@ ul{
     margin-top: 50px;
 }
 
-.btn-theme-m{
+.btn-theme-done{
     background-color: var(--main-color);
     color: var(--WHITE);
     font-size: 16px;
@@ -1322,16 +1439,22 @@ ul{
     text-transform: capitalize;
     padding: 8px 20px;
     transition: all 0.3s ease;
-    width: 100%;
+    margin-bottom: 20px; 
+    width: 10%;
 }
 
-.btn-theme-m:focus{
+.btn-theme-done:focus{
     box-shadow: 0 0 8px var(--main-color);
 }
 
-.btn-theme-m:hover{
+.btn-theme-done:hover{
     background-color: var(--WHITE);
     color: var(--main-color);
+    border: 1px solid var(--black-70);
+}
+.btn-theme-done-para{
+    text-align: center;
+    margin-top: -130px;
 }
 
 /* Math Section Ends Here */
@@ -1344,7 +1467,7 @@ ul{
 .tech .heading h2{
     font-size: 24px;
     font-weight: 700;
-    color: hsl(0, 84%, 80%);
+    color: var(--main-color);
     justify-content: center;
     text-align: center;
 }
@@ -1358,13 +1481,13 @@ ul{
     .tech{
     width: 100%;
     height: 100%;
-    background: hsl(0, 63%, 97%);
+    background: var(--body-bg-color);
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
     min-height: 90vh;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid var(--border-color-1);
    }
    .tech-cards {
     display: flex;
@@ -1379,10 +1502,9 @@ ul{
     border-radius: 0px 10px 10px 0px;
     box-shadow: 3px 4px 4px hsla(0, 0%, 0%, 0.4);
     perspective: 100em;
-    background-color: var(--WHITE);
+    background-color: var(--white);
     margin-bottom: 50px;
     margin-top: 50px;
-
    }
     .tech-cover {
         position: absolute;
@@ -1408,14 +1530,12 @@ ul{
     }
 
     .tech-coverFront, .tech-coverBack {
-        background: #f4f4f4;
+        background: var(--white);
         text-align: center;
         border-radius: 0px 10px 10px 0px;
-        color: red;
     }
     .tech-coverBack {
-        background:#685f78;
-        border-radius: 10px 0px 0px 10px;
+        /* background:#685f78; */
         transform: rotateY(180deg);
 
     }
@@ -1427,15 +1547,15 @@ ul{
         font-size: 14px;
         font-weight: 500;
         border: 0px;
-        background:hsl(0, 84%, 80%);
+        background:var(--main-color);
         border-radius: 5px;
         padding: 10px 20px;
-        color: #ffffff;
+        color: var(--white);
         cursor: pointer;
         transition: all 0.3s ease;
     }
     .sh_btn:hover {
-        color: black;
+        color: var(--black-70);
     }
 
 
@@ -1449,12 +1569,11 @@ ul{
         height: 100%;
         width: 100%;
         position: fixed;
-        background: rgba(0, 0, 0, .3);
+        background: var(--black-70);
         /* transform: scale(0); */
         /* overflow: auto; */
         z-index: 1;
         /* visibility: none; */
-
     }
 
     .tech-modal-container .tech-modal {
@@ -1467,11 +1586,10 @@ ul{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background: #ffffff;
+        background: var(--white);
         border-radius: 5px;
         text-align: center;
         overflow-y: auto;
-
     }
     .tech-modal-container .tech-modal .tech-modal-heading {
         margin-top: 30px;
@@ -1497,33 +1615,33 @@ ul{
         margin-top: 52px;
         max-width: 420px;
         float: right;
-        border: 3px solid #fff;
+        border: 3px solid var(--white);
         border-radius: 10px;
         margin-right: 10px;
     }
     .tech-modal-container .tech-modal h3 {
-        color: #333;
+        color: var(--black-90);
         font-size: 25px;
     }
     .tech-modal-container .tech-modal p{
-        color: #666;
+        color: var(--black-70);
         margin: 25px;
 
     }
     .tech-modal-container .tech-modal button {
         height: 35px;
         width: 120px;
-        background: #333;
-        color: #fff;
+        background: var(--black-70);
+        color: var(--white);
         outline: none;
         border: none;
         border-radius: 50px;
         font-size: 17px;
         cursor: pointer;
-        box-shadow: 0px 5px 15px rgba(0, 0, 0, .3);
+        box-shadow: 0px 5px 15px var(--shadow);
     }
     .tech-modal-container .tech-modal button:hover {
-        color: black;
+        color: var(--black-90);
     }
     .tech-modal-container .tech-modal .fa-times{
         position: absolute;
@@ -1531,7 +1649,7 @@ ul{
         right: 15px;
         font-size: 20px;
         cursor: pointer;
-        color: #333;
+        color: var(--black-70);
     }
 
 
@@ -1547,7 +1665,7 @@ ul{
     .career_exploration_section1 .heading h2{
         font-weight: 700;
         font-size: 24px;
-        color: hsl(0, 74%, 61%);
+        color: var(--main-color);
     }
     .career_exploration_section1 .heading p{
         font-weight: 300;
@@ -1565,7 +1683,7 @@ ul{
     .career_exploration_section1_para{
         font-size: 14px;
         text-align: justify;
-        background-color: white;
+        background-color: var(--white);
         border-radius: 10px;
         padding: 20px;
         display: flex;
@@ -1577,7 +1695,7 @@ ul{
     .career_left .newspaper{
         font-size: 12px;
         font-weight: 600;
-        color: hsl(0, 84%, 80%);
+        color: var(--main-color);
         cursor: pointer;
     }
     .career-container .career_right{
@@ -1607,7 +1725,7 @@ ul{
     .career_exploration_section2_para{
         font-size: 14px;
         text-align: justify;
-        background-color: white;
+        background-color: var(--white);
         border-radius: 10px;
         padding: 20px;
         display: flex;
@@ -1620,7 +1738,7 @@ ul{
     .career_right1 .newspaper{
         font-size: 12px;
         font-weight: 600;
-        color: hsl(0, 84%, 80%);
+        color: var(--main-color);
         cursor: pointer;
     }
     .career-container1 .career_right1{
@@ -1759,7 +1877,7 @@ ul{
 
     /* Xplore Button Styling */
     .x_btn{
-        background-color: hsl(0, 74%, 61%);
+        background-color: var(--main-color);
         color: var(--white);
         font-size: 14px;
         padding: 10px;
@@ -1767,7 +1885,7 @@ ul{
         border-radius: 10px;
     }
     .x_btn:hover{
-        color: hsl(0, 74%, 61%);
+        color: var(--main-color);
         background-color: var(--white);
         border: 1px solid var(--main-color);
     }

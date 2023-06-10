@@ -29,6 +29,53 @@
             }
         })
     });
+
+    /* Style Switcher Functionality */
+    function styleSwitchertoggle(){
+        const styleSwitcher = document.querySelector(".js-style-switcher"),
+        styleSwitcherToggler= document.querySelector(".js-style-switcher-toggler");
+
+        styleSwitcherToggler.addEventListener("click", function(){
+            styleSwitcher.classList.toggle("open");
+            this.querySelector("i").classList.toggle("fa-times");
+            this.querySelector("i").classList.toggle("fa-cog");
+        })
+    }
+    styleSwitchertoggle();
+
+    // Theme color changer 
+    function themecolor(){
+        const colorStyle = document.querySelector(".js-color-style"),
+        themeColorContainer = document.querySelector(".js-theme-colors");
+
+        themeColorContainer.addEventListener("click", ({target}) => {
+            if(target.classList.contains("js-theme-color-item")){
+                localStorage.setItem("color", target.getAttribute("data-js-theme-color"));
+                setColor();
+            }
+        });
+
+        function setColor(){
+            let path = colorStyle.getAttribute("href").split("/");
+            path = path.slice(0, path.length-1);
+            // console.log(path);
+            colorStyle.setAttribute("href", path.join('/') + "/" + localStorage.getItem("color") + ".css");
+
+            if(document.querySelector(".js-theme-color-item.active")){
+                document.querySelector(".js-theme-color-item.active").classList.remove("active");
+            }
+            document.querySelector("[data-js-theme-color=" + localStorage.getItem("color") + "]").classList.add("active");
+        }
+
+        if(localStorage.getItem("color") !== null){
+            setColor();
+        }
+        else{
+            const defaultcolor = colorStyle.getAttribute("href").split("/").pop().split(".").shift();
+            document.querySelector("[data-js-theme-color=" + defaultcolor + "]").classList.add("active");
+        }
+    }
+    themecolor();
     // Home Page Section Styling Ends Here
 
 
