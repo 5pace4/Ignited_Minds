@@ -1548,7 +1548,7 @@ ul{
         flex-direction: column;
     }
     .career_exploration_section1_img{
-        margin-left: 180px;
+        margin-left: 210px;
     }
     .career_exploration_section1_img1{
         height: 300px;
@@ -1574,17 +1574,15 @@ ul{
         width: 50%;
         font-size: 16px;
         text-align: justify;
-        background-color: white;
-        border:1px solid white;
-        border-radius: 10px;
+        
         padding: 10px;
         box-sizing: border-box;
-        box-shadow: 2px 2px 2px rgb(85, 83, 83);
+
         display: flex;
         flex-direction: column;
     }
     .career_exploration_section2_para{
-        margin-left: 180px;
+        margin-left: 210px;
     }
     .career_exploration_section2_img1{
         height: 300px;
@@ -1593,5 +1591,4 @@ ul{
         border-radius: 50%;
         background-color: #FF6347;
         text-align: center;
-        
     }
