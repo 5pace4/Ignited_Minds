@@ -13,6 +13,7 @@
   <link rel="stylesheet" class="js-color-style" href="css/colors/color-1.css">
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
 </head>
 <body>
 
@@ -541,25 +542,25 @@
             </div>
         </div>
         <div class="contact-form" data-aos="fade-up-left" data-aos-delay="500" data-aos-duration="1000">
-            <form>
+            <form action="https://formspree.io/f/xwkjgplz" method="post">
                 <h2>Send Message</h2>
                 <div class="inputbox">
-                    <input type="text" name="" required="required">
+                    <input type="text" name="name" required="required">
                     <span>Full Name</span>
 
                 </div>
                 <div class="inputbox">
-                    <input type="email" name="" required="required">
+                    <input type="email"  name="email" required="required">
                     <span>Email</span>
 
                 </div>
                 <div class="inputbox">
-                    <textarea required="required"></textarea>
+                    <textarea required="required" name="message"></textarea>
                     <span> Type your message...</span>
 
                 </div>
                 <div class="inputbox">
-                    <input type="submit" name="" value="send" style="float: right; color: white;" onclick="openPopup()">
+                    <input type="submit" name="" value="send" style="float: right; color: white;">
                 </div>
 
                 <!-- pop-up message here -->
