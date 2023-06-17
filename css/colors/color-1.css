@@ -10,4 +10,5 @@
     --body-gradient-bg-color-2: hsla(var(--hue-value-2), 100%, 50%, 0.2);
     --decoration-bg-color-1: hsl(var(--hue-value-1), 100%, 70%);
     --decoration-bg-color-2: hsl(var(--hue-value-2), 100%, 70%);
+    --card-color: hsl(0, 65%, 91%);
 }

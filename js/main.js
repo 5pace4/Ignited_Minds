@@ -1,34 +1,153 @@
-/* Testimonial Slider */
+    // Home Page Section Styling Starts Here
+    /* Testimonial Slider */
+    function testimonialSlider(){
+        const carouselOne = document.getElementById('carouselOne');
+        if(carouselOne){
+            carouselOne.addEventListener('slid.bs.carousel', function() {
+                const activeItem = this.querySelector(".active");
+                document.querySelector(".js-testimonial-img").src =
+                activeItem.getAttribute("data-js-testimonial-img");
+            })
+        }
+    }
+    testimonialSlider();
 
-function testimonialSlider(){
-    const carouselOne = document.getElementById('carouselOne');
-    if(carouselOne){
-        carouselOne.addEventListener('slid.bs.carousel', function() {
-            const activeItem = this.querySelector(".active");
-            document.querySelector(".js-testimonial-img").src =
-            activeItem.getAttribute("data-js-testimonial-img");
+    /* Faq Functionality */
+    const faqs = document.querySelectorAll('.faq');
+    faqs.forEach(faq => {
+        faq.addEventListener('click', () => {
+            faq.classList.toggle('open');
+
+            // For changing Icon
+            const icon = faq.querySelector('.faq_icon i');
+            if(icon.className === 'fas fa-plus'){
+                icon.className = "fas fa-minus"
+            }
+            else{
+                icon.className = "fas fa-plus"
+            }
+        })
+    });
+
+    /* Style Switcher Functionality */
+    function styleSwitchertoggle(){
+        const styleSwitcher = document.querySelector(".js-style-switcher"),
+        styleSwitcherToggler= document.querySelector(".js-style-switcher-toggler");
+
+        styleSwitcherToggler.addEventListener("click", function(){
+            styleSwitcher.classList.toggle("open");
+            this.querySelector("i").classList.toggle("fa-times");
+            this.querySelector("i").classList.toggle("fa-cog");
         })
     }
-}
-testimonialSlider();
+    styleSwitchertoggle();
 
-/* Faq Functionality */
-const faqs = document.querySelectorAll('.faq');
-faqs.forEach(faq => {
-    faq.addEventListener('click', () => {
-        faq.classList.toggle('open');
+    // Theme color changer 
+    function themecolor(){
+        const colorStyle = document.querySelector(".js-color-style"),
+        themeColorContainer = document.querySelector(".js-theme-colors");
 
-        // For changing Icon
-        const icon = faq.querySelector('.faq_icon i');
-        if(icon.className === 'fas fa-plus'){
-            icon.className = "fas fa-minus"
+        themeColorContainer.addEventListener("click", ({target}) => {
+            if(target.classList.contains("js-theme-color-item")){
+                localStorage.setItem("color", target.getAttribute("data-js-theme-color"));
+                setColor();
+            }
+        });
+
+        function setColor(){
+            let path = colorStyle.getAttribute("href").split("/");
+            path = path.slice(0, path.length-1);
+            // console.log(path);
+            colorStyle.setAttribute("href", path.join('/') + "/" + localStorage.getItem("color") + ".css");
+
+            if(document.querySelector(".js-theme-color-item.active")){
+                document.querySelector(".js-theme-color-item.active").classList.remove("active");
+            }
+            document.querySelector("[data-js-theme-color=" + localStorage.getItem("color") + "]").classList.add("active");
+        }
+
+        if(localStorage.getItem("color") !== null){
+            setColor();
         }
         else{
-            icon.className = "fas fa-plus"
+            const defaultcolor = colorStyle.getAttribute("href").split("/").pop().split(".").shift();
+            document.querySelector("[data-js-theme-color=" + defaultcolor + "]").classList.add("active");
         }
-    })
-});
+    }
+    themecolor();
 
+    /* Dark Theme Functionality */
+    function darkTheme(){
+        const darkMode = document.querySelector(".js-dark-mode");
+
+        darkMode.addEventListener("click", function(){
+            if(this.checked){
+                localStorage.setItem("dark-theme", "true");
+            }
+            else{
+                localStorage.setItem("dark-theme", "false");
+            }
+            themeMode();
+        });
+
+        function themeMode(){
+            if(localStorage.getItem("dark-theme") === "true"){
+                document.body.classList.add("dark");
+            }
+            else{
+                document.body.classList.remove("dark");
+            }
+        }
+        /* For null value-See the change in console->application->localstorage */
+        if(localStorage.getItem("dark-theme") !== null){
+            themeMode();
+        }
+        /* Reload and check remains */
+        if(document.body.classList.contains("dark")){
+            darkMode.checked = true;
+        }
+    }
+    darkTheme();
+
+    /* Dark Theme Functionality Ends Here */
+
+    /* Glass effect Functionality Starts Here */
+    
+    function glassEffect(){
+        const glassChecker = document.querySelector(".js-glass-effect"),
+        glassStyle = document.querySelector(".js-glass-style");
+
+        glassChecker.addEventListener("click", function(){
+            if(this.checked){
+                localStorage.setItem("glass-effect", "true");
+            }
+            else{
+                localStorage.setItem("glass-effect", "false");
+            }
+            glass_function();
+        });
+
+        function glass_function(){
+            if(localStorage.getItem("glass-effect") === "true"){
+                glassStyle.removeAttribute("disabled");
+            }
+            else{
+                glassStyle.disabled = true;
+            }
+        }
+        if(localStorage.getItem("glass-effect") !== null){
+            glass_function();
+        }
+        if(!glassStyle.hasAttribute("disabled")){
+            glassChecker.checked = true;
+        }
+    }
+    glassEffect();
+
+    /* Glass effect functionality Ends Here */
+
+
+    // Home Page Section Styling Ends Here
 
 
     // $(window).scroll(function(){
@@ -39,6 +158,18 @@ faqs.forEach(faq => {
     //     }
     // });
 
+
+        /* Sign Up Modal Styling Starts */
+        // Open the modal
+        function openModal_s() {
+            document.getElementById("signupModal").style.display = "block";
+        }
+    
+        // Close the modal
+        function closeModal_s() {
+            document.getElementById("signupModal").style.display = "none";
+            
+        }
 
         // Sign Up Verification
         function validation(){
@@ -86,17 +217,9 @@ faqs.forEach(faq => {
             }
         }
 
-        // Open the modal
-        function openModal_s() {
-            document.getElementById("signupModal").style.display = "block";
-        }
-    
-        // Close the modal
-        function closeModal_s() {
-            document.getElementById("signupModal").style.display = "none";
-            
-        }
+        /* Sign Up Modal Styling Ends */
 
+        /* Home_Course Section Modal Styling Starts */
         // Math Modal 1
         function openModal() {
             document.getElementById("m_modal1").style.display = "block";
@@ -135,6 +258,12 @@ faqs.forEach(faq => {
         function closePopup() {
             document.getElementById("popup").style.display = "none";
         }
+        /* Home_Course Section Modal Styling Ends */
+
+
+        // Career Exploration Functionality Starts Here
+
+        // Content Functionality Starts
         const parentContainer = document.querySelector('.career_exploration_section1');
         parentContainer.addEventListener('click', event=>{
             const current = event.target;
@@ -155,7 +284,6 @@ faqs.forEach(faq => {
             current.textContent = current.textContent.includes('Read More..')?
             "Read Less..": "Read More..";
         })
-
 
 
     
