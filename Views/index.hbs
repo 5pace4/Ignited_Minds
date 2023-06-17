@@ -15,6 +15,7 @@
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
 </head>
 <body>
 
@@ -129,7 +130,43 @@
     </div>
   </section>
   <br><br>
-
+<!--Timeline section starts-->
+<section class = "timeline">
+  <div class = "timeline-heading">
+    <h3><span style = "color: red; font-size: 36px;">H</span>ow To Enroll Our Courses & Learn Programming languages?</h3>
+  </div> <br>
+  <div class = "timeline-line">
+    <span class = "timeline-innerline"></span>
+  </div>
+  <ul>
+    <li>
+      <span class = "timeline-point"></span>
+      <span class = "page">Step 1</span>
+      <p class = "para">Sign Up or Log In your account to get full access our website.</p>
+    </li>
+    <li>
+      <span class = "timeline-point"></span>
+      <span class = "page">Step 2</span>
+      <p class = "para">Visit STEM page to get our all courses to enhance your knowledge.</p>
+    </li>
+    <li>
+      <span class = "timeline-point"></span>
+      <span class = "page">Step 3</span>
+      <p class = "para">Choose our courses which are appropriate for you and enroll our courses.</p>
+    </li>
+    <li>
+      <span class = "timeline-point"></span>
+      <span class = "page">Step 4</span>
+      <p class = "para">Visit Programming section to learn different programming languages.</p>
+    </li>
+    <li>
+      <span class = "timeline-point"></span>
+      <span class = "page">Step 5</span>
+      <p class = "para">Enroll programming related courses to enrich yourself in programming</p>
+    </li>
+  </ul>
+</section>
+<!--Timeline section ends-->
 
   <!-- Categories Section -->
   <section class="categories">
@@ -547,25 +584,25 @@
             </div>
         </div>
         <div class="contact-form" data-aos="fade-up-left" data-aos-delay="500" data-aos-duration="1000">
-            <form>
+            <form action="https://formspree.io/f/xwkjgplz" method="post">
                 <h2>Send Message</h2>
                 <div class="inputbox">
-                    <input type="text" name="" required="required">
+                    <input type="text" name="name" required="required">
                     <span>Full Name</span>
 
                 </div>
                 <div class="inputbox">
-                    <input type="email" name="" required="required">
+                    <input type="email"  name="email" required="required">
                     <span>Email</span>
 
                 </div>
                 <div class="inputbox">
-                    <textarea required="required"></textarea>
+                    <textarea required="required" name="message"></textarea>
                     <span> Type your message...</span>
 
                 </div>
                 <div class="inputbox">
-                    <input type="submit" name="" value="send" style="float: right; color: white;" onclick="openPopup()">
+                    <input type="submit" name="" value="send" style="float: right; color: white;">
                 </div>
 
                 <!-- pop-up message here -->

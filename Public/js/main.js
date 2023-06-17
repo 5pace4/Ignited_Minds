@@ -272,7 +272,7 @@
             const currentText = event.target.parentNode.querySelector('.see-more-text');
             currentText.classList.toggle('see-more-text--show');
             current.textContent = current.textContent.includes('Read More..')?
-            "Read More..": "Read Less..";
+            "Read Less..": "Read More..";
         })
         const parentContainer1 = document.querySelector('.career_exploration_section2');
         parentContainer1.addEventListener('click', event=>{
@@ -282,9 +282,8 @@
             const currentText = event.target.parentNode.querySelector('.see-more-text');
             currentText.classList.toggle('see-more-text--show');
             current.textContent = current.textContent.includes('Read More..')?
-            "Read More..": "Read Less..";
+            "Read Less..": "Read More..";
         })
-
 
 
     
