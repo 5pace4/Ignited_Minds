@@ -12,7 +12,7 @@
     --black-alpha-40: hsla(0, 0%, 0%, 0.4);
     --yellow-light: hsl(44, 95%, 85%);
     --green-light: hsl(158, 68%, 75%);
-    --red-light: hsl(0, 84%, 80%);
+    --red-light: var(--red-light);
     --orange-light: hsl(22, 85%, 80%);
     --select-box-bg-color: hsl(0, 0%, 100%);
     --border-color-1: hsl(0, 0%, 90%);
@@ -159,7 +159,7 @@ ul{
     padding: 0 0 15px 0;
 }
 .theme-color .color-1{
-    background-color: hsl(0, 74%, 61%);
+    background-color: var(--main-color);
 }
 .theme-color .color-2{
     background-color: hsl(230, 74%, 61%);
@@ -408,6 +408,77 @@ ul{
     margin: 0;
     text-decoration: uppercase;
 }
+/* Fun Facts Ends Here */
+
+/* Timeline Styling Starts Here */
+
+.timeline-heading{
+    width: 50%;
+    padding: 0px;
+    margin-bottom: 80px;
+    top: 0px
+}
+.timeline{
+    margin: 100px;
+    padding: 20px;
+}
+.timeline ul{
+    margin-top: 30px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.timeline ul li{
+    position: relative;
+}
+.para{
+    transform: translateY(-10px);
+    /*opacity: 0;*/
+    padding: 0 20px;
+    transition: 1.5s;
+    text-align: center;
+}
+.page{
+    /*opacity: 0;*/
+    transition: 1.5s;
+    font-size: 14px;
+    position: absolute;
+    top: -80px;
+    left: 39%;
+    font-weight: 700px;
+}
+.timeline-line{
+    background: var(--main-color);
+    width: 100%;
+    height: 4px;
+    border-radius: 12px;
+    position: relative;
+}
+.timeline-point{
+    border: none;
+    position: absolute;
+    border-radius: 50%;
+    background: var(--main-color);
+    width: 15px;
+    height: 15px;
+    top: -40px;
+    left: 45%;
+    transition: 1.5s ease;
+}
+.timeline-innerline{
+    position: absolute;
+    background: var(--main-color);
+    width: 0%;
+    height: 4px;
+    top: 0%;
+    left: 0%;
+    transition: 1s linear;
+    border-radius: 999px;
+}
+
+/* Timeline Styling Ends Here */
 
 /* Categories Section Starts */
 .categories{
@@ -1898,69 +1969,4 @@ ul{
         color: var(--main-color);
         background-color: var(--white);
         border: 1px solid var(--main-color);
-    }
-    .timeline-heading{
-        width: 50%;
-        padding: 0px;
-        margin-bottom: 80px;
-        top: 0px
-    }
-    .timeline{
-        margin: 100px;
-        padding: 20px;
-    }
-    .timeline ul{
-        margin-top: 30px;
-        display: flex;
-        list-style: none;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-    }
-    .timeline ul li{
-        position: relative;
-    }
-    .para{
-        transform: translateY(-10px);
-        /*opacity: 0;*/
-        padding: 0 20px;
-        transition: 1.5s;
-        text-align: center;
-    }
-    .page{
-        /*opacity: 0;*/
-        transition: 1.5s;
-        font-size: 14px;
-        position: absolute;
-        top: -80px;
-        left: 39%;
-        font-weight: 700px;
-    }
-    .timeline-line{
-        background: blue;
-        width: 100%;
-        height: 4px;
-        border-radius: 12px;
-        position: relative;
-    }
-    .timeline-point{
-        border: none;
-        position: absolute;
-        border-radius: 50%;
-        background: blue;
-        width: 15px;
-        height: 15px;
-        top: -40px;
-        left: 45%;
-        transition: 1.5s ease;
-    }
-    .timeline-innerline{
-        position: absolute;
-        background: blue;
-        width: 0%;
-        height: 4px;
-        top: 0%;
-        left: 0%;
-        transition: 1s linear;
-        border-radius: 999px;
     }
