@@ -1656,70 +1656,10 @@ ul{
     .career_exploration_section1{
         padding: 20px;
     }
-<<<<<<< HEAD
-    .career_exploration_section1_para{
-        width: 50%;
-        font-size: 12;
-        text-align: justify;
-        background-color: white;
-        border:1px solid white;
-        border-radius: 10px;
-        padding: 10px;
-        box-sizing: border-box;
-        box-shadow: 2px 2px 2px rgb(85, 83, 83);
-        display: flex;
-        flex-direction: column;
-    }
-    .career_exploration_section1_img{
-        margin-left: 210px;
-    }
-    .career_exploration_section1_img1{
-        height: 300px;
-        width: 300px;
-        border: 3px solid white;
-        border-radius: 50%;
-        background-color: #FF6347;
-    }
-    .Read_more{
-        color:#0984e3;
-    }
-    .see-more-text{
-        display: none;
-    }
-    .see-more-text--show{
-        display: inline;
-    }
-    .career_exploration_section2{
-        display: flex;
-        padding: 100px 9%;
-    }
-    .career_exploration_section2_para{
-        width: 50%;
-        font-size: 16px;
-        text-align: justify;
-        
-        padding: 10px;
-        box-sizing: border-box;
-
-        display: flex;
-        flex-direction: column;
-    }
-    .career_exploration_section2_para{
-        margin-left: 210px;
-    }
-    .career_exploration_section2_img1{
-        height: 300px;
-        width: 300px;
-        border: 3px solid white;
-        border-radius: 50%;
-        background-color: #FF6347;
-        text-align: center;
-=======
     .career_exploration_section1 .heading{
         text-align: center;
         padding: 10px;
         margin-top: 5px;
->>>>>>> 7b1ec5a9b32ba2fdfafe50f2075134916dc60e8d
     }
     .career_exploration_section1 .heading h2{
         font-weight: 700;
@@ -1947,4 +1887,69 @@ ul{
         color: var(--main-color);
         background-color: var(--white);
         border: 1px solid var(--main-color);
+    }
+    .timeline-heading{
+        width: 50%;
+        padding: 0px;
+        margin-bottom: 80px;
+        top: 0px
+    }
+    .timeline{
+        margin: 100px;
+        padding: 20px;
+    }
+    .timeline ul{
+        margin-top: 30px;
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .timeline ul li{
+        position: relative;
+    }
+    .para{
+        transform: translateY(-10px);
+        /*opacity: 0;*/
+        padding: 0 20px;
+        transition: 1.5s;
+        text-align: center;
+    }
+    .page{
+        /*opacity: 0;*/
+        transition: 1.5s;
+        font-size: 14px;
+        position: absolute;
+        top: -80px;
+        left: 39%;
+        font-weight: 700px;
+    }
+    .timeline-line{
+        background: blue;
+        width: 100%;
+        height: 4px;
+        border-radius: 12px;
+        position: relative;
+    }
+    .timeline-point{
+        border: none;
+        position: absolute;
+        border-radius: 50%;
+        background: blue;
+        width: 15px;
+        height: 15px;
+        top: -40px;
+        left: 45%;
+        transition: 1.5s ease;
+    }
+    .timeline-innerline{
+        position: absolute;
+        background: blue;
+        width: 0%;
+        height: 4px;
+        top: 0%;
+        left: 0%;
+        transition: 1s linear;
+        border-radius: 999px;
     }
