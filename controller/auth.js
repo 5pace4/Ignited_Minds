@@ -5,13 +5,24 @@ const bcrypt = require("bcryptjs");
 const app = express();
 
 // Creating DB Connection
-const db = mysql.createConnection({
-    host : process.env.DB_HOST,
-    user : process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DATABASE
-});
+// const db = mysql.createConnection({
+//     host : process.env.DB_HOST,
+//     user : process.env.DB_USER,
+//     password: process.env.DB_PASSWORD,
+//     database: process.env.DATABASE
+// });
 
+// const db = mysql.createConnection(process.env.DATABASE_URL)
+// console.log('Connected to PlanetScale!')
+
+let db;
+
+try{
+    db = mysql.createConnection(process.env.DATABASE_URL)
+    console.log('Connected to PlanetScale!')
+} catch (error) {
+    console.error(error)
+}
 
 exports.register = (req, res) => {
     console.log(req.body);
@@ -86,7 +97,7 @@ exports.login = (req, res) => {
             } 
             else {
                 console.log(results);
-                return res.render('login', {
+                return res.render('user_common_page', {
                     message: 'You have entered an incorrect password.'
                 });
                 email: '';
@@ -105,4 +116,3 @@ exports.login = (req, res) => {
       }
     );
 }
-
