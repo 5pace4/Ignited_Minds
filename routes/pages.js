@@ -34,4 +34,22 @@ router.get("/user_common_page", (req, res) => {
     res.render("user_common_page");
 });
 
+router.get("/formulae-home", (req, res) => {
+    res.render("formulae-home");
+});
+
+router.get("/formula-chemistry", (req, res) => {
+    res.render("formula-chemistry");
+});
+
+router.get("/formula-physics", (req, res) => {
+    res.render("formula-physics");
+});
+
+router.get("/formula-math", (req, res) => {
+    res.render("formula-math");
+});
+
+
+
 module.exports = router;
