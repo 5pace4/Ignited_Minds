@@ -12,22 +12,12 @@ dotenv.config({
 const app = express();
 
 // Creating DB Connection
-// const db = mysql.createConnection({
-//     host : process.env.DB_HOST,
-//     user : process.env.DB_USER,
-//     password: process.env.DB_PASSWORD,
-//     database: process.env.DATABASE
-// });
-
-// let db;
-// try {
-//  db = mysql.createConnection(process.env.DATABASE_URL)
-// console.log('Connected to PlanetScale!')
-// } catch (error) {
-//     console.error(error)
-// }
-
-
+const db = mysql.createConnection({
+    host : process.env.DB_HOST,
+    user : process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DATABASE
+});
 
 // For accessing the CSS and JS and All other Assets
 const publicDirectory = path.join(__dirname, './public');
@@ -41,11 +31,21 @@ app.use(express.json());
 // Setup the engine to load the front-end
 app.set('view engine', 'hbs');
 
+// DB connection
+db.connect( (error) => {
+    if(error){
+        console.log(error)
+    }
+    else{
+        console.log("MYsql Connected")
+    }
+})
+
 // Defining Routes for Organizing The Pages
 app.use('/', require('./routes/pages'));
 app.use('/auth', require('./routes/authentication'));
 // Ends
 
-app.listen(5500, () => {
+app.listen(5508, () => {
     console.log("Connected on port.");
 })
