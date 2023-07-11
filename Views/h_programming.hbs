@@ -4,10 +4,17 @@
   <title> Ignited_Minds | Programming </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/font-awesome.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" class="js-color-style" href="css/colors/color-1.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" class="js-glass-style" href="/css/glassEffect.css" disabled>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" class="js-color-style" href="/css/colors/color-1.css">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
 
@@ -19,7 +26,7 @@
       <div class = "container">
         <div class="header-main d-flex justify-content-between align-items-center">
           <div class="header-logo">
-            <a href = "index.html"> <b><span>Ignited_</span> Minds.</b> </a>
+            <a href = "/index"> <b><span>Ignited_</span> Minds.</b> </a>
           </div>
           <button type="button" class="header-hamburger-btn js-header-menu-toggler">
             <span></span>
@@ -30,24 +37,24 @@
               <i class="fas fa-times"></i>
             </button>
               <ul class="menu">
-                <li class="menu-item menu-item-has-children"><a href="index.html">Home</a></li>
+                <li class="menu-item menu-item-has-children"><a href="/index">Home</a></li>
                 <li class="menu-item menu-item-has-children">
-                  <a href="h_stem.html">STEM <i class="fas fa-chevron-down"></i></a>
+                  <a href="/h_stem">STEM <i class="fas fa-chevron-down"></i></a>
                   <ul class="sub-menu js-sub-menu">
-                    <li class="sub-menu-item"><a href="h_stem.html">Science</a></li>
-                    <li class="sub-menu-item"><a href="h_stem.html">Technology</a></li>
-                    <li class="sub-menu-item"><a href="h_stem.html">Engineering</a></li>
-                    <li class="sub-menu-item"><a href="h_stem.html">Mathematics</a></li>
+                    <li class="sub-menu-item"><a href="/h_stem">Science</a></li>
+                    <li class="sub-menu-item"><a href="/h_stem">Technology</a></li>
+                    <li class="sub-menu-item"><a href="/h_stem">Engineering</a></li>
+                    <li class="sub-menu-item"><a href="/h_stem">Mathematics</a></li>
                   </ul>
                 </li>
                 <li class="menu-item">
-                  <a href="h_programming.html" style="color: var(--main-color);">Programming</i></a>
+                  <a href="/h_programming" style="color: var(--main-color);">Programming</i></a>
                 </li>
                 <li class="menu-item">
-                  <a href="h_career_exploration.html">Career Exploration</a>
+                  <a href="/h_career_exploration">Career Exploration</a>
                 </li>
                 <li class="menu-item">
-                  <a href="aboutus.html">About Us</a>
+                  <a href="/aboutus">About Us</a>
                 </li>
               </ul>
               <ul class="menu">
@@ -64,7 +71,7 @@
         <div class="container">
             <nav class="aria-level">
                 <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="/index">Home</a></li>
                     <li class="breadcrumb-item active" aria-current = "page">Programming & Coding</li>
                 </ol>
             </nav>
@@ -167,7 +174,7 @@
   </div>
   <div class="style-switcher-item">
     <div class="form-check form-switch">
-      <input type="checkbox" class="form-check-input js-dark-mode" role="switch" id="glass-effect">
+      <input type="checkbox" class="form-check-input js-glass-effect" role="switch" id="glass-effect">
       <label for="glass-effect" class="form-check-label"><span style="color: var(--main-color); font-size: 16px; font-weight: 600;">G</span>lass Effect</label>
     </div>
   </div>
@@ -175,8 +182,8 @@
 <!--Style switcher ends here-->
 
 <!--Script File Link-->
-<script src="js/bootstrap.bundle.min.js"></script>  
-<script src="js/main.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>  
+<script src="/js/main.js"></script>
 
 </body>
 </html>

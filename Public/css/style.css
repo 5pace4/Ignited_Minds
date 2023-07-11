@@ -12,7 +12,7 @@
     --black-alpha-40: hsla(0, 0%, 0%, 0.4);
     --yellow-light: hsl(44, 95%, 85%);
     --green-light: hsl(158, 68%, 75%);
-    --red-light: var(--red-light);
+    --red-light: hsl(0, 84%, 80%);
     --orange-light: hsl(22, 85%, 80%);
     --select-box-bg-color: hsl(0, 0%, 100%);
     --border-color-1: hsl(0, 0%, 90%);
@@ -283,6 +283,38 @@ ul{
     font-weight: 400;
     transition: color 0.3s ease;
 }
+
+.header .menu-item-login > a{
+    display: block;
+    padding: 20px 0;
+    font-weight: 500;
+    color: var(--black-70);
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+    font-size: 14px;
+    margin-left: auto;
+}
+
+.header .menu-item-login .btn-theme-1{
+    color: var(--black-90);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 20px 30px;
+    transition: all 0.3s ease;
+}
+.header .menu-item-login .btn-theme-1:hover{
+    color: var(--main-color);
+    background-color: var(--white);
+    transition: all 0.3s ease;
+}
+
+.header .menu-item > a:hover, 
+.header .sub-menu-item > a:hover{
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+
 
 .header-backdrop, 
 .header-close-btn,
@@ -1014,7 +1046,7 @@ ul{
 /* Footer Section Styling */
 .footer-top{
     padding: 50px 0 20px;
-    border-top: 1px solid hsl(0, 0%, 90%);
+    border-top: 1px solid var(--border-color-1);
 }
 
 .footer-item{
@@ -1402,7 +1434,7 @@ ul{
     border-radius: 0px 10px 10px 0px;
     box-shadow: 3px 4px 4px hsla(0, 0%, 0%, 0.4);
     perspective: 100em;
-    background-color: var(--WHITE);
+    background-color: var(--white);
     margin-bottom: 50px;
     margin-top: 50px;
 }
@@ -1419,7 +1451,7 @@ ul{
     justify-content: center;
 }
 .btn-theme1{
-    color: var(--white);
+    color: var(--WHITE);
     background-color: var(--main-color);
     border-radius: 8px;
     font-size: 14px;
@@ -1461,7 +1493,7 @@ ul{
     height: 100%;
 }
 .cover_front{
-    background: var(--white);
+    background: var(--WHITE);
     font-weight: 700;
     border-radius: 0px 10px 10px  0px;
 }
@@ -1562,7 +1594,7 @@ ul{
     .tech{
     width: 100%;
     height: 100%;
-    background: var(--body-bg-color);
+
     justify-content: center;
     align-items: center;
     display: flex;
@@ -1611,7 +1643,7 @@ ul{
     }
 
     .tech-coverFront, .tech-coverBack {
-        background: var(--white);
+        background: var(--WHITE);
         text-align: center;
         border-radius: 0px 10px 10px 0px;
     }
@@ -1631,7 +1663,7 @@ ul{
         background:var(--main-color);
         border-radius: 5px;
         padding: 10px 20px;
-        color: var(--white);
+        color: var(--WHITE);
         cursor: pointer;
         transition: all 0.3s ease;
     }
@@ -1959,10 +1991,11 @@ ul{
     /* Xplore Button Styling */
     .x_btn{
         background-color: var(--main-color);
-        color: var(--white);
+        color: var(--WHITE);
         font-size: 14px;
         padding: 10px;
         justify-content: center;
+        font-weight: 600;
         border-radius: 10px;
     }
     .x_btn:hover{
