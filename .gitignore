@@ -178,7 +178,7 @@ build/Release
 node_modules/
 jspm_packages/
 /node_modules
-.env
+#.env
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/

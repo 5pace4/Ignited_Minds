@@ -76,7 +76,7 @@ ul{
 /*Style Switcher Toggler Styling */
 .style-switcher{
     width: 250px;
-    height: 50%;
+    height: 55%;
     top: 25%;
     bottom: 25%;
     right: -250px;
@@ -173,7 +173,6 @@ ul{
 .theme-color .color-5{
     background-color: hsl(189, 74%, 61%);
 }
-
 
 /* Header */
 .header{
@@ -1519,7 +1518,7 @@ ul{
 }
 
 .modal-content-m {
-    background-color: var(--white);
+    background-color: var(--WHITE);
     margin: 5% auto;
     padding: 40px 40px 100px 40px;
     border: 1px solid var(--black-70);
@@ -1682,7 +1681,7 @@ ul{
         height: 100%;
         width: 100%;
         position: fixed;
-        background: var(--black-70);
+        background: var(--WHITE);
         /* transform: scale(0); */
         /* overflow: auto; */
         z-index: 1;

@@ -146,6 +146,10 @@
 
     /* Glass effect functionality Ends Here */
 
+    // Translator Functionality Starts Here
+    function loadGoogleTranslate(){
+        new google.translate.TranslateElement("google_element");
+    }
 
     // Home Page Section Styling Ends Here
 
