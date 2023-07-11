@@ -46,6 +46,6 @@ app.use('/', require('./routes/pages'));
 app.use('/auth', require('./routes/authentication'));
 // Ends
 
-app.listen(5400, () => {
+app.listen(5508, () => {
     console.log("Connected on port.");
 })
