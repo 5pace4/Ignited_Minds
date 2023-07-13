@@ -50,6 +50,26 @@ router.get("/formula-math", (req, res) => {
     res.render("formula-math");
 });
 
+router.get("/prefix", (req, res) => {
+    res.render("universal_prefixes");
+});
+
+router.get("/constant", (req, res) => {
+    res.render("universal_constants");
+});
+
+router.get("/periodicTable", (req, res) => {
+    res.render("periodic_table");
+});
+
+router.get("/unit", (req, res) => {
+    res.render("measurement_units");
+});
+
+router.get("/unit-c", (req, res) => {
+    res.render("unit_conversion");
+});
+
 
 
 module.exports = router;

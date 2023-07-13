@@ -1,3 +1,10 @@
+    
+// Sticky Header
+window.addEventListener("scroll", function() {
+    var header = document.querySelector(".header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+});
+    
     // Home Page Section Styling Starts Here
     /* Testimonial Slider */
     function testimonialSlider(){

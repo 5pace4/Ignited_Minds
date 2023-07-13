@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Ignited_Minds | Unit Conversion </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" class="js-glass-style" href="/css/glassEffect.css" disabled>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" class="js-color-style" href="/css/colors/color-1.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <link rel="stylesheet" href="/css/swiper-bundle-1.min.css">
+  <link rel="stylesheet" href="/css/swiper-bundle-2.min.css">
+  
+  <link rel="stylesheet" href="/css/inner_style.css">
+  <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+</head>
+<body>
+
+<!--Main Section Start-->
+<div class = "main-wraper">
+  <header class = "header">
+      <div class = "container">
+        <div class="header-main d-flex justify-content-between align-items-center">
+          <div class="header-logo">
+            <a href = "/user_common_page"> <b><span>Ignited_</span>Minds.</b> </a>
+          </div>
+          <button type="button" class="header-hamburger-btn js-header-menu-toggler">
+            <span></span>
+          </button>
+          <div class = "header-backdrop js-header-backdrop"></div>
+          <nav class="header-menu js-header-menu">
+            <button type="button" class="header-close-btn js-header-menu-toggler">
+              <i class="fas fa-times"></i>
+            </button>
+              <ul class="menu">
+                
+                <li class="menu-item menu-item-has-children">
+                  <a href="#">Science <i class="fas fa-chevron-down"></i></a>
+                  <ul class="sub-menu js-sub-menu">
+                    <li class="sub-menu-item"><a href="#">5-8 Years</a></li>
+                    <li class="sub-menu-item"><a href="#">9-11 Years</a></li>
+                    <li class="sub-menu-item"><a href="#">12-14 Years</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Technology <i class="fas fa-chevron-down"></i></a>
+                  <ul class="sub-menu js-sub-menu">
+                    <li class="sub-menu-item"><a href="#">5-8 Years</a></li>
+                    <li class="sub-menu-item"><a href="#">9-11 Years</a></li>
+                    <li class="sub-menu-item"><a href="#">12-14 Years</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Engineering <i class="fas fa-chevron-down"></i></a>
+                  <ul class="sub-menu js-sub-menu">
+                    <li class="sub-menu-item"><a href="#">5-8 Years</a></li>
+                    <li class="sub-menu-item"><a href="#">9-11 Years</a></li>
+                    <li class="sub-menu-item"><a href="#">12-14 Years</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Mathematics <i class="fas fa-chevron-down"></i></a>
+                  <ul class="sub-menu js-sub-menu">
+                    <li class="sub-menu-item"><a href="#">5-8 Years</a></li>
+                    <li class="sub-menu-item"><a href="#">9-11 Years</a></li>
+                    <li class="sub-menu-item"><a href="#">12-14 Years</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Programming <i class="fas fa-chevron-down"></i></a>
+                  <ul class="sub-menu js-sub-menu">
+                    <li class="sub-menu-item"><a href="#">5-8 Years</a></li>
+                    <li class="sub-menu-item"><a href="#">9-11 Years</a></li>
+                    <li class="sub-menu-item"><a href="#">12-14 Years</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <li class="menu-item">
+                  <a href="#">User Name</a>
+                  <ul class="sub-menu js-sub-menu">
+                    <li class="sub-menu-item"><a href="#">View Profile</a></li>
+                    <li class="sub-menu-item"><a href="#">View Dashboard</a></li>
+                    <li class="sub-menu-item"><a href="/formulae-home">User Tools</a></li>
+                    <li class="sub-menu-item"><a href="/formulae-home">Formulae</a></li>
+                    <li class="sub-menu-item"><a href="/">Log Out <i class="fas fa-chevron-right"></i></a></li>
+                  </ul>
+                </li>
+
+            </nav>
+          </div>
+      </div>
+    </header>
+  </div>
+  <!--Main Section Ends Here-->
+
+<div class="circle"></div>
+
+<h3 class="unit-header">-Conversion of Scientific Units-</h3>
+
+<section>
+    <div class="units-container">
+
+    <!-- Length -->
+    <div class="units-card">
+        <h2 id="length">Length</h2>
+        <p>MKS: Meter(m)</p>
+        <p>CGS: Centimeter(cm)</p>
+        <p>FPS: Foot(ft)</p>
+        <div class="conversion-formula">
+            <select onchange="calculateLengthConversion(this)">
+                <option value="">Select a conversion formula</option>
+                <option value="m-to-cm">Meter to Centimeter</option>
+                <option value="cm-to-m">Centimeter to Meter</option>
+                <option value="ft-to-m">Foot to Meter</option>
+                <option value="m-to-ft">Meter to Foot</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Mass -->
+    <div class="units-card">
+        <h2 id="mass">Mass</h2>
+        <p>MKS: Kilogram(kg)</p>
+        <p>CGS: Gram(g)</p>
+        <p>FPS: Pound(lb)</p>
+        <div class="conversion-formula">
+            <select onchange="calculateMassConversion(this)">
+                <option value="">Select a conversion formula</option>
+                <option value="kg-to-g">Kilogram to Gram</option>
+                <option value="g-to-kg">Gram to Kilogram</option>
+                <option value="lb-to-kg">Pound to Kilogram</option>
+                <option value="kg-to-lb">Kilogram to Pound</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Time -->
+    <div class="units-card">
+        <h2 id="time">Time</h2>
+        <p>MKS: Second(s)</p>
+        <p>CGS: Second(s)</p>
+        <p>FPS: Second(s)</p>
+        <div class="conversion-formula">
+            <select onchange="calculateTimeConversion(this)">
+                <option value="">Select a conversion formula</option>
+                <option value="s-to-s">Second to Second</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Electric Current -->
+    <div class="units-card">
+        <h2 id="electric-current">Electric Current</h2>
+        <p>MKS: Ampere(A)</p>
+        <p>CGS: Statampere(statA)</p>
+        <p>FPS: Ampere(A)</p>
+        <div class="conversion-formula">
+            <select onchange="calculateElectricCurrentConversion(this)">
+                <option value="">Select a conversion formula</option>
+                <option value="A-to-statA">Ampere to Statampere</option>
+                <option value="statA-to-A">Statampere to Ampere</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Temperature -->
+    <div class="units-card">
+        <h2 id="temperature">Temperature</h2>
+        <p>MKS: Kelvin(K)</p>
+        <p>CGS: Kelvin(K)</p>
+        <p>FPS: Rankine(°R)</p>
+        <div class="conversion-formula">
+            <select onchange="calculateTemperatureConversion(this)">
+                <option value="">Select a conversion formula</option>
+                <option value="K-to-K">Kelvin to Kelvin</option>
+                <option value="K-to-R">Kelvin to Rankine</option>
+                <option value="R-to-K">Rankine to Kelvin</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Amount of Substance -->
+    <div class="units-card">
+        <h2 id="amount-substance">Amount of Substance</h2>
+        <p>MKS: Mole(mol)</p>
+        <p>CGS: Mole(mol)</p>
+        <p>FPS: Mole(mol)</p>
+        <div class="conversion-formula">
+            <select onchange="calculateAmountSubstanceConversion(this)">
+                <option value="">Select a conversion formula</option>
+                <option value="mol-to-mol">Mole to Mole</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Luminous Intensity -->
+    <div class="units-card">
+        <h2 id="luminous-intensity">Luminous Intensity</h2>
+        <p>MKS: Candela(cd)</p>
+        <p>CGS: Candle(cd)</p>
+        <p>FPS: Candle(cd)</p>
+        <div class="conversion-formula">
+            <select onchange="calculateLuminousIntensityConversion(this)">
+                <option value="">Select a conversion formula</option>
+                <option value="cd-to-cd">Candela to Candela</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Frequency -->
+    <div class="units-card">
+        <h2 id="frequency">Frequency</h2>
+        <p>MKS: Hertz(Hz)</p>
+        <p>CGS: Hertz(Hz)</p>
+        <p>FPS: Hertz(Hz)</p>
+        <div class="conversion-formula">
+            <select onchange="calculateFrequencyConversion(this)">
+                <option value="">Select a conversion formula</option>
+                <option value="Hz-to-Hz">Hertz to Hertz</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Force -->
+    <div class="units-card">
+        <h2 id="force">Force</h2>
+        <p>MKS: Newton(N)</p>
+        <p>CGS: Dyne(dyn)</p>
+        <p>FPS: Pound-force(lbf)</p>
+        <div class="conversion-formula">
+            <select onchange="calculateForceConversion(this)">
+                <option value="">Select a conversion formula</option>
+                <option value="N-to-dyn">Newton to Dyne</option>
+                <option value="dyn-to-N">Dyne to Newton</option>
+                <option value="lbf-to-N">Pound-force to Newton</option>
+                <option value="N-to-lbf">Newton to Pound-force</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Energy -->
+    <div class="units-card">
+        <h2 id="energy">Energy</h2>
+        <p>MKS: Joule(J)</p>
+        <p>CGS: Erg(erg)</p>
+        <p>FPS: Foot-pound(ft-lbf)</p>
+        <div class="conversion-formula">
+            <select onchange="calculateEnergyConversion(this)">
+                <option value="">Select a conversion formula</option>
+                <option value="J-to-erg">Joule to Erg</option>
+                <option value="erg-to-J">Erg to Joule</option>
+                <option value="ft-lbf-to-J">Foot-pound to Joule</option>
+                <option value="J-to-ft-lbf">Joule to Foot-pound</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Power -->
+    <div class="units-card">
+        <h2 id="power">Power</h2>
+        <p>MKS: Watt(W)</p>
+        <p>CGS: Erg per second(erg/s)</p>
+        <p>FPS: Foot-pound per second(ft-lbf/s)</p>
+        <div class="conversion-formula">
+            <select onchange="calculatePowerConversion(this)">
+                <option value="">Select a conversion formula</option>
+                <option value="W-to-erg/s">Watt to Erg per second</option>
+                <option value="erg/s-to-W">Erg per second to Watt</option>
+                <option value="ft-lbf/s-to-W">Foot-pound per second to Watt</option>
+                <option value="W-to-ft-lbf/s">Watt to Foot-pound per second</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Pressure -->
+    <div class="units-card">
+        <h2 id="pressure">Pressure</h2>
+        <p>MKS: Pascal(Pa)</p>
+        <p>CGS: Barye(Ba)</p>
+        <p>FPS: Pound per square inch(psi)</p>
+        <div class="conversion-formula">
+            <select onchange="calculatePressureConversion(this)">
+                <option value="">Select a conversion formula</option>
+                <option value="Pa-to-Ba">Pascal to Barye</option>
+                <option value="Ba-to-Pa">Barye to Pascal</option>
+                <option value="psi-to-Pa">Pound per square inch to Pascal</option>
+                <option value="Pa-to-psi">Pascal to Pound per square inch</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Electric Charge -->
+    <div class="units-card">
+        <h2 id="electric-charge">Electric Charge</h2>
+        <p>MKS: Coulomb(C)</p>
+        <p>CGS: Statcoulomb(statC)</p>
+        <p>FPS: Coulomb(C)</p>
+        <div class="conversion-formula">
+            <select onchange="calculateElectricChargeConversion(this)">
+                <option value="">Select a conversion formula</option>
+                <option value="C-to-statC">Coulomb to Statcoulomb</option>
+                <option value="statC-to-C">Statcoulomb to Coulomb</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Electric Potential -->
+    <div class="units-card">
+        <h2 id="electric-potential">Electric Potential</h2>
+        <p>MKS: Volt(V)</p>
+        <p>CGS: Statvolt(statV)</p>
+        <p>FPS: Volt(V)</p>
+        <div class="conversion-formula">
+            <select onchange="calculateElectricPotentialConversion(this)">
+                <option value="">Select a conversion formula</option>
+                <option value="V-to-statV">Volt to Statvolt</option>
+                <option value="statV-to-V">Statvolt to Volt</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Electric Resistance -->
+    <div class="units-card">
+        <h2 id="electric-resistance">Electric Resistance</h2>
+        <p>MKS: Ohm(Ω)</p>
+        <p>CGS: Statohm(statΩ)</p>
+        <p>FPS: Ohm(Ω)</p>
+        <div class="conversion-formula">
+            <select onchange="calculateElectricResistanceConversion(this)">
+                <option value="">Select a conversion formula</option>
+                <option value="Ω-to-statΩ">Ohm to Statohm</option>
+                <option value="statΩ-to-Ω">Statohm to Ohm</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Electric Capacitance -->
+    <div class="units-card">
+        <h2 id="electric-capacitance">Electric Capacitance</h2>
+        <p>MKS: Farad(F)</p>
+        <p>CGS: Statfarad(statF)</p>
+        <p>FPS: Farad(F)</p>
+        <div class="conversion-formula">
+            <select onchange="calculateElectricCapacitanceConversion(this)">
+                <option value="">Select a conversion formula</option>
+                <option value="F-to-statF">Farad to Statfarad</option>
+                <option value="statF-to-F">Statfarad to Farad</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Magnetic Flux -->
+    <div class="units-card">
+        <h2 id="magnetic-flux">Magnetic Flux</h2>
+        <p>MKS: Weber(Wb)</p>
+        <p>CGS: Maxwell(Mx)</p>
+        <p>FPS: Weber(Wb)</p>
+        <div class="conversion-formula">
+            <select onchange="calculateMagneticFluxConversion(this)">
+                <option value="">Select a conversion formula</option>
+                <option value="Wb-to-Mx">Weber to Maxwell</option>
+                <option value="Mx-to-Wb">Maxwell to Weber</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Magnetic Field Strength -->
+    <div class="units-card">
+        <h2 id="magnetic-field-strength">Magnetic Field Strength</h2>
+        <p>MKS: Tesla(T)</p>
+        <p>CGS: Gauss(G)</p>
+        <p>FPS: Gauss(G)</p>
+        <div class="conversion-formula">
+            <select onchange="calculateMagneticFieldStrengthConversion(this)">
+                <option value="">Select a conversion formula</option>
+                <option value="T-to-G">Tesla to Gauss</option>
+                <option value="G-to-T">Gauss to Tesla</option>
+            </select>
+        </div>
+    </div>
+
+</div>
+</section>
+
+  
+ <!--Footer Section Starts Here-->
+
+  <footer class="footer" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm-6 col-lg-3">
+            <div class="footer-item">
+              <h3 class="footer-logo"><span>Ignited</span>_Minds</h3>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#">What We Offer</a></li>
+                <li><a href="#">Career Exploration</a></li>
+                <li><a href="#">Blogs</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <div class="footer-item">
+              <h3>Learning</h3>
+              <ul>
+                <li><a href="#">Science & Tech.</a></li>
+                <li><a href="#">Engineering</a></li>
+                <li><a href="#">Mathematics</a></li>
+                <li><a href="#">Programming</a></li>
+                <li><a href="#">Facts</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <div class="footer-item">
+              <h3>More</h3>
+              <ul>
+                <li><a href="#">Become A Mentor</a></li>
+                <li><a href="#">Affiliations</a></li>
+                <li><a href="#">Sponsorship</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Help & Support</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <div class="footer-item">
+              <h3>Get in touch</h3>
+              <ul>
+                <li><a href="#"><i class="fab fa-facebook social-icon"></i>Facebook</a></li>
+                <li><a href="#"><i class="fab fa-youtube social-icon"></i>Youtube</a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in social-icon"></i>Linkedin</a></li>
+                <li><a href="#"><i class="fab fa-twitter social-icon"></i>Twitter</a></li>
+                <li><a href="#"><i class="fab fa-instagram social-icon"></i>Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">Copyright &copy; 2023 by ZTR Labs.</div>
+  </footer>
+
+  <!--Footer Section Ends Here-->
+
+</div>  
+<!--Main Wrapper Ends Here-->
+
+<!--Style Switcher Starts Here-->
+<div class="style-switcher js-style-switcher">
+  <div class="style-switcher-toggler js-style-switcher-toggler">
+    <i class="fas fa-cog"></i>
+  </div>
+  <h4 style="color: var(--main-color);">-Style Switcher-</h4>
+  <div class="style-switcher-item">
+    <p class="mb-2">Choose Your Theme</p>
+    <div class="theme-color js-theme-colors">
+      <button type="button" data-js-theme-color="color-1" class="js-theme-color-item color-1"></button>
+      <button type="button" data-js-theme-color="color-2" class="js-theme-color-item color-2"></button>
+      <button type="button" data-js-theme-color="color-3" class="js-theme-color-item color-3"></button>
+      <button type="button" data-js-theme-color="color-4" class="js-theme-color-item color-4"></button>
+      <button type="button" data-js-theme-color="color-5" class="js-theme-color-item color-5"></button>
+    </div>
+  </div>
+  <div class="style-switcher-item">
+    <div class="form-check form-switch">
+      <input type="checkbox" class="form-check-input js-dark-mode" role="switch" id="dark-mode">
+      <label for="dark-mode" class="form-check-label"><span style="color: var(--main-color); font-size: 16px;font-weight: 600;">D</span>ark Mode</label>
+    </div>
+  </div>
+  <div class="style-switcher-item">
+    <div class="form-check form-switch">
+      <input type="checkbox" class="form-check-input js-glass-effect" role="switch" id="glass-effect">
+      <label for="glass-effect" class="form-check-label"><span style="color: var(--main-color); font-size: 16px; font-weight: 600;">G</span>lass Effect</label>
+    </div>
+  </div>
+
+  <h4>-Language Settings-</h4>
+  <div id="google_element"></div>
+
+</div>
+<!--Style switcher ends here-->
+
+
+<!--Script File Link-->
+
+<script src="/js/main.js"></script>
+<script src="/js/inner_main.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+    <!-- Add other unit cards here -->
+
+    <script>
+        function calculateLengthConversion(selectElement){
+            const selectedOption = selectElement.value;
+            if(selectedOption === "m-to-cm"){
+                const inputValue = prompt("Enter the value in meters:");
+                if(inputValue !== null && inputValue !== ""){
+                    const meter = parseFloat(inputValue);
+                    const centimeter = meter * 100;
+                    alert(`${meter}meter = ${centimeter}centimeter`);
+                }
+            }else if(selectedOption === "cm-to-m"){
+                const inputValue = prompt("Enter the value in centimeters:");
+                if(inputValue !== null && inputValue !== ""){
+                    const centimeter = parseFloat(inputValue);
+                    const meter = centimeter / 100;
+                    alert(`${centimeter}centimeter = ${meter}meter`);
+                }
+            }else if(selectedOption === "ft-to-m"){
+                const inputValue = prompt("Enter the value in feet:");
+                if(inputValue !== null && inputValue !== ""){
+                    const foot = parseFloat(inputValue);
+                    const meter = foot / 3.281;
+                    alert(`${foot}foot = ${meter}meter`);
+                }
+            }else if(selectedOption === "m-to-ft"){
+                const inputValue = prompt("Enter the value in meters:");
+                if(inputValue !== null && inputValue !== ""){
+                    const meter = parseFloat(inputValue);
+                    const foot = meter * 3.281;
+                    alert(`${meter}meter = ${foot}foot`);
+                }
+            }
+        }
+
+        function calculateMassConversion(selectElement){
+            const selectedOption = selectElement.value;
+            if(selectedOption === "kg-to-g"){
+                const inputValue = prompt("Enter the value in kilograms:");
+                if(inputValue !== null && inputValue !== ""){
+                    const kilogram = parseFloat(inputValue);
+                    const gram = kilogram * 1000;
+                    alert(`${kilogram}kilogram = ${gram}gram`);
+                }
+            }else if(selectedOption === "g-to-kg"){
+                const inputValue = prompt("Enter the value in grams:");
+                if(inputValue !== null && inputValue !== ""){
+                    const gram = parseFloat(inputValue);
+                    const kilogram = gram / 1000;
+                    alert(`${gram}gram = ${kilogram}kilogram`);
+                }
+            }else if(selectedOption === "lb-to-kg"){
+                const inputValue = prompt("Enter the value in pounds:");
+                if(inputValue !== null && inputValue !== ""){
+                    const pound = parseFloat(inputValue);
+                    const kilogram = pound * 0.453592;
+                    alert(`${pound}pound = ${kilogram}kilogram`);
+                }
+            }else if(selectedOption === "kg-to-lb"){
+                const inputValue = prompt("Enter the value in kilograms:");
+                if(inputValue !== null && inputValue !== ""){
+                    const kilogram = parseFloat(inputValue);
+                    const pound = kilogram * 2.20462;
+                    alert(`${kilogram}kilogram = ${pound}pound`);
+                }
+            }
+        }
+
+        function calculateTimeConversion(selectElement){
+            const selectedOption = selectElement.value;
+            if(selectedOption === "s-to-s"){
+                const inputValue = prompt("Enter the value in seconds:");
+                if(inputValue !== null && inputValue !== ""){
+                    const seconds = parseFloat(inputValue);
+                    alert(`${seconds}seconds = ${seconds}seconds`);
+                }
+            }
+        }
+
+        function calculateElectricCurrentConversion(selectElement){
+            const selectedOption = selectElement.value;
+            if(selectedOption === "A-to-statA"){
+                const inputValue = prompt("Enter the value in Ampere:");
+                if(inputValue !== null && inputValue !== ""){
+                    const ampere = parseFloat(inputValue);
+                    const statampere = ampere * 2997924580;
+                    alert(`${ampere}Ampere = ${statampere}Statampere`);
+                }
+            }else if(selectedOption === "statA-to-A"){
+                const inputValue = prompt("Enter the value in Statampere:");
+                if(inputValue !== null && inputValue !== ""){
+                    const statampere = parseFloat(inputValue);
+                    const ampere = statampere / 2997924580;
+                    alert(`${statampere}Statampere = ${ampere}Ampere`);
+                }
+            }
+        }
+
+        function calculateTemperatureConversion(selectElement){
+            const selectedOption = selectElement.value;
+            if(selectedOption === "K-to-K"){
+                const inputValue = prompt("Enter the value in Kelvin:");
+                if(inputValue !== null && inputValue !== ""){
+                    const kelvin = parseFloat(inputValue);
+                    alert(`${kelvin}Kelvin = ${kelvin}Kelvin`);
+                }
+            }else if(selectedOption === "K-to-R"){
+                const inputValue = prompt("Enter the value in Kelvin:");
+                if(inputValue !== null && inputValue !== ""){
+                    const kelvin = parseFloat(inputValue);
+                    const rankine = kelvin * 1.8;
+                    alert(`${kelvin}Kelvin = ${rankine}Rankine`);
+                }
+            }else if(selectedOption === "R-to-K"){
+                const inputValue = prompt("Enter the value in Rankine:");
+                if(inputValue !== null && inputValue !== ""){
+                    const rankine = parseFloat(inputValue);
+                    const kelvin = rankine / 1.8;
+                    alert(`${rankine}Rankine = ${kelvin}Kelvin`);
+                }
+            }
+        }
+
+        function calculateAmountSubstanceConversion(selectElement){
+            const selectedOption = selectElement.value;
+            if(selectedOption === "mol-to-mol"){
+                const inputValue = prompt("Enter the value in moles:");
+                if(inputValue !== null && inputValue !== ""){
+                    const mole = parseFloat(inputValue);
+                    alert(`${mole}mole = ${mole}mole`);
+                }
+            }
+        }
+
+        function calculateLuminousIntensityConversion(selectElement){
+            const selectedOption = selectElement.value;
+            if(selectedOption === "cd-to-cd"){
+                const inputValue = prompt("Enter the value in candela:");
+                if(inputValue !== null && inputValue !== ""){
+                    const candela = parseFloat(inputValue);
+                    alert(`${candela}candela = ${candela}candela`);
+                }
+            }
+        }
+
+        function calculateFrequencyConversion(selectElement){
+            const selectedOption = selectElement.value;
+            if(selectedOption === "Hz-to-Hz"){
+                const inputValue = prompt("Enter the value in Hertz:");
+                if(inputValue !== null && inputValue !== ""){
+                    const hertz = parseFloat(inputValue);
+                    alert(`${hertz}Hertz = ${hertz}Hertz`);
+                }
+            }
+        }
+
+        function calculateForceConversion(selectElement){
+            const selectedOption = selectElement.value;
+            if(selectedOption === "N-to-dyn"){
+                const inputValue = prompt("Enter the value in Newton:");
+                if(inputValue !== null && inputValue !== ""){
+                    const newton = parseFloat(inputValue);
+                    const dyne = newton * 100000;
+                    alert(`${newton}Newton = ${dyne}Dyne`);
+                }
+            }else if(selectedOption === "dyn-to-N"){
+                const inputValue = prompt("Enter the value in Dyne:");
+                if(inputValue !== null && inputValue !== ""){
+                    const dyne = parseFloat(inputValue);
+                    const newton = dyne / 100000;
+                    alert(`${dyne}Dyne = ${newton}Newton`);
+                }
+            }else if(selectedOption === "lbf-to-N"){
+                const inputValue = prompt("Enter the value in Pound-force:");
+                if(inputValue !== null && inputValue !== ""){
+                    const poundForce = parseFloat(inputValue);
+                    const newton = poundForce * 4.44822;
+                    alert(`${poundForce}Pound-force = ${newton}Newton`);
+                }
+            }else if(selectedOption === "N-to-lbf"){
+                const inputValue = prompt("Enter the value in Newton:");
+                if(inputValue !== null && inputValue !== ""){
+                    const newton = parseFloat(inputValue);
+                    const poundForce = newton / 4.44822;
+                    alert(`${newton}Newton = ${poundForce}Pound-force`);
+                }
+            }
+        }
+
+        function calculateEnergyConversion(selectElement){
+            const selectedOption = selectElement.value;
+            if(selectedOption === "J-to-erg"){
+                const inputValue = prompt("Enter the value in Joules:");
+                if(inputValue !== null && inputValue !== ""){
+                    const joule = parseFloat(inputValue);
+                    const erg = joule * 10000000;
+                    alert(`${joule}Joule = ${erg}Erg`);
+                }
+            }else if(selectedOption === "erg-to-J"){
+                const inputValue = prompt("Enter the value in Ergs:");
+                if(inputValue !== null && inputValue !== ""){
+                    const erg = parseFloat(inputValue);
+                    const joule = erg / 10000000;
+                    alert(`${erg}Erg = ${joule}Joule`);
+                }
+            }else if(selectedOption === "ft-lbf-to-J"){
+                const inputValue = prompt("Enter the value in Foot-pounds:");
+                if(inputValue !== null && inputValue !== ""){
+                    const footPound = parseFloat(inputValue);
+                    const joule = footPound * 1.35582;
+                    alert(`${footPound}Foot-pound = ${joule}Joule`);
+                }
+            }else if(selectedOption === "J-to-ft-lbf"){
+                const inputValue = prompt("Enter the value in Joules:");
+                if(inputValue !== null && inputValue !== ""){
+                    const joule = parseFloat(inputValue);
+                    const footPound = joule / 1.35582;
+                    alert(`${joule}Joule = ${footPound}Foot-pound`);
+                }
+            }
+        }
+
+        function calculatePowerConversion(selectElement){
+            const selectedOption = selectElement.value;
+            if(selectedOption === "W-to-erg/s"){
+                const inputValue = prompt("Enter the value in Watts:");
+                if(inputValue !== null && inputValue !== ""){
+                    const watt = parseFloat(inputValue);
+                    const ergPerSecond = watt * 10000000;
+                    alert(`${watt}Watt = ${ergPerSecond}Erg per second`);
+                }
+            }else if(selectedOption === "erg/s-to-W"){
+                const inputValue = prompt("Enter the value in Ergs per second:");
+                if(inputValue !== null && inputValue !== ""){
+                    const ergPerSecond = parseFloat(inputValue);
+                    const watt = ergPerSecond / 10000000;
+                    alert(`${ergPerSecond}Erg per second = ${watt}Watt`);
+                }
+            }else if(selectedOption === "ft-lbf/s-to-W"){
+                const inputValue = prompt("Enter the value in Foot-pounds per second:");
+                if(inputValue !== null && inputValue !== ""){
+                    const footPoundPerSecond = parseFloat(inputValue);
+                    const watt = footPoundPerSecond * 1.35582;
+                    alert(`${footPoundPerSecond}Foot-pound per second = ${watt}Watt`);
+                }
+            }else if(selectedOption === "W-to-ft-lbf/s"){
+                const inputValue = prompt("Enter the value in Watts:");
+                if(inputValue !== null && inputValue !== ""){
+                    const watt = parseFloat(inputValue);
+                    const footPoundPerSecond = watt / 1.35582;
+                    alert(`${watt}Watt = ${footPoundPerSecond}Foot-pound per second`);
+                }
+            }
+        }
+
+        function calculatePressureConversion(selectElement){
+            const selectedOption = selectElement.value;
+            if(selectedOption === "Pa-to-Ba"){
+                const inputValue = prompt("Enter the value in Pascal:");
+                if(inputValue !== null && inputValue !== ""){
+                    const pascal = parseFloat(inputValue);
+                    const barye = pascal * 10;
+                    alert(`${pascal}Pascal = ${barye}Barye`);
+                }
+            }else if(selectedOption === "Ba-to-Pa"){
+                const inputValue = prompt("Enter the value in Barye:");
+                if(inputValue !== null && inputValue !== ""){
+                    const barye = parseFloat(inputValue);
+                    const pascal = barye / 10;
+                    alert(`${barye}Barye = ${pascal}Pascal`);
+                }
+            }else if(selectedOption === "psi-to-Pa"){
+                const inputValue = prompt("Enter the value in Pound per square inch:");
+                if(inputValue !== null && inputValue !== ""){
+                    const psi = parseFloat(inputValue);
+                    const pascal = psi * 6894.76;
+                    alert(`${psi}Pound per square inch = ${pascal}Pascal`);
+                }
+            }else if(selectedOption === "Pa-to-psi"){
+                const inputValue = prompt("Enter the value in Pascal:");
+                if(inputValue !== null && inputValue !== ""){
+                    const pascal = parseFloat(inputValue);
+                    const psi = pascal / 6894.76;
+                    alert(`${pascal}Pascal = ${psi}Pound per square inch`);
+                }
+            }
+        }
+
+        function calculateElectricChargeConversion(selectElement){
+            const selectedOption = selectElement.value;
+            if(selectedOption === "C-to-statC"){
+                const inputValue = prompt("Enter the value in Coulombs:");
+                if(inputValue !== null && inputValue !== ""){
+                    const coulomb = parseFloat(inputValue);
+                    const statcoulomb = coulomb * 2997924580;
+                    alert(`${coulomb}Coulomb = ${statcoulomb}Statcoulomb`);
+                }
+            }else if(selectedOption === "statC-to-C"){
+                const inputValue = prompt("Enter the value in Statcoulombs:");
+                if(inputValue !== null && inputValue !== ""){
+                    const statcoulomb = parseFloat(inputValue);
+                    const coulomb = statcoulomb / 2997924580;
+                    alert(`${statcoulomb}Statcoulomb = ${coulomb}Coulomb`);
+                }
+            }
+        }
+
+        function calculateElectricPotentialConversion(selectElement){
+            const selectedOption = selectElement.value;
+            if(selectedOption === "V-to-statV"){
+                const inputValue = prompt("Enter the value in Volts:");
+                if(inputValue !== null && inputValue !== ""){
+                    const volt = parseFloat(inputValue);
+                    const statvolt = volt * 2997924580;
+                    alert(`${volt}Volt = ${statvolt}Statvolt`);
+                }
+            }else if(selectedOption === "statV-to-V"){
+                const inputValue = prompt("Enter the value in Statvolts:");
+                if(inputValue !== null && inputValue !== ""){
+                    const statvolt = parseFloat(inputValue);
+                    const volt = statvolt / 2997924580;
+                    alert(`${statvolt}Statvolt = ${volt}Volt`);
+                }
+            }
+        }
+
+        function calculateElectricResistanceConversion(selectElement){
+            const selectedOption = selectElement.value;
+            if(selectedOption === "Ω-to-statΩ"){
+                const inputValue = prompt("Enter the value in Ohms:");
+                if(inputValue !== null && inputValue !== ""){
+                    const ohm = parseFloat(inputValue);
+                    const statohm = ohm * 1.11265e-12;
+                    alert(`${ohm}Ohm = ${statohm}Statohm`);
+                }
+            }else if(selectedOption === "statΩ-to-Ω"){
+                const inputValue = prompt("Enter the value in Statohms:");
+                if(inputValue !== null && inputValue !== ""){
+                    const statohm = parseFloat(inputValue);
+                    const ohm = statohm / 1.11265e-12;
+                    alert(`${statohm}Statohm = ${ohm}Ohm`);
+                }
+            }
+        }
+
+        function calculateElectricCapacitanceConversion(selectElement){
+            const selectedOption = selectElement.value;
+            if(selectedOption === "F-to-statF"){
+                const inputValue = prompt("Enter the value in Farads:");
+                if(inputValue !== null && inputValue !== ""){
+                    const farad = parseFloat(inputValue);
+                    const statfarad = farad * 9.80665e+11;
+                    alert(`${farad}Farad = ${statfarad}Statfarad`);
+                }
+            }else if(selectedOption === "statF-to-F"){
+                const inputValue = prompt("Enter the value in Statfarads:");
+                if(inputValue !== null && inputValue !== ""){
+                    const statfarad = parseFloat(inputValue);
+                    const farad = statfarad / 9.80665e+11;
+                    alert(`${statfarad}Statfarad = ${farad}Farad`);
+                }
+            }
+        }
+
+        function calculateMagneticFluxConversion(selectElement){
+            const selectedOption = selectElement.value;
+            if(selectedOption === "Wb-to-Mx"){
+                const inputValue = prompt("Enter the value in Weber:");
+                if(inputValue !== null && inputValue !== ""){
+                    const weber = parseFloat(inputValue);
+                    const maxwell = weber * 1e+8;
+                    alert(`${weber}Weber = ${maxwell}Maxwell`);
+                }
+            }else if(selectedOption === "Mx-to-Wb"){
+                const inputValue = prompt("Enter the value in Maxwell:");
+                if(inputValue !== null && inputValue !== ""){
+                    const maxwell = parseFloat(inputValue);
+                    const weber = maxwell / 1e+8;
+                    alert(`${maxwell}Maxwell = ${weber}Weber`);
+                }
+            }
+        }
+
+        function calculateMagneticFieldStrengthConversion(selectElement){
+            const selectedOption = selectElement.value;
+            if(selectedOption === "T-to-G"){
+                const inputValue = prompt("Enter the value in Tesla:");
+                if(inputValue !== null && inputValue !== ""){
+                    const tesla = parseFloat(inputValue);
+                    const gauss = tesla * 10000;
+                    alert(`${tesla}Tesla = ${gauss}Gauss`);
+                }
+            }else if(selectedOption === "G-to-T"){
+                const inputValue = prompt("Enter the value in Gauss:");
+                if(inputValue !== null && inputValue !== ""){
+                    const gauss = parseFloat(inputValue);
+                    const tesla = gauss / 10000;
+                    alert(`${gauss}Gauss = ${tesla}Tesla`);
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

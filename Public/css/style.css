@@ -73,6 +73,14 @@ ul{
     background-color: var(--main-color);
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--body-bg-color);
+  }
+
 /*Style Switcher Toggler Styling */
 .style-switcher{
     width: 250px;
@@ -81,7 +89,7 @@ ul{
     bottom: 25%;
     right: -250px;
     padding: 20px;
-    background: var(--white);
+    background: var(--WHITE);
     box-shadow: var(--shadow);
     z-index: 10;
     position: fixed;
@@ -253,7 +261,7 @@ ul{
 .header .sub-menu{
     position: absolute;
     top: 100%;
-    background-color: var(--white);
+    background-color: var(--WHITE);
     left: 0;
     width: 210px;
     padding: 10px 0;

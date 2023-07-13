@@ -27,3 +27,5 @@ let filter_btns = document.querySelectorAll('.filter-btn');
     }
 }
 function1();
+
+// Calculator Functionality

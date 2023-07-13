@@ -38,6 +38,14 @@ body{
     border-radius: 20px;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 89%;
+    z-index: 100;
+    background-color: var(--body-bg-color);
+  }
+
 /* for dark glass effect */
 body.dark{
     --border-color-1: hsl(0, 0%, 100%, 0.15);

@@ -754,10 +754,12 @@ ul{
 }
 /* Formula-Home Page Styling Ends Here */
 
-.physics-section{
+.physics-section,
+.math-section{
     padding: 20px;
 }
-.physics-section .phy-header h3{
+.physics-section .phy-header h3,
+.math-section .math-header h3{
     line-height: 1;
     font-size: 25px;
     text-align: center;
@@ -765,17 +767,19 @@ ul{
     font-weight: 700;
     margin: 20px;
 }
-.phy-header p{
+.phy-header p,
+.math-header p{
     font-size: 18px;
     color: var(--black-90);
     text-align: center;
 }
 
-.phy-container{
+.phy-container,
+.math-container{
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 10px;
-    margin-top: 65px;
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 .phy-left .heading h3,
@@ -826,4 +830,194 @@ ul{
     height: 140px;
     z-index: -1;
     border-radius: 50%;
+}
+
+/*Periodic Table Styling */
+.theader{
+    color: var(--main-color);
+    font-size: 25px;
+    text-align: center;
+    font-weight: 700;
+    margin: 40px;
+}
+#periodic-table
+{
+    justify-content: center;
+    margin-left: 5%;
+    width: 90%;
+	display: grid;
+	grid-template-columns: repeat(18, 1fr);
+	grid-template-rows: repeat(7, 1fr)
+		[separator-start] 0.25fr
+		[separator-end lanthanides-start] 1fr
+		[lanthanides-end actinides-start] 1fr
+		[actinides-end];
+	grid-gap: 0.125em;
+	list-style: none;
+	padding: 0;
+	font: 1em/1 Calibri, sans-serif;
+	counter-reset: atomic-number;
+    margin: 50px auto;
+}
+
+#periodic-table li a{
+    text-decoration: none;
+    color: var(--WHITE);
+}
+#periodic-table li
+{
+	background: var(--main-color);
+	color: var(--WHITE);
+	padding: 0.5em 0.125em;
+	text-align: center;
+	counter-increment: atomic-number;
+    border-radius: 8px;
+    margin: 0px;
+}
+
+#periodic-table li:nth-of-type(2)
+{
+	grid-column: 18;
+}
+
+#periodic-table li:nth-of-type(5),
+#periodic-table li:nth-of-type(13)
+{
+	grid-column: 13;
+}
+
+#periodic-table li:nth-of-type(n+58):nth-of-type(-n+71)
+{
+	grid-row: lanthanides;
+}
+
+#periodic-table li:nth-of-type(n+90):nth-of-type(-n+103)
+{
+	grid-row: actinides;
+}
+
+#periodic-table::before
+{
+	content: '';
+	grid-row: lanthanides / actinides;
+	grid-column: 1 / span 3;
+}
+
+@media (min-width: 60em)
+{
+	#periodic-table li::before
+	{
+		content: counter(atomic-number, decimal);
+		font-feature-settings: 'subs';
+	}
+}
+
+@media (min-width: 72em)
+{
+	#periodic-table li
+	{
+		font-size: 1.2em;
+	}
+	
+	#periodic-table li::after
+	{
+		content: attr(title);
+		display: block;
+		margin-top: 0.5em;
+		font-size: 0.5em;
+	}
+}
+
+@media (min-width: 90em)
+{
+	#periodic-table li
+	{
+		font-size: 1.5em;
+	}
+}
+/* Ends Here */
+
+/* Calculator Styling Starts */
+/* Calculato Styling Ends Here */
+
+/* Units Styling */
+.units-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px;
+  }
+  .unit-header{
+    color: var(--main-color);
+    font-weight: 700;
+    text-align: center;
+    margin: 30px;
+  }
+
+  .units-card{
+    width: calc(33% - 40px);
+    margin: 10px;
+    padding: 20px;
+    background-color: var(--white);
+    box-shadow: 0 4px 8px 0 var(--box-shadow);
+    border-radius: 10px;
+  }
+  .units-card h2{
+    font-size: 20px;
+    color: var(--main-color);
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .units-card p{
+    font-size: 15px;
+    color: var(--black-90);
+  }
+
+  /* CSS for responsive design */
+  @media screen and (max-width: 960px) {
+    .units-card{
+      width: calc(50% - 20px);
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .units-card{
+      width: 100%;
+    }
+  }
+
+  .dropdown-container{
+    margin-bottom: 20px;
+  }
+  .dropdown{
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    left: 72%;
+  }
+
+  .dropdown select,
+  .dropdown-physics select{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: var(--white);
+    color: var(--main-color);
+  }
+  .dropdown-container .dropdown-physics{
+    width: 300px;
+    padding: 10px;
+    margin-left: 70%;
+  }
+
+.conversion-formula{
+    margin-top: 10px;
+}
+.conversion-formula select{
+    border-radius: 4px;
+    color: var(--main-color);
+    background-color: var(--WHITE);
+    padding: 10px;
 }
