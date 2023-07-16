@@ -70,6 +70,36 @@ router.get("/unit-c", (req, res) => {
     res.render("unit_conversion");
 });
 
+router.get("/animal", (req, res) => {
+    res.render("facts_animal");
+});
 
+router.get("/scientist", (req, res) => {
+    res.render("facts_scientist");
+});
+
+router.get("/earth", (req, res) => {
+    res.render("facts_earth");
+});
+
+router.get("/nature", (req, res) => {
+    res.render("facts_nature");
+});
+
+router.get("/planet", (req, res) => {
+    res.render("facts_planet");
+});
+
+router.get("/math", (req, res) => {
+    res.render("facts_math");
+});
+
+router.get("/science", (req, res) => {
+    res.render("facts_science");
+});
+
+router.get("/tech", (req, res) => {
+    res.render("facts_tech");
+});
 
 module.exports = router;

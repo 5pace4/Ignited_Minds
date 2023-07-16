@@ -230,7 +230,7 @@ ul{
 .header .sub-menu{
     position: absolute;
     top: 100%;
-    background-color: var(--white);
+    background-color: var(--WHITE);
     left: 0;
     width: 210px;
     padding: 10px 0;
@@ -1020,4 +1020,70 @@ ul{
     color: var(--main-color);
     background-color: var(--WHITE);
     padding: 10px;
+}
+
+/* Facts Pages Styling */
+
+.all_facts_container h2{
+    margin: 30px 30px 10px 30px;
+    font-size: 30px;
+    padding: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--main-color);
+}
+.all_facts_container p{
+    text-align: center;
+    font-weight: 700;
+    color: var(--black-90);
+    margin-bottom: 35px;
+}
+.facts_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.facts_card {
+    background-color: var(--WHITE);
+    border-radius: 8px;
+    padding: 20px;
+    flex-basis: calc(33.33% - 62px);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.facts_card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.facts_card h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.facts_card p{
+    color: var(--black-90);
+    font-weight: 500;
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .facts_card {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .facts_card {
+        flex-basis: 100%;
+    }
 }
