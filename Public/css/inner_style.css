@@ -81,7 +81,7 @@ ul{
     bottom: 25%;
     right: -250px;
     padding: 20px;
-    background: var(--white);
+    background: var(--WHITE);
     box-shadow: var(--shadow);
     z-index: 10;
     position: fixed;
@@ -291,9 +291,12 @@ ul{
   }
 
   .swiper-slide img {
-    display: block;
     width: 100%;
-    border-radius: 12px;
+    max-height: 450px;
+    margin-top: 15%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
   }
 /*Swiper Slide Styling Ends Here */
 
@@ -1054,7 +1057,8 @@ ul{
     margin-bottom: 20px;
 }
 
-.facts_card img {
+.facts_card img,
+.science_card img{
     width: 100%;
     max-height: 200px;
     object-fit: cover;
@@ -1087,3 +1091,248 @@ ul{
         flex-basis: 100%;
     }
 }
+/* Ends Here */
+
+
+/* Common Facts Styling */
+.info_container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 45px;
+}
+
+.fact_text{
+    flex: 1 0 70%; /* Adjust the width as needed */
+    padding: 40px;
+    text-align: justify;
+}
+
+.fact_image {
+    flex: 1 0 30%; /* Adjust the width as needed */
+    text-align: center;
+    padding: 40px;
+    margin-top: 6%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .fact_text, .fact_image {
+        flex: 1 0 100%;
+    }
+}
+/* Ends Here */
+
+
+/* scientific Facts Styling */
+.s_heading{
+    text-align: center;
+    margin: 45px 35px 35px 35px;
+}
+.s_heading h1{
+    font-size: 30px;
+    color: var(--main-color);
+    font-weight: 600;
+}
+.s_heading p{
+    font-weight: 700;
+    color: var(--black-90);
+    font-size: 16px;
+}
+
+.all_sfacts_container{
+    margin: 35px;
+}
+.scientist_facts_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.scientist_card {
+    background-color: var(--WHITE);
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(45% - 15px);
+    text-align: center;
+    margin: 20px;
+    color: var(--black-90);
+}
+
+.scientist_card img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.scientist_card h2 {
+    color: var(--black-90);
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.scientist_card h3 {
+    color: var(--black-90);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.scientist_card .date{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.scientist_card p,
+.science_card p{
+    color: var(--black-90);
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.scientist_card a {
+    color: var(--black-90);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .scientist_card {
+        width: 100%;
+    }
+}
+
+/* Science Facts Starts Here */
+.select-container{
+    text-align: right;
+    margin-right: 6%;
+}
+#factSelect,
+#topic_select{
+    border-radius: 8px;
+    width: 25%;
+    color: var(--main-color);
+    padding: 12px;
+}
+.science_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.science_card {
+    background-color: var(--WHITE);
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(45% - 37px);
+    text-align: center;
+    margin: 20px;
+    color: var(--black-90);
+}
+
+.science_card h2 {
+    color: var(--black-90);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.science_card ul {
+    padding: 20px;
+    list-style-type: upper-alpha;
+    text-align: justify;
+}
+
+.science_card a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+@media only screen and (max-width: 768px) {
+    .science_card {
+        width: 100%;
+    }
+}
+
+/* Earth Facts Styling */
+
+.earth_card {
+    background-color: var(--WHITE);
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(45%-37px);
+    text-align: center;
+    margin: 10px;
+    color: var(--black-90);
+}
+
+.earth_card h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.earth_card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.earth_card a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    /* For tablets and larger screens */
+    .earth_container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .earth_card {
+        width: calc(50% - 60px);
+        margin: 30px;
+    }
+
+    .earth_card:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+
+/* Nature Facts Styling */
+.nature_card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .nature_card_item {
+    flex-basis: 40%;
+    padding: 20px;
+    border: 1px solid var(--border-color-1);
+    border-radius: 8px;
+    margin: 30px 65px 20px 65px;
+    background-color: var(--WHITE);
+  }
+
+  .nature_card_item h2 {
+    margin-top: 0;
+    font-size: 30px;
+  }
+
+  .nature_card_item ul {
+    margin: 0;
+    padding: 20px;
+    list-style-type:circle;
+  }
+
+  .nature_card_item li {
+    margin-bottom: 5px;
+  }

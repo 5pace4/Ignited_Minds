@@ -29,3 +29,11 @@ let filter_btns = document.querySelectorAll('.filter-btn');
 function1();
 
 // Calculator Functionality
+
+// Science Section Selection
+    function selectFact() {
+        var selectElement = document.getElementById("factSelect");
+        var selectedFactId = selectElement.value;
+        var selectedFactElement = document.getElementById(selectedFactId);
+        selectedFactElement.scrollIntoView({ behavior: 'smooth' });
+    }

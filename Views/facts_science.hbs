@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="/css/swiper-bundle-2.min.css">
   
   <link rel="stylesheet" href="/css/inner_style.css">
+  <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
 </head>
 <body>
 
@@ -99,6 +100,216 @@
   <!--Main Section Ends Here-->
 
 <div class="circle"></div>
+
+<div class="info_container">
+    <div class="fact_text">
+      <h3>Unveiling the Wonders of STEM</h3>
+      <p>Discover the Power of Facts in Science, Technology, Engineering, and Mathematics</p>
+        <p>
+            Facts are objective and verifiable pieces of information that are based on empirical evidence and can be proven to be true.
+            In the STEM (Science, Technology, Engineering, and Mathematics) field, facts form the foundation upon which scientific theories, technological advancements, and engineering designs are built.
+            Facts help scientists and researchers establish a common understanding and shared knowledge, enabling them to make informed decisions and draw accurate conclusions.
+            In STEM disciplines, facts are obtained through rigorous experimentation, observation, data analysis, and peer-reviewed research, ensuring the reliability and validity of the information.
+            By relying on facts, STEM professionals can develop innovative solutions, advance knowledge, and contribute to the progress and improvement of society through evidence-based practices and discoveries.
+        </p>
+    </div>
+    <div class="fact_image">
+        <img src="/img/facts/1.jpg" alt="Image">
+    </div>
+</div>
+
+{{!-- Selection Option --}}
+<div class="select-container">
+    <select id="factSelect" onchange="selectFact()">
+        <option value="">-- Select --</option>
+        <option value="space-exploration">Space Exploration</option>
+        <option value="human-body">Human Body</option>
+        <option value="mathematics">Mathematics</option>
+        <option value="paleontology">Paleontology</option>
+        <option value="astronomy">Astronomy</option>
+        <option value="genetics">Genetics</option>
+        <option value="engineering">Engineering</option>
+        <option value="environmental-science">Environmental Science</option>
+        <option value="animals">Animals</option>
+        <option value="earth-geology">Earth and Geology</option>
+        <option value="chemistry">Chemistry</option>
+        <option value="physics">Physics</option>
+        <option value="medicine">Medicine</option>
+    </select>
+</div>
+
+<section class="science_facts_container">
+    <div class="science_container">
+        <div class="science_card" id="space-exploration">
+            <h2><a href="https://en.wikipedia.org/wiki/Space_exploration" target="_blank">Space Exploration</a></h2>
+            <ul>
+                <li>The first human to walk on the moon was Neil Armstrong in 1969.</li>
+                <li>The International Space Station (ISS) is the largest human-made structure in space.</li>
+                <li>The Hubble Space Telescope has captured breathtaking images of distant galaxies and nebulae.</li>
+                <li>The sun is so large that approximately 1.3 million Earths could fit inside it.</li>
+                <li>The speed of light is approximately 299,792 kilometers per second (or about 186,282 miles per second).</li>
+            </ul>
+        </div>
+        
+        <div class="science_card" id="human-body">
+            <h2><a href="https://en.wikipedia.org/wiki/Human_body" target="_blank">Human Body</a></h2>
+            <ul>
+                <li>The human brain has about 100 billion neurons.</li>
+                <li>The strongest muscle in the human body is the masseter muscle, responsible for jaw movement.</li>
+                <li>The human skeleton is made up of 206 bones.</li>
+                <li>The average adult has about 5 liters (1.3 gallons) of blood in their body.</li>
+                <li>Humans have unique fingerprints, and no two people have the same pattern.</li>
+            </ul>
+        </div>
+        
+       <div class="science_card" id="animals">
+            <h2><a href="https://en.wikipedia.org/wiki/Animals" target="_blank">Animals</a></h2>
+            <ul>
+                <li>The blue whale is the largest animal ever known to have existed, reaching lengths of over 30 meters (98 feet).</li>
+                <li>Cheetahs are the fastest land animals, capable of reaching speeds up to 70 miles per hour (113 kilometers per hour).</li>
+                <li>The lifespan of a housefly is only about 15-30 days.</li>
+                <li>Elephants are the largest land mammals, with some individuals weighing over 6 tons.</li>
+                <li>The mimic octopus can change its shape and color to mimic other creatures, such as snakes and lionfish.</li>
+            </ul>
+        </div>
+
+        <div class="science_card" id="earth-geology">
+            <h2><a href="https://en.wikipedia.org/wiki/Earth" target="_blank">Earth and Geology</a></h2>
+            <ul>
+                <li>The Earth's core is primarily composed of iron and nickel.</li>
+                <li>The tallest mountain on Earth is Mount Everest, reaching a height of 8,848 meters (29,029 feet) above sea level.</li>
+                <li>Earth's continents were once part of a supercontinent called Pangaea.</li>
+                <li>Lightning can reach temperatures hotter than the surface of the sun.</li>
+                <li>The Earth's atmosphere is composed mainly of nitrogen (78%) and oxygen (21%).</li>
+            </ul>
+        </div>
+
+        <div class="science_card" id="chemistry">
+            <h2><a href="https://en.wikipedia.org/wiki/Chemistry" target="_blank">Chemistry</a></h2>
+            <ul>
+                <li>Water is composed of two hydrogen atoms and one oxygen atom (H2O).</li>
+                <li>The periodic table contains 118 known elements.</li>
+                <li>The process of rusting is a chemical reaction called oxidation.</li>
+                <li>Diamonds are formed deep within the Earth under high pressure and temperature.</li>
+                <li>The pH scale measures the acidity or alkalinity of a substance, ranging from 0 (highly acidic) to 14 (highly alkaline).</li>
+            </ul>
+        </div>
+
+
+        <div class="science_card" id="physics">
+            <h2><a href="https://en.wikipedia.org/wiki/Physics" target="_blank">Physics</a></h2>
+            <ul>
+                <li>Quantum mechanics is a branch of physics that describes the behavior of matter and energy at the smallest scales.</li>
+                <li>The theory of general relativity, developed by Albert Einstein, explains the force of gravity as the curvature of spacetime.</li>
+                <li>Light travels at a speed of approximately 299,792 kilometers per second (or about 186,282 miles per second) in a vacuum.</li>
+                <li>The concept of entropy in thermodynamics measures the amount of disorder or randomness in a system.</li>
+                <li>The phenomenon of electromagnetic induction is the basis for generating electricity in power plants.</li>
+            </ul>
+        </div>
+
+        <div class="science_card" id="medicine">
+            <h2><a href="https://en.wikipedia.org/wiki/Medicine" target="_blank">Medicine</a></h2>
+            <ul>
+                <li>Antibiotics are medications that help fight bacterial infections by killing or inhibiting the growth of bacteria.</li>
+                <li>Vaccines stimulate the immune system to produce an immune response, providing protection against specific diseases.</li>
+                <li>The human circulatory system consists of the heart, blood vessels, and blood, which deliver oxygen and nutrients throughout the body.</li>
+                <li>The discovery of antibiotics, such as penicillin, revolutionized the treatment of bacterial infections and saved countless lives.</li>
+                <li>Stem cells have the potential to develop into different cell types and hold promise for regenerative medicine and treating various diseases.</li>
+            </ul>
+        </div>
+
+        <div class="science_card" id="environmental-science">
+            <h2><a href="https://en.wikipedia.org/wiki/Environmental_science" target="_blank">Environmental Science</a></h2>
+            <ul>
+                <li>The greenhouse effect is the process by which greenhouse gases in the Earth's atmosphere trap heat, contributing to global warming.</li>
+                <li>Deforestation, the clearing of forests for various purposes, leads to habitat loss, climate change, and a decline in biodiversity.</li>
+                <li>Renewable energy sources, such as solar, wind, hydroelectric, and geothermal power, are essential for reducing carbon emissions and mitigating climate change.</li>
+                <li>The ozone layer depletion, primarily caused by human-made chemicals called chlorofluorocarbons (CFCs), leads to increased ultraviolet (UV) radiation reaching the Earth's surface.</li>
+                <li>Ecosystem services, such as clean air, water purification, and pollination, are essential for human well-being and are provided by healthy ecosystems.</li>
+            </ul>
+        </div>
+
+        <div class="science_card" id="engineering">
+            <h2><a href="https://en.wikipedia.org/wiki/Engineering" target="_blank">Engineering</a></h2>
+            <ul>
+                <li>The field of robotics combines science, engineering, and technology to design and build robots that can perform various tasks.</li>
+                <li>Civil engineers are involved in the design, construction, and maintenance of infrastructure, including buildings, bridges, and roads.</li>
+                <li>Aerospace engineers design and develop aircraft, spacecraft, and related systems.</li>
+                <li>Electrical engineers work on designing, developing, and testing electrical systems and devices.</li>
+                <li>Mechanical engineers are involved in designing and building mechanical systems, machines, and devices.</li>
+            </ul>
+        </div>
+
+        <div class="science_card" id="chemistry">
+            <h2><a href="https://en.wikipedia.org/wiki/Chemistry" target="_blank">Chemistry</a></h2>
+            <ul>
+                <li>The periodic table is organized based on the increasing atomic number of elements and their recurring chemical properties.</li>
+                <li>Chemical reactions involve the breaking and formation of chemical bonds between atoms, resulting in the rearrangement of atoms to form new substances.</li>
+                <li>Organic chemistry is the study of compounds containing carbon atoms, which are the building blocks of life.</li>
+                <li>Acids have a pH value less than 7, while bases have a pH value greater than 7 on the pH scale.</li>
+                <li>The process of rusting is a chemical reaction called oxidation.</li>
+            </ul>
+        </div>
+
+
+
+        <div class="science_card" id="biology">
+            <h2><a href="https://en.wikipedia.org/wiki/Biology" target="_blank">Biology</a></h2>
+            <ul>
+                <li>Photosynthesis is the process by which plants convert sunlight, carbon dioxide, and water into glucose (sugar) and oxygen.</li>
+                <li>The human body contains trillions of bacteria, collectively known as the human microbiome, which play a crucial role in digestion, immunity, and overall health.</li>
+                <li>The process of cell division is essential for growth, development, and repair in multicellular organisms.</li>
+                <li>Evolution is the process by which species change over time in response to changes in their environment, driven by mechanisms such as natural selection.</li>
+                <li>The human immune system is a complex network of cells, tissues, and organs that protects the body against pathogens and foreign substances.</li>
+            </ul>
+        </div>
+
+        <div class="science_card" id="paleontology">
+            <h2><a href="https://en.wikipedia.org/wiki/Paleontology" target="_blank">Paleontology</a></h2>
+            <ul>
+                <li>Fossils are the preserved remains or traces of ancient organisms, providing valuable insights into Earth's history and the evolution of life.</li>
+                <li>The age of dinosaurs spanned from approximately 230 to 65 million years ago, during the Mesozoic Era.</li>
+                <li>The largest dinosaur ever discovered is Argentinosaurus, estimated to have been around 90-100 feet long and weighing up to 100 tons.</li>
+                <li>The study of ancient human remains and artifacts is called archaeology, while the study of ancient life forms and ecosystems is called paleontology.</li>
+                <li>Fossil fuels, such as coal, oil, and natural gas, are formed from the remains of ancient plants and animals that lived millions of years ago.</li>
+            </ul>
+        </div>
+
+        <div class="science_card" id="mathematics">
+            <h2><a href="https://en.wikipedia.org/wiki/Mathematics" target="_blank">Mathematics</a></h2>
+            <ul>
+                <li>Pi (π) is a mathematical constant representing the ratio of a circle's circumference to its diameter and is approximately equal to 3.14159.</li>
+                <li>The Fibonacci sequence is a series of numbers in which each number is the sum of the two preceding ones: 0, 1, 1, 2, 3, 5, 8, 13, 21, and so on.</li>
+                <li>The golden ratio, approximately equal to 1.618, is a mathematical proportion often found in nature and art.</li>
+                <li>Calculus, developed by Isaac Newton and Gottfried Wilhelm Leibniz, is a branch of mathematics that deals with rates of change and accumulation.</li>
+                <li>Probability theory is the branch of mathematics concerned with analyzing the likelihood of events occurring.</li>
+            </ul>
+        </div>
+
+        <div class="science_card" id="astronomy">
+            <h2><a href="https://en.wikipedia.org/wiki/Astronomy" target="_blank">Astronomy</a></h2>
+            <ul>
+                <li>There are more stars in the universe than grains of sand on all the beaches on Earth.</li>
+                <li>Black holes are regions in space where gravity is so strong that nothing, not even light, can escape their gravitational pull.</li>
+                <li>The Milky Way galaxy is estimated to contain billions of stars, along with planets, comets, and asteroids.</li>
+                <li>The universe is expanding, and galaxies are moving away from each other.</li>
+                <li>Supernovae are powerful explosions that occur at the end of a star's life cycle, releasing an enormous amount of energy.</li>
+            </ul>
+        </div>
+
+        <div class="science_card" id="genetics">
+            <h2><a href="https://en.wikipedia.org/wiki/Genetics" target="_blank">Genetics</a></h2>
+            <ul>
+                <li>DNA, or deoxyribonucleic acid, carries the genetic instructions for the development and functioning of all living organisms.</li>
+                <li>Genes are segments of DNA that encode specific traits or characteristics.</li>
+                <li>Genetic mutations can lead to variations in traits and can be the basis for evolution.</li>
+                <li>Humans share about 99.9% of their DNA with each other.</li>
+                <li>Gregor Mendel is considered the father of modern genetics for his pioneering work with pea plants.</li>
+            </ul>
+        </div>
+        
+    </div>
+</section>
 
 
  <!--Footer Section Starts Here-->
@@ -199,9 +410,10 @@
       <label for="glass-effect" class="form-check-label"><span style="color: var(--main-color); font-size: 16px; font-weight: 600;">G</span>lass Effect</label>
     </div>
   </div>
+    <h4>-Language Settings-</h4>
+  <div id="google_element"></div>
 </div>
 <!--Style switcher ends here-->
-
 
 <!--Script File Link-->
 
