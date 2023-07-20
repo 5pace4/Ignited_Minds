@@ -1336,6 +1336,7 @@ img {
   .nature_card_item li {
     margin-bottom: 5px;
   }
+<<<<<<< Updated upstream
 
   .dashboard{
     padding: 30px;
@@ -1576,3 +1577,50 @@ img {
     }
   }
   /* Course details Styling Ends Here */
+=======
+  /*programming for (5-8) start here*/
+.programming_5{
+    padding: 0 10%;
+    margin-top: 60px;
+}
+.container_prog_5{
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.container_prog_5 ul{
+    text-align: center;
+}
+.container_prog_5 ul li{
+    display: inline-block;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-weight: 550;
+    color: #000;
+}
+.container_prog_5 ul li:hover{
+    text-decoration: underline;
+}
+.programming-body{
+    padding: 0 10%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.container-prog-body{
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.container-prog-name1{
+    display: grid;
+    grid-template-columns: 20% 30% 30% auto;
+    border-top: 1px solid var(--border-color-1);
+    padding: 10px;
+}
+.container-prog-name1 a{
+    color:#000;
+    text-decoration: underline;
+}
+/*programming for (5-8) end here*/
+>>>>>>> Stashed changes

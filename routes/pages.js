@@ -125,11 +125,56 @@ router.get("/upload", (req, res) => {
 //     res.render("admin_home");
 // });
 
+router.get("/animal", (req, res) => {
+    res.render("facts_animal");
+});
 
+<<<<<<< Updated upstream
 router.get("/admin_home", verifyJWT, admin_home);
 router.get("/admin_view", verifyJWT, admin_view);
 router.get("/course_upload", verifyJWT, course_upload);
 router.get("/courseDetails", verifyJWT, courseDetails);
+=======
+router.get("/scientist", (req, res) => {
+    res.render("facts_scientist");
+});
+
+router.get("/earth", (req, res) => {
+    res.render("facts_earth");
+});
+
+router.get("/nature", (req, res) => {
+    res.render("facts_nature");
+});
+
+router.get("/planet", (req, res) => {
+    res.render("facts_planet");
+});
+
+router.get("/math", (req, res) => {
+    res.render("facts_math");
+});
+
+router.get("/science", (req, res) => {
+    res.render("facts_science");
+});
+
+router.get("/tech", (req, res) => {
+    res.render("facts_tech");
+});
+router.get("/programming-5-8", (req, res) =>{
+    res.render("programming-5-8");
+}
+);
+router.get("/programming-9-11", (req, res) =>{
+    res.render("programming-9-11");
+}
+);
+router.get("/programming-12-14", (req, res) =>{
+    res.render("programming-12-14");
+}
+);
+>>>>>>> Stashed changes
 
 router.get("/dashboard", verifyJWT, dashboard);
 
