@@ -100,51 +100,62 @@
   <!--Main Section Ends Here-->
 
 <div class="circle"></div>
-
-<section class="physics-section">
-  <div class="phy-header">
-    <h3>Explore Universal Constants</h3>
-    <p>-Powered by Formulia <a href="https://play.google.com/store/apps/details?id=m4.enginary" target="_blank">[Get The App From Playstore]-</a> </p>
-  </div>
-  
-  <div class="container phy-container">
-      <div class="phy-left" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-        <div class="heading">
-          <h3>Universal Constants</h3>
-
-          <div class="mini-heading">
-            <h4>Constant Values</h4>
-              <img src="/img/formula-home/constant/1.jpg" alt="Image">
-              <img src="/img/formula-home/constant/2.jpg" alt="Image">
-              <img src="/img/formula-home/constant/3.jpg" alt="Image">
-          </div>
-
-        </div>
-
+    
+<h3 class="course_heading">{{course.heading}}</h4>
+<h4 class="course_heading2">{{course.semi_heading}}</h4>
+<div class="course_container">
+    <section>
+      <div class="course_content">
+        <p>{{course.content1}}</p>
       </div>
+      <div class="course_image">
+        <img src="/{{course.image1_path}}" alt="Image 1">
+      </div>
+    </section>
 
-      <div class="phy-right" data-aos="fade-right" data-aos-delay="800" data-aos-duration="1000">
+    <section>
+      <div class="course_content1">
+        <p>{{course.content2}}</p>
+      </div>
+    </section>
 
-      <div class="heading">
-          <h3>Greek Letters</h3>
+    <section> 
+      <div class="course_content">
+        <p>{{course.content3}}</p>
+      </div>
+      <div class="course_image">
+        <img src="/{{course.image2_path}}" alt="Image 2">
+      </div> 
+    </section>
 
-          <div class="mini-heading">
-            <h4>Scientific Used Letter</h4>
-              <img src="/img/formula-home/constant/4.jpg" alt="Image">
-              <img src="/img/formula-home/constant/5.jpg" alt="Image">
-              <img src="/img/formula-home/constant/6.jpg" alt="Image">
-          </div>
-
+    <section>
+        <div class="course_image1">
+            <img src="/{{course.image3_path}}" alt="Image 3">
         </div>
+    </section>
 
-    </div>
+    <section>
+      <div class="course_content1">
+        <p>{{course.content4}}</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="course_image1">
+        <img src="/{{course.image4_path}}" alt="Image 4">
+      </div>
+    </section>
+
+    <section>
+        <div class="course_content">
+            <a href="/{{course.notes_path}}" alt="Download Files" class="course_download_link">Download Files</a>
+        </div>
+    </section>
   </div>
 
-</section>
 
 
-  
- <!--Footer Section Starts Here-->
+<!--Footer Section Starts Here-->
 
   <footer class="footer" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
     <div class="footer-top">
@@ -210,8 +221,7 @@
   </footer>
 
   <!--Footer Section Ends Here-->
-
-</div>  
+</div>
 <!--Main Wrapper Ends Here-->
 
 <!--Style Switcher Starts Here-->
@@ -242,15 +252,15 @@
       <label for="glass-effect" class="form-check-label"><span style="color: var(--main-color); font-size: 16px; font-weight: 600;">G</span>lass Effect</label>
     </div>
   </div>
-
-  <h4>-Language Settings-</h4>
+    <h4>-Language Settings-</h4>
   <div id="google_element"></div>
-
 </div>
 <!--Style switcher ends here-->
 
 
 <!--Script File Link-->
+<script src="/js/swiper-bundle-1.min.js"></script>
+<script src="/js/swiper-bundle-2.min.js"></script>
 
 <script src="/js/main.js"></script>
 <script src="/js/inner_main.js"></script>
@@ -258,5 +268,6 @@
 <script>
   AOS.init();
 </script>
+
 </body>
 </html>

@@ -101,49 +101,22 @@
 
 <div class="circle"></div>
 
-<section class="physics-section">
-  <div class="phy-header">
-    <h3>Explore Universal Constants</h3>
-    <p>-Powered by Formulia <a href="https://play.google.com/store/apps/details?id=m4.enginary" target="_blank">[Get The App From Playstore]-</a> </p>
-  </div>
-  
-  <div class="container phy-container">
-      <div class="phy-left" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-        <div class="heading">
-          <h3>Universal Constants</h3>
+<section class="course_view_section">
+  <h2 class="view_header">Explore Your Favourite Topics</h2>
+  <h3 class="view_cat">{{category}} [{{subcategory}}]</h3>
 
-          <div class="mini-heading">
-            <h4>Constant Values</h4>
-              <img src="/img/formula-home/constant/1.jpg" alt="Image">
-              <img src="/img/formula-home/constant/2.jpg" alt="Image">
-              <img src="/img/formula-home/constant/3.jpg" alt="Image">
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="phy-right" data-aos="fade-right" data-aos-delay="800" data-aos-duration="1000">
-
-      <div class="heading">
-          <h3>Greek Letters</h3>
-
-          <div class="mini-heading">
-            <h4>Scientific Used Letter</h4>
-              <img src="/img/formula-home/constant/4.jpg" alt="Image">
-              <img src="/img/formula-home/constant/5.jpg" alt="Image">
-              <img src="/img/formula-home/constant/6.jpg" alt="Image">
-          </div>
-
-        </div>
-
+  <div class="course_card_container">
+    {{#each courses}}
+    <div class="course_card">
+      <img src="/{{this.image1_path}}" alt="Image 1">
+      <h2>{{this.heading}}</h2>
+      <h3>{{this.semi_heading}}</h3>
+      <a href="/courses/{{../category}}/{{../subcategory}}/{{this.id}}">Read More</a>
     </div>
+    {{/each}}
   </div>
-
 </section>
 
-
-  
  <!--Footer Section Starts Here-->
 
   <footer class="footer" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
@@ -210,8 +183,7 @@
   </footer>
 
   <!--Footer Section Ends Here-->
-
-</div>  
+</div>
 <!--Main Wrapper Ends Here-->
 
 <!--Style Switcher Starts Here-->
@@ -242,15 +214,15 @@
       <label for="glass-effect" class="form-check-label"><span style="color: var(--main-color); font-size: 16px; font-weight: 600;">G</span>lass Effect</label>
     </div>
   </div>
-
-  <h4>-Language Settings-</h4>
+    <h4>-Language Settings-</h4>
   <div id="google_element"></div>
-
 </div>
 <!--Style switcher ends here-->
 
 
 <!--Script File Link-->
+<script src="/js/swiper-bundle-1.min.js"></script>
+<script src="/js/swiper-bundle-2.min.js"></script>
 
 <script src="/js/main.js"></script>
 <script src="/js/inner_main.js"></script>
@@ -258,5 +230,6 @@
 <script>
   AOS.init();
 </script>
+
 </body>
 </html>

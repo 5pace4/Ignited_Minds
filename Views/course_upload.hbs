@@ -41,43 +41,43 @@
               <ul class="menu">
                 
                 <li class="menu-item menu-item-has-children">
-                  <a href="#">Science <i class="fas fa-chevron-down"></i></a>
+                  <a href="/courses">Science <i class="fas fa-chevron-down"></i></a>
                   <ul class="sub-menu js-sub-menu">
                     <li class="sub-menu-item"><a href="/courses/science/5-8 Years">5-8 Years</a></li>
-                    <li class="sub-menu-item"><a href="/courses/science/9-11 Years">9-11 Years</a></li>
+                    <li class="sub-menu-item"><a href="#">9-11 Years</a></li>
                     <li class="sub-menu-item"><a href="/courses/science/12-14 Years">12-14 Years</a></li>
                   </ul>
                 </li>
                 <li class="menu-item">
                   <a href="#">Technology <i class="fas fa-chevron-down"></i></a>
                   <ul class="sub-menu js-sub-menu">
-                    <li class="sub-menu-item"><a href="/courses/technology/5-8 Years">5-8 Years</a></li>
-                    <li class="sub-menu-item"><a href="/courses/technology/9-11 Years">9-11 Years</a></li>
-                    <li class="sub-menu-item"><a href="/courses/technology/12-14 Years">12-14 Years</a></li>
+                    <li class="sub-menu-item"><a href="#">5-8 Years</a></li>
+                    <li class="sub-menu-item"><a href="#">9-11 Years</a></li>
+                    <li class="sub-menu-item"><a href="#">12-14 Years</a></li>
                   </ul>
                 </li>
                 <li class="menu-item">
                   <a href="#">Engineering <i class="fas fa-chevron-down"></i></a>
                   <ul class="sub-menu js-sub-menu">
-                    <li class="sub-menu-item"><a href="/courses/engineering/5-8 Years">5-8 Years</a></li>
+                    <li class="sub-menu-item"><a href="#">5-8 Years</a></li>
                     <li class="sub-menu-item"><a href="/courses/engineering/9-11 Years">9-11 Years</a></li>
-                    <li class="sub-menu-item"><a href="/courses/engineering/12-14 Years">12-14 Years</a></li>
+                    <li class="sub-menu-item"><a href="#">12-14 Years</a></li>
                   </ul>
                 </li>
                 <li class="menu-item">
                   <a href="#">Mathematics <i class="fas fa-chevron-down"></i></a>
                   <ul class="sub-menu js-sub-menu">
-                    <li class="sub-menu-item"><a href="/courses/mathematics/5-8 Years">5-8 Years</a></li>
-                    <li class="sub-menu-item"><a href="/courses/mathematics/9-11 Years">9-11 Years</a></li>
-                    <li class="sub-menu-item"><a href="/courses/mathematics/12-14 Years">12-14 Years</a></li>
+                    <li class="sub-menu-item"><a href="#">5-8 Years</a></li>
+                    <li class="sub-menu-item"><a href="#">9-11 Years</a></li>
+                    <li class="sub-menu-item"><a href="#">12-14 Years</a></li>
                   </ul>
                 </li>
                 <li class="menu-item">
                   <a href="#">Programming <i class="fas fa-chevron-down"></i></a>
                   <ul class="sub-menu js-sub-menu">
-                    <li class="sub-menu-item"><a href="/courses/programming/5-8 Years">5-8 Years</a></li>
-                    <li class="sub-menu-item"><a href="/courses/programming/9-11 Years">9-11 Years</a></li>
-                    <li class="sub-menu-item"><a href="/courses/programming/12-14 Years">12-14 Years</a></li>
+                    <li class="sub-menu-item"><a href="#">5-8 Years</a></li>
+                    <li class="sub-menu-item"><a href="#">9-11 Years</a></li>
+                    <li class="sub-menu-item"><a href="#">12-14 Years</a></li>
                   </ul>
                 </li>
               </ul>
@@ -85,7 +85,7 @@
                   <h6 style="display: inline-block; margin-top: 20px;" id="fullName"> {{profile.name}} </h6>
                   <ul class="sub-menu js-sub-menu">
                     <li class="sub-menu-item"><a href="#">View Profile</a></li>
-                    <li class="sub-menu-item"><a href="#">View Dashboard</a></li>
+                    <li class="sub-menu-item"><a href="/dashboard">View Dashboard</a></li>
                     <li class="sub-menu-item"><a href="/formulae-home">User Tools</a></li>
                     <li class="sub-menu-item"><a href="/formulae-home">Formulae</a></li>
                     <li class="sub-menu-item"><a href="/logout">Log Out <i class="fas fa-chevron-right"></i></a></li>
@@ -101,50 +101,47 @@
 
 <div class="circle"></div>
 
-<section class="physics-section">
-  <div class="phy-header">
-    <h3>Explore Universal Constants</h3>
-    <p>-Powered by Formulia <a href="https://play.google.com/store/apps/details?id=m4.enginary" target="_blank">[Get The App From Playstore]-</a> </p>
-  </div>
+<section class="course_upload">
+<h3 class="upload_header">&nbsp; &nbsp; -Upload Your Courses-</h3>
+  {{#if successMessage}}
+    <p class="success-message">{{successMessage}}</p>
+  {{/if}}
   
-  <div class="container phy-container">
-      <div class="phy-left" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-        <div class="heading">
-          <h3>Universal Constants</h3>
-
-          <div class="mini-heading">
-            <h4>Constant Values</h4>
-              <img src="/img/formula-home/constant/1.jpg" alt="Image">
-              <img src="/img/formula-home/constant/2.jpg" alt="Image">
-              <img src="/img/formula-home/constant/3.jpg" alt="Image">
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="phy-right" data-aos="fade-right" data-aos-delay="800" data-aos-duration="1000">
-
-      <div class="heading">
-          <h3>Greek Letters</h3>
-
-          <div class="mini-heading">
-            <h4>Scientific Used Letter</h4>
-              <img src="/img/formula-home/constant/4.jpg" alt="Image">
-              <img src="/img/formula-home/constant/5.jpg" alt="Image">
-              <img src="/img/formula-home/constant/6.jpg" alt="Image">
-          </div>
-
-        </div>
-
-    </div>
-  </div>
-
+  <form action="/upload" method="POST" enctype="multipart/form-data" class="c_upload_form">
+    <input type="text" name="heading" placeholder="Heading"><br>
+    <input type="file" name="image1"><br>
+    <input type="file" name="image2"><br>
+    <input type="file" name="image3"><br>
+    <input type="file" name="image4"><br>
+    <input type="text" name="semiHeading" placeholder="Semi Heading"><br>
+    <textarea name="content1" placeholder="Content 1"></textarea><br>
+    <textarea name="content2" placeholder="Content 2"></textarea><br>
+    <textarea name="content3" placeholder="Content 3"></textarea><br>
+    <textarea name="content4" placeholder="Content 4"></textarea><br>
+    <input type="file" name="notes"><br>
+    
+    <!-- Add Category and Subcategory fields -->
+    <select name="category">
+      <option value="science">Science</option>
+      <option value="technology">Technology</option>
+      <option value="engineering">Engineering</option>
+      <option value="mathematics">Mathematics</option>
+      <option value="programming">Programming</option>
+    </select><br>
+    
+    <select name="subcategory" class="subcategory">
+      <option value="5-8 years">5-8 years</option>
+      <option value="9-11 years">9-11 years</option>
+      <option value="12-14 years">12-14 years</option>
+    </select><br>
+    
+    <input type="submit" value="Upload Course">
+  </form>
+  <a href="/user_common_page" class="view-courses-link">View Uploaded Courses</a>
 </section>
 
-
-  
- <!--Footer Section Starts Here-->
+{{!-- Course Upload Form Ends Here --}}
+<!--Footer Section Starts Here-->
 
   <footer class="footer" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
     <div class="footer-top">
@@ -210,8 +207,7 @@
   </footer>
 
   <!--Footer Section Ends Here-->
-
-</div>  
+</div>
 <!--Main Wrapper Ends Here-->
 
 <!--Style Switcher Starts Here-->
@@ -242,15 +238,15 @@
       <label for="glass-effect" class="form-check-label"><span style="color: var(--main-color); font-size: 16px; font-weight: 600;">G</span>lass Effect</label>
     </div>
   </div>
-
-  <h4>-Language Settings-</h4>
+    <h4>-Language Settings-</h4>
   <div id="google_element"></div>
-
 </div>
 <!--Style switcher ends here-->
 
 
 <!--Script File Link-->
+<script src="/js/swiper-bundle-1.min.js"></script>
+<script src="/js/swiper-bundle-2.min.js"></script>
 
 <script src="/js/main.js"></script>
 <script src="/js/inner_main.js"></script>
@@ -258,5 +254,6 @@
 <script>
   AOS.init();
 </script>
+
 </body>
 </html>
