@@ -3,6 +3,11 @@ const jwt = require("jsonwebtoken");
 const { dashboard, user_common_page, formulae_home, admin_home, course_upload, courseDetails, facts_animal, facts_earth, facts_math, facts_planet, facts_nature, facts_science, facts_scientist, formula_chemistry, formula_math, formula_physics, measurement_units, periodic_table, unit_conversion, universal_constants, universal_prefixes, view_course, admin_view, facts_tech} = require("../controller/auth");
 const router = express.Router();
 
+
+router.get('/pre_loader', (req, res) => {
+    res.render("pre_loader");
+});
+
 router.get('/', (req, res) => {
     res.render("index");
 });

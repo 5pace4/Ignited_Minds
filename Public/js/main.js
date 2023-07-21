@@ -1,4 +1,4 @@
-    
+
 // Sticky Header
 window.addEventListener("scroll", function() {
     var header = document.querySelector(".header");
@@ -295,3 +295,17 @@ window.addEventListener("scroll", function() {
             current.textContent = current.textContent.includes('Read More..')?
             "Read Less..": "Read More..";
         })
+
+
+
+        fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCa1w8_QFAteJ0rSSw_FlhNw&relatedToVideoId=Ks-_Mh1QhMc&type=video&key=AIzaSyB6kn-1IfUgycL-FAzIQyvlNK_QRad6szo")
+        .then((result)=>{
+            return result.json()
+        }).then((data)=>{
+            console.log(data)
+            let videos = data.items
+            let videocontainer = document.querySelector("video_container")
+            for(video of videos){
+                document.write(videon.snippet.title)
+            }
+        })  
