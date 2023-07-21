@@ -129,12 +129,10 @@ router.get("/animal", (req, res) => {
     res.render("facts_animal");
 });
 
-<<<<<<< Updated upstream
 router.get("/admin_home", verifyJWT, admin_home);
 router.get("/admin_view", verifyJWT, admin_view);
 router.get("/course_upload", verifyJWT, course_upload);
 router.get("/courseDetails", verifyJWT, courseDetails);
-=======
 router.get("/scientist", (req, res) => {
     res.render("facts_scientist");
 });
@@ -174,7 +172,6 @@ router.get("/programming-12-14", (req, res) =>{
     res.render("programming-12-14");
 }
 );
->>>>>>> Stashed changes
 
 router.get("/dashboard", verifyJWT, dashboard);
 
