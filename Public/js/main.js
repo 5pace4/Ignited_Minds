@@ -20,7 +20,7 @@ function headerMenu(){
         item.addEventListener("click", toggleMenu);
     });
 
-    
+    backdrop.addEventListener("click", toggleMenu);
 
     function collapse(){
         menu.querySelector(".active .js-sub-menu").removeAttribute("style");
@@ -195,6 +195,7 @@ headerMenu();
     glassEffect();
 
     /* Glass effect functionality Ends Here */
+
 
     // Translator Functionality Starts Here
     function loadGoogleTranslate(){
