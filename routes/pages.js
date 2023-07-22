@@ -165,18 +165,11 @@ router.get("/science", (req, res) => {
 router.get("/tech", (req, res) => {
     res.render("facts_tech");
 });
-router.get("/programming-5-8", (req, res) =>{
-    res.render("programming-5-8");
-}
-);
-router.get("/programming-9-11", (req, res) =>{
-    res.render("programming-9-11");
-}
-);
-router.get("/programming-12-14", (req, res) =>{
-    res.render("programming-12-14");
-}
-);
+
+router.get("/quiz_page", (req, res) => {
+    res.render("quiz_page");
+});
+
 
 router.get("/dashboard", verifyJWT, dashboard);
 

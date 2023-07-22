@@ -18,20 +18,18 @@
   <link rel="stylesheet" href="/css/swiper-bundle-2.min.css">
   
   <link rel="stylesheet" href="/css/inner_style.css">
-  {{!-- <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script> --}}
   <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
 </head>
 <body>
-
-<!--Main Section Start-->
-<div class = "main-wraper">
-  <header class = "header">
+  <!--Main Section Start-->
+  <div class = "main-wraper">
+    <header class = "header">
       <div class = "container">
         <div class="header-main d-flex justify-content-between align-items-center">
           <div class="header-logo">
-            <a href = "/user_common_page"> <b><span>Ignited_</span> Minds.</b> </a>
+            <a href = "/"> <b><span>Ignited_</span>Minds.</b> </a>
           </div>
-          <button type="button" class="header-hamburger-btn js-header-menu-toggler">
+          <button type="button" class="header-hamburger-btn js-header-menu-toggler"><i class="fas fa-bars"></i>
             <span></span>
           </button>
           <div class = "header-backdrop js-header-backdrop"></div>
@@ -81,19 +79,16 @@
                     <li class="sub-menu-item"><a href="/courses/programming/12-14 Years">12-14 Years</a></li>
                   </ul>
                 </li>
-              </ul>
-              <li class="menu-item">
+                <li class="menu-item">
                   <h6 style="display: inline-block; margin-top: 20px;" id="fullName"> {{profile.name}} </h6>
                   <ul class="sub-menu js-sub-menu">
-                    <li class="sub-menu-item"><a href="#">View Profile</a></li>
                     <li class="sub-menu-item"><a href="/dashboard">View Dashboard</a></li>
+                    <li class="sub-menu-item"><a href="/quiz_page">Participate in Quizzes</a></li>
                     <li class="sub-menu-item"><a href="/formulae-home">User Tools</a></li>
                     <li class="sub-menu-item"><a href="/formulae-home">Formulae</a></li>
                     <li class="sub-menu-item"><a href="/logout">Log Out <i class="fas fa-chevron-right"></i></a></li>
-                    
                   </ul>
                 </li>
-
             </nav>
           </div>
       </div>
@@ -173,6 +168,15 @@
         </div>
     </section>
   <!--Slide Info Section Ends Here-->
+
+  <div class="quote_container">
+        <h3>-Today's Quote For You-</h3>
+        <form id="quoteForm">
+            <button type="button" id="generateBtn">Generate Quote</button>
+        </form>
+        <div id="quoteResult"></div>
+  </div>
+
 
   <!--Tabs Section Starts Here -->
   <div class="container">
