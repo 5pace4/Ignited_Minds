@@ -37,3 +37,50 @@ function1();
         var selectedFactElement = document.getElementById(selectedFactId);
         selectedFactElement.scrollIntoView({ behavior: 'smooth' });
     }
+
+//calculator section
+let displayValue = "0";
+
+    function updateDisplay() {
+      document.getElementById("result").textContent = displayValue;
+    }
+
+    function appendToDisplay(val) {
+      if (displayValue === "0" && val !== ".") {
+        displayValue = val;
+      } else {
+        displayValue += val;
+      }
+      updateDisplay();
+    }
+
+    function clearDisplay() {
+      displayValue = "0";
+      updateDisplay();
+    }
+
+    function clearLastEntry() {
+      if (displayValue !== "0") {
+        displayValue = displayValue.slice(0, -1);
+        if (displayValue === "") {
+          displayValue = "0";
+        }
+        updateDisplay();
+      }
+    }
+
+    function calculateResult() {
+      try {
+        // Using our custom expression parser and evaluator
+        const result = evaluateExpression(displayValue);
+        displayValue = result.toString();
+        updateDisplay();
+      } catch (error) {
+        displayValue = "Error";
+        updateDisplay();
+      }
+    }
+
+    function evaluateExpression(expression) {
+      return Function(`'use strict'; return (${expression})`)();
+    }

@@ -28,7 +28,7 @@
       <div class = "container">
         <div class="header-main d-flex justify-content-between align-items-center">
           <div class="header-logo">
-            <a href = "/user_common_page"> <b><span>Ignited_</span>Minds.</b> </a>
+            <a href = "/user_common_page"> <b><span>Ignited_</span> Minds.</b> </a>
           </div>
           <button type="button" class="header-hamburger-btn js-header-menu-toggler">
             <span></span>
@@ -100,109 +100,53 @@
   <!--Main Section Ends Here-->
 
 <div class="circle"></div>
-
-{{!-- Formula Section Starts Here --}}
-<section class="formula-section">
-    <div class="container formula-container">
-      <div class="formula_left" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-        <h1> <span style="color:var(--main-color); font-size: 50px;">W</span>hy Choose Us? </h1>
-        <p>
-          By believing that every student has the potential to be a hero in the world of STEM.
-          By offering a wide range of interactive and immersive learning materials, 
-          we strive to inspire curiosity, critical thinking, and problem-solving abilities. 
-          Our curriculum is carefully crafted to be both informative and exciting, 
-          allowing students to explore complex concepts through hands-on activities and real-world applications.
-          Students will have access to cutting-edge resources, including videos, interactive modules,
-          virtual experiments, and challenging projects that encourage collaboration and creativity.
-        </p>
-      </div>
-
-      <div class="formula_right" data-aos="fade-right" data-aos-delay="800" data-aos-duration="1000">
-        <ul class="formula">
-            <li><a href="/formula-physics">Physics</a></li>
-            <li><a href="/formula-chemistry">Chemistry</a></li>
-            <li><a href="/formula-math">Mathematics</a></li>
-        </ul>
-      </div>
+<!--calculator section starts here-->
+<h3 class="unit-header">-Calculate With Us-</h3>
+<section>
+  <div class="calculator">
+    <div class="result" id="result">0</div>
+    <div class="buttons">
+      <div class="button3" onclick="clearDisplay()">C</div>
+      <div class="button1" onclick="appendToDisplay('%')">%</div>
+      <div class="button1" onclick="appendToDisplay('(')">(</div>
+      <div class="button1" onclick="appendToDisplay(')')">)</div>
+      <div class="button" onclick="appendToDisplay('7')">7</div>
+      <div class="button" onclick="appendToDisplay('8')">8</div>
+      <div class="button" onclick="appendToDisplay('9')">9</div>
+      <div class="button1" onclick="appendToDisplay('/')">÷</div>
+      <div class="button" onclick="appendToDisplay('4')">4</div>
+      <div class="button" onclick="appendToDisplay('5')">5</div>
+      <div class="button" onclick="appendToDisplay('6')">6</div>
+      <div class="button1" onclick="appendToDisplay('*')">x</div>
+      <div class="button" onclick="appendToDisplay('1')">1</div>
+      <div class="button" onclick="appendToDisplay('2')">2</div>
+      <div class="button" onclick="appendToDisplay('3')">3</div>
+      <div class="button1" onclick="appendToDisplay('-')">-</div>
+      <div class="button" onclick="appendToDisplay('0')">0</div>
+      <div class="button" onclick="appendToDisplay('.')">.</div>
+      <div class="button2" onclick="calculateResult()">=</div>
+      <div class="button1" onclick="appendToDisplay('+')">+</div>
     </div>
-  </section>
+  </div>
+</section>
 
-  {{!-- Tools Section Starts Here --}}
-
-  <section class="tools" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
-    <div class="tools-header">
-        <h3>Scientific Tools</h3>
-        <p>-Explore Something Awesome-</p>
+<!--<section class = "calculator">
+    <div class = "container">
+        <div class = "row">
+            <button class = "button">1</button>
+            <button class = "button">2</button>
+            <button class = "button">3</button>
+            <button class = "button">4</button>
+            <button class = "button">5</button>
+            <button class = "button">6</button>
+            <button class = "button">7</button>
+            <button class = "button">8</button>
+            <button class = "button">9</button>
+            <button class = "button">0</button>
+        </div>
     </div>
-    <div class="tools-container" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">
-            <a href="/universal_constants">
-            <div class="tools-card">
-              <div class="tools-img">
-                <img src="/img/formula-home/constant.png" alt="Image-1">
-              </div>
-              <div class="tools-content">
-                <h3>Universal Constants</h3>
-              </div>
-            </div>  
-            </a>
-
-             <a href="/measurement_units">
-            <div class="tools-card">
-              <div class="tools-img">
-                <img src="/img/formula-home/units.png" alt="Image-2">
-              </div>
-              <div class="tools-content">
-                <h3>Scientific Units</h3>
-              </div>
-            </div>  
-            </a>
-
-            <a href="/calculator">
-            <div class="tools-card">
-              <div class="tools-img">
-                <img src="/img/formula-home/calculator.png" alt="Image-2">
-              </div>
-              <div class="tools-content">
-                <h3>Calculator</h3>
-              </div>
-            </div>  
-            </a>
-
-            <a href="/unit_conversion">
-            <div class="tools-card">
-              <div class="tools-img">
-                <img src="/img/formula-home/transfer.png" alt="Image-3">
-              </div>
-              <div class="tools-content">
-                <h3>Unit Conversion</h3>
-              </div>
-            </div>  
-            </a>
-
-             <a href="/periodic_table">
-            <div class="tools-card">
-              <div class="tools-img">
-                <img src="/img/formula-home/table.png" alt="Image-4">
-              </div>
-              <div class="tools-content">
-                <h3>Periodic Table</h3>
-              </div>
-            </div>  
-            </a>
-
-             <a href="/universal-prefixes">
-            <div class="tools-card">
-              <div class="tools-img">
-                <img src="/img/formula-home/prefix.png" alt="">
-              </div>
-              <div class="tools-content">
-                <h3>Universal Prefixes</h3>
-              </div>
-            </div>  
-            </a>
-
-    </div>
-  </section>
+</section>-->
+<!--calculator section ends here-->
  <!--Footer Section Starts Here-->
 
   <footer class="footer" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
@@ -301,8 +245,10 @@
       <label for="glass-effect" class="form-check-label"><span style="color: var(--main-color); font-size: 16px; font-weight: 600;">G</span>lass Effect</label>
     </div>
   </div>
+
   <h4>-Language Settings-</h4>
   <div id="google_element"></div>
+
 </div>
 <!--Style switcher ends here-->
 

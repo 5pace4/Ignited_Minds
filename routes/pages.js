@@ -177,6 +177,10 @@ router.get("/programming-12-14", (req, res) =>{
     res.render("programming-12-14");
 }
 );
+router.get("/calculator", (req, res) =>{
+    res.render("calculator");
+}
+);
 
 router.get("/dashboard", verifyJWT, dashboard);
 
