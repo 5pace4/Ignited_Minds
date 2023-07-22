@@ -166,10 +166,6 @@ router.get("/tech", (req, res) => {
     res.render("facts_tech");
 });
 
-router.get("/quiz_page", (req, res) => {
-    res.render("quiz_page");
-});
-
 
 router.get("/dashboard", verifyJWT, dashboard);
 
