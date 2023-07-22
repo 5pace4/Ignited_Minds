@@ -1,54 +1,10 @@
-
 // Sticky Header
 window.addEventListener("scroll", function() {
     var header = document.querySelector(".header");
     header.classList.toggle("sticky", window.scrollY > 0);
 });
-
-// Header Menu Functioning
-function headerMenu(){
-    const menu = document.querySelector(".js-header-menu"),
-    backdrop = document.querySelector(".js-header-backdrop").
-    menuCollapsor = 991;
-
-    function toggleMenu(){
-        menu.classList.toggle("open");
-        backdrop.classList.toggle("active");
-        document.body.classList.toggle("overflow-hidden");
-    }
-    document.querySelectorAll(".js-header-menu-toggler").forEach((item) =>{
-        item.addEventListener("click", toggleMenu);
-    });
-
-    backdrop.addEventListener("click", toggleMenu);
-
-    function collapse(){
-        menu.querySelector(".active .js-sub-menu").removeAttribute("style");
-        menu.querySelector(".active").classList.remove("active");
-    }
-    menu.addEventListener("click", (event) => {
-        const {target} = event;
-        if(target.classList.contains("js-toggle-sub-menu") && window.innerWidth <= menuCollapsor){
-            event.preventDefault();
-
-            if(target.parentElement.classList.contains("active")){
-                collapse();
-                return;
-            }
-
-            if(menu.querySelector(".active")){
-                collapse();
-            }
-            
-            target.parentElement.classList.add("active");
-            target.nextElementSibling.style.maxHeight = target.nextElementSibling.scrollHeight + "px"
-        }
-    });
-    console.log("ok");
-}
-headerMenu();
     
-    // Home Page Section Styling Starts Here
+ // Home Page Section Styling Starts Here
     /* Testimonial Slider */
     function testimonialSlider(){
         const carouselOne = document.getElementById('carouselOne');
@@ -85,7 +41,7 @@ headerMenu();
         styleSwitcherToggler= document.querySelector(".js-style-switcher-toggler");
 
         styleSwitcherToggler.addEventListener("click", function(){
-            styleSwitcher.classList.toggle("open");
+            styleSwitcher.classList.toggle('open');
             this.querySelector("i").classList.toggle("fa-times");
             this.querySelector("i").classList.toggle("fa-cog");
         })
@@ -315,27 +271,46 @@ headerMenu();
         }
         /* Home_Course Section Modal Styling Ends */
 
+        
+// Header Menu Functioning
+function headerMenu(){
+    const menu = document.querySelector(".js-header-menu"),
+    backdrop = document.querySelector(".js-header-backdrop").
+    menuCollapsor = 991;
 
-        // Career Exploration Functionality Starts Here
+    function toggleMenu(){
+        menu.classList.toggle("open");
+        backdrop.classList.toggle("active");
+        document.body.classList.toggle("overflow-hidden");
+    }
+    document.querySelectorAll(".js-header-menu-toggler").forEach((item) =>{
+        item.addEventListener("click", toggleMenu);
+    });
 
-        // // Content Functionality Starts
-        // const parentContainer = document.querySelector('.career_exploration_section1');
-        // parentContainer.addEventListener("click", (event) =>{
-        //     const current = event.target;
-        //     const isReadMoreBtn = current.className.includes('Read_more');
-        //     if(!isReadMoreBtn) return;
-        //     const currentText = event.target.parentNode.querySelector('.see-more-text');
-        //     currentText.classList.toggle('see-more-text--show');
-        //     current.textContent = current.textContent.includes('Read More..')?
-        //     "Read Less..": "Read More..";
-        // })
-        // const parentContainer1 = document.querySelector('.career_exploration_section2');
-        // parentContainer1.addEventListener('click', (event) => {
-        //     const current = event.target;
-        //     const isReadMoreBtn = current.className.includes('Read_more');
-        //     if(!isReadMoreBtn) return;
-        //     const currentText = event.target.parentNode.querySelector('.see-more-text');
-        //     currentText.classList.toggle('see-more-text--show');
-        //     current.textContent = current.textContent.includes('Read More..')?
-        //     "Read Less..": "Read More..";
-        // })
+    backdrop.addEventListener("click", toggleMenu);
+
+    function collapse(){
+        menu.querySelector(".active .js-sub-menu").removeAttribute("style");
+        menu.querySelector(".active").classList.remove("active");
+    }
+    menu.addEventListener("click", (event) => {
+        const {target} = event;
+        if(target.classList.contains("js-toggle-sub-menu") && window.innerWidth <= menuCollapsor){
+            event.preventDefault();
+
+            if(target.parentElement.classList.contains("active")){
+                collapse();
+                return;
+            }
+
+            if(menu.querySelector(".active")){
+                collapse();
+            }
+            
+            target.parentElement.classList.add("active");
+            target.nextElementSibling.style.maxHeight = target.nextElementSibling.scrollHeight + "px"
+        }
+    });
+    console.log("ok");
+}
+headerMenu();
