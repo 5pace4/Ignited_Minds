@@ -1633,7 +1633,6 @@ img {
     border-radius: 10px;
     border: 2px solid black;
     margin-bottom: 40px;
-    margin-top: 40px;
   }
 
   .result {
@@ -1643,7 +1642,7 @@ img {
     border: 1px solid black;
     background-color: rgb(255, 249, 249);
     border-radius: 5px;
-    height: 80px;
+    height: 90px;
     font-weight: 600;
   }
 
@@ -1682,6 +1681,7 @@ img {
     border: 1px solid black;
     border-radius: 5px;
     font-weight: 700;
+    color: black;
   }
   .button3 {
     padding: 10px;
@@ -1691,4 +1691,15 @@ img {
     border: 1px solid black;
     border-radius: 5px;
     font-weight: 700;
+    color: black;
+  }
+  .button4 {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(221, 217, 217);
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: 700;
+    color: black;
   }

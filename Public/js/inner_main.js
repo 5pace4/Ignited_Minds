@@ -81,6 +81,89 @@ let displayValue = "0";
       }
     }
 
+    function calculateSquareRoot() {
+      try {
+        const value = parseFloat(displayValue);
+        if (value >= 0) {
+          displayValue = Math.sqrt(value).toString();
+        } else {
+          displayValue = "Error";
+        }
+        updateDisplay();
+      } catch (error) {
+        displayValue = "Error";
+        updateDisplay();
+      }
+    }
+
+    function calculateCubeRoot() {
+      try {
+        const value = parseFloat(displayValue);
+        displayValue = Math.cbrt(value).toString();
+        updateDisplay();
+      } catch (error) {
+        displayValue = "Error";
+        updateDisplay();
+      }
+    }
+
+    function calculateSquare() {
+      try {
+        const value = parseFloat(displayValue);
+        displayValue = (value * value).toString();
+        updateDisplay();
+      } catch (error) {
+        displayValue = "Error";
+        updateDisplay();
+      }
+    }
+
+    function calculateSine() {
+        try {
+          const value = parseFloat(displayValue);
+          const radians = (value * Math.PI) / 180;
+          displayValue = Math.sin(radians).toString();
+          updateDisplay();
+        } catch (error) {
+          displayValue = "Error";
+          updateDisplay();
+        }
+      }
+  
+      function calculateCosine() {
+        try {
+          const value = parseFloat(displayValue);
+          const radians = (value * Math.PI) / 180;
+          displayValue = Math.cos(radians).toString();
+          updateDisplay();
+        } catch (error) {
+          displayValue = "Error";
+          updateDisplay();
+        }
+      }
+  
+      function calculateTangent() {
+        try {
+          const value = parseFloat(displayValue);
+          const radians = (value * Math.PI) / 180;
+          displayValue = Math.tan(radians).toString();
+          updateDisplay();
+        } catch (error) {
+          displayValue = "Error";
+          updateDisplay();
+        }
+      }
+    function calculateCube() {
+        try {
+          const value = parseFloat(displayValue);
+          displayValue = (value * value * value).toString();
+          updateDisplay();
+        } catch (error) {
+          displayValue = "Error";
+          updateDisplay();
+        }
+      }
+
     function evaluateExpression(expression) {
       return Function(`'use strict'; return (${expression})`)();
     }
