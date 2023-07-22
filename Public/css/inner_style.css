@@ -1633,6 +1633,7 @@ img {
     border-radius: 10px;
     border: 2px solid black;
     margin-bottom: 40px;
+    margin-top: 10px;
     box-shadow: 0 0 2px 1px gray;
   }
 

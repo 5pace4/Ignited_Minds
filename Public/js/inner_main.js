@@ -71,9 +71,15 @@ let displayValue = "0";
 
     function calculateResult() {
       try {
-        // Using our custom expression parser and evaluator
-        const result = evaluateExpression(displayValue);
-        displayValue = result.toString();
+        // Check if the expression contains a percentage calculation
+        if (displayValue.includes("%")) {
+          const percentageValue = parseFloat(displayValue) / 100;
+          displayValue = percentageValue.toString();
+        } else {
+          // Using our custom expression parser and evaluator
+          const result = evaluateExpression(displayValue);
+          displayValue = result.toString();
+        }
         updateDisplay();
       } catch (error) {
         displayValue = "Error";
