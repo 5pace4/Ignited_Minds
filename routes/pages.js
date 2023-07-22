@@ -167,6 +167,15 @@ router.get("/tech", (req, res) => {
 });
 
 
+router.get("/quiz_page", (req, res) => {
+    res.render("quiz_page");
+});
+
+
+router.get("/calculator", (req, res) =>{
+    res.render("calculator");
+});
+
 router.get("/dashboard", verifyJWT, dashboard);
 
 router.get("/facts_animal", verifyJWT, facts_animal);
