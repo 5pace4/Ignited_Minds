@@ -4,6 +4,49 @@ window.addEventListener("scroll", function() {
     var header = document.querySelector(".header");
     header.classList.toggle("sticky", window.scrollY > 0);
 });
+
+// Header Menu Functioning
+function headerMenu(){
+    const menu = document.querySelector(".js-header-menu"),
+    backdrop = document.querySelector(".js-header-backdrop").
+    menuCollapsor = 991;
+
+    function toggleMenu(){
+        menu.classList.toggle("open");
+        backdrop.classList.toggle("active");
+        document.body.classList.toggle("overflow-hidden");
+    }
+    document.querySelectorAll(".js-header-menu-toggler").forEach((item) =>{
+        item.addEventListener("click", toggleMenu);
+    });
+
+    backdrop.addEventListener("click", toggleMenu);
+
+    function collapse(){
+        menu.querySelector(".active .js-sub-menu").removeAttribute("style");
+        menu.querySelector(".active").classList.remove("active");
+    }
+    menu.addEventListener("click", (event) => {
+        const {target} = event;
+        if(target.classList.contains("js-toggle-sub-menu") && window.innerWidth <= menuCollapsor){
+            event.preventDefault();
+
+            if(target.parentElement.classList.contains("active")){
+                collapse();
+                return;
+            }
+
+            if(menu.querySelector(".active")){
+                collapse();
+            }
+            
+            target.parentElement.classList.add("active");
+            target.nextElementSibling.style.maxHeight = target.nextElementSibling.scrollHeight + "px"
+        }
+    });
+    console.log("ok");
+}
+headerMenu();
     
     // Home Page Section Styling Starts Here
     /* Testimonial Slider */
@@ -153,6 +196,7 @@ window.addEventListener("scroll", function() {
 
     /* Glass effect functionality Ends Here */
 
+
     // Translator Functionality Starts Here
     function loadGoogleTranslate(){
         new google.translate.TranslateElement("google_element");
@@ -274,38 +318,24 @@ window.addEventListener("scroll", function() {
 
         // Career Exploration Functionality Starts Here
 
-        // Content Functionality Starts
-        const parentContainer = document.querySelector('.career_exploration_section1');
-        parentContainer.addEventListener('click', event=>{
-            const current = event.target;
-            const isReadMoreBtn = current.className.includes('Read_more');
-            if(!isReadMoreBtn) return;
-            const currentText = event.target.parentNode.querySelector('.see-more-text');
-            currentText.classList.toggle('see-more-text--show');
-            current.textContent = current.textContent.includes('Read More..')?
-            "Read Less..": "Read More..";
-        })
-        const parentContainer1 = document.querySelector('.career_exploration_section2');
-        parentContainer1.addEventListener('click', event=>{
-            const current = event.target;
-            const isReadMoreBtn = current.className.includes('Read_more');
-            if(!isReadMoreBtn) return;
-            const currentText = event.target.parentNode.querySelector('.see-more-text');
-            currentText.classList.toggle('see-more-text--show');
-            current.textContent = current.textContent.includes('Read More..')?
-            "Read Less..": "Read More..";
-        })
-
-
-
-        fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCa1w8_QFAteJ0rSSw_FlhNw&relatedToVideoId=Ks-_Mh1QhMc&type=video&key=AIzaSyB6kn-1IfUgycL-FAzIQyvlNK_QRad6szo")
-        .then((result)=>{
-            return result.json()
-        }).then((data)=>{
-            console.log(data)
-            let videos = data.items
-            let videocontainer = document.querySelector("video_container")
-            for(video of videos){
-                document.write(videon.snippet.title)
-            }
-        })  
+        // // Content Functionality Starts
+        // const parentContainer = document.querySelector('.career_exploration_section1');
+        // parentContainer.addEventListener("click", (event) =>{
+        //     const current = event.target;
+        //     const isReadMoreBtn = current.className.includes('Read_more');
+        //     if(!isReadMoreBtn) return;
+        //     const currentText = event.target.parentNode.querySelector('.see-more-text');
+        //     currentText.classList.toggle('see-more-text--show');
+        //     current.textContent = current.textContent.includes('Read More..')?
+        //     "Read Less..": "Read More..";
+        // })
+        // const parentContainer1 = document.querySelector('.career_exploration_section2');
+        // parentContainer1.addEventListener('click', (event) => {
+        //     const current = event.target;
+        //     const isReadMoreBtn = current.className.includes('Read_more');
+        //     if(!isReadMoreBtn) return;
+        //     const currentText = event.target.parentNode.querySelector('.see-more-text');
+        //     currentText.classList.toggle('see-more-text--show');
+        //     current.textContent = current.textContent.includes('Read More..')?
+        //     "Read Less..": "Read More..";
+        // })

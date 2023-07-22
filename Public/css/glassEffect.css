@@ -41,11 +41,19 @@ body{
 .sticky {
     position: fixed;
     top: 0;
-    width: 89%;
+    width: 87.8%;
     z-index: 100;
     background-color: var(--body-bg-color);
   }
 
+@media(max-width: 991px){
+    .sticky{
+        width: 100%;
+    }
+    .header-menu{
+        background-color: white;
+    }
+}
 /* for dark glass effect */
 body.dark{
     --border-color-1: hsl(0, 0%, 100%, 0.15);
