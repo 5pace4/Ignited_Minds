@@ -1340,7 +1340,7 @@ img {
 
   .dashboard{
     padding: 30px;
-    margin: 30px;
+    margin-left: 5%;
   }
   .dashboard h2{
     font-size: 15px;
@@ -1358,8 +1358,7 @@ img {
 
 /* Course Upload Section Styling */
 .course_upload{
-    max-width: calc(50% - 10px);
-    margin-left: calc(30% - 10px);
+    text-align: center;
 }
 .upload_header{
     color: var(--main-color);
@@ -1483,6 +1482,10 @@ img {
         max-height: 600px;
       width: calc(50% - 20px);
       text-align: center;
+    }
+
+    .dashboard{
+        text-align: center;
     }
   }
 
@@ -1754,7 +1757,7 @@ img {
 .quote_container {
     text-align: center;
     max-width: 400px;
-    margin: 20px auto;
+    margin: 30px auto;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -1791,6 +1794,104 @@ button:hover {
 }
 
 /* Quote Generator Ends Here */
+
+
+/* Admin Dashboard Styling */
+.d_container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .d_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .d_card {
+    background-color: var(--white);
+    border: 1px solid var(--border-color-1);
+    border-left: 5px solid blue;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .d_card h2 {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  
+  .d_card img {
+    max-width: 20%;
+    height: auto;
+    float: right;
+    top: auto;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+.calendar {
+    margin-top: 50px;
+  }
+  
+  .calendar-container {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .prev-btn,
+  .next-btn {
+    cursor: pointer;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  
+  .weekday {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border: 1px solid #ddd;
+  }
+  
+  .calendar-day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .calendar-day:hover {
+    background-color: #f2f2f2;
+  }
+  
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .d_cards {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+/* Admin Dashboard Styling Ends Here */
+
+
+
 
 /* Responsive Design */
 @media(max-width: 1190px){

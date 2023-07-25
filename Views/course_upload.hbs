@@ -100,7 +100,78 @@
 
 <div class="circle"></div>
 
-<section class="course_upload">
+<section class="dashboard">
+<h3>Welcome, {{profile.name}}!</h3>
+
+  <h2>Profile Information</h2>
+  <p>Name: {{profile.name}}</p>
+  <p>Email: {{profile.email}}</p>
+</section>
+
+<section class="dashboard_container">
+  <div class="d_container">
+    <div class="d_cards">
+      <div class="d_card">
+      <a href="#course_upload">
+        <h2>Course Upload</h2>
+        <img src="/img/admin dashboard/1.png" alt="Thumbnail 1">
+      </a>
+      </div>
+      <div class="d_card">
+        <a href="/adminCourses">
+          <h2>View Uploaded Courses</h2>
+          <img src="/img/admin dashboard/2.png" alt="Thumbnail 2">
+        </a>
+      </div>
+      <div class="d_card">
+        <a href="/adminCourses">
+          <h2>Delete Courses</h2>
+          <img src="/img/admin dashboard/3.png" alt="Thumbnail 3">
+        </a>
+      </div>
+      <div class="d_card">
+        <a href="#quote_generator">
+          <h2>Quote Generator</h2>
+          <img src="/img/admin dashboard/4.png" alt="Thumbnail 4">
+        </a>
+      </div>
+    </div>
+
+    <div class="calendar">
+      <h2>My Calendar</h2>
+      <div class="calendar-container">
+        <div class="calendar-header">
+          <span class="prev-btn">&lt;</span>
+          <span class="current-month">July 2023</span>
+          <span class="next-btn">&gt;</span>
+        </div>
+        <div class="calendar-grid">
+          <div class="weekday">Sun</div>
+          <div class="weekday">Mon</div>
+          <div class="weekday">Tue</div>
+          <div class="weekday">Wed</div>
+          <div class="weekday">Thu</div>
+          <div class="weekday">Fri</div>
+          <div class="weekday">Sat</div>
+
+        </div>
+      </div>
+
+      <div class="quote-generator" id="quote_generator">
+      <div class="quote_container">
+        <h3>-Today's Quote For You-</h3>
+        <form id="quoteForm">
+            <button type="button" id="generateBtn">Generate Quote</button>
+        </form>
+        <div id="quoteResult"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="course_upload" id="course_upload">
 <h3 class="upload_header">&nbsp; &nbsp; -Upload Your Courses-</h3>
   {{#if successMessage}}
     <p class="success-message">{{successMessage}}</p>
@@ -136,7 +207,7 @@
     
     <input type="submit" value="Upload Course">
   </form>
-  <a href="/user_common_page" class="view-courses-link">View Uploaded Courses</a>
+  <a href="/adminCourses" class="view-courses-link">View Uploaded Courses</a>
 </section>
 
 {{!-- Course Upload Form Ends Here --}}
@@ -252,6 +323,83 @@
 
 <script>
   AOS.init();
+</script>
+
+<script>
+  const calendarContainer = document.querySelector(".calendar-container");
+    const currentMonthElement = document.querySelector(".current-month");
+    const prevBtn = document.querySelector(".prev-btn");
+    const nextBtn = document.querySelector(".next-btn");
+
+    let currentDate = new Date();
+    let currentMonth = currentDate.getMonth();
+    let currentYear = currentDate.getFullYear();
+
+    function generateCalendar() {
+      const firstDayOfMonth = new Date(currentYear, currentMonth, 1);
+      const lastDayOfMonth = new Date(currentYear, currentMonth + 1, 0);
+      const prevMonthDays = firstDayOfMonth.getDay();
+      const totalDays = lastDayOfMonth.getDate();
+
+      const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+      let calendarHTML = `<div class="calendar-header">
+                            <span class="prev-btn">&lt;</span>
+                            <span class="current-month">${getMonthName(currentMonth)} ${currentYear}</span>
+                            <span class="next-btn">&gt;</span>
+                          </div>
+                          <div class="calendar-grid">`;
+
+      for (const day of daysOfWeek) {
+        calendarHTML += `<div class="weekday">${day}</div>`;
+      }
+
+      let dayCounter = 1;
+      for (let i = 0; i < 42; i++) {
+        if (i >= prevMonthDays && dayCounter <= totalDays) {
+          calendarHTML += `<div class="calendar-day">${dayCounter}</div>`;
+          dayCounter++;
+        } else {
+          calendarHTML += `<div class="calendar-day"></div>`;
+        }
+      }
+
+      calendarHTML += `</div>`;
+      calendarContainer.innerHTML = calendarHTML;
+
+      const calendarDays = document.querySelectorAll(".calendar-day");
+      calendarDays.forEach((day) => {
+        day.addEventListener("click", () => {
+          // Handle day click event here
+          // You can implement custom behavior when a day is clicked
+        });
+      });
+    }
+
+    function getMonthName(monthIndex) {
+      const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+      return months[monthIndex];
+    }
+
+    prevBtn.addEventListener("click", () => {
+      currentMonth--;
+      if (currentMonth < 0) {
+        currentMonth = 11;
+        currentYear--;
+      }
+      generateCalendar();
+    });
+
+    nextBtn.addEventListener("click", () => {
+      currentMonth++;
+      if (currentMonth > 11) {
+        currentMonth = 0;
+        currentYear++;
+      }
+      generateCalendar();
+    });
+
+    generateCalendar();
 </script>
 
 </body>

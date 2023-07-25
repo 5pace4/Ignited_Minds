@@ -316,6 +316,24 @@ exports.dashboard = async (req, res, next) => {
     }
 };
 
+exports.upload = async (req, res, next) => {
+  try {
+    // Get the user ID from the JWT token
+    const email = req.email;
+
+  // Fetch the user's information from the database
+  const profile = await getUserByEmail(email);
+
+  // Render the dashboard view with the user information
+  return res.render("course_upload", { profile });
+  } catch (error) {
+    console.error(error);
+    return res.render("course_upload", {
+      message: "An error occurred.",
+    });
+  }
+};
+
 exports.facts_animal = async (req, res, next) => {
   try{
   const email = req.email;

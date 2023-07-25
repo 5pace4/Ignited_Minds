@@ -118,9 +118,9 @@ router.get("/register", (req, res) => {
 //     res.render("facts_tech");
 // });
 
-router.get("/upload", (req, res) => {
-    res.render("course_upload");
-});
+// router.get("/upload", (req, res) => {
+//     res.render("course_upload");
+// });
 
 // router.get("/admin_view", (req, res) => {
 //     res.render("admin_view");
@@ -188,6 +188,7 @@ router.get("/facts_scientist", verifyJWT, facts_scientist);
 router.get("/facts_tech", verifyJWT, facts_tech);
 
 router.get("/user_common_page", verifyJWT, user_common_page);
+router.get("/upload", verifyJWT, course_upload);
 
 router.get("/formulae-home", verifyJWT, formulae_home);
 router.get("/formula-chemistry", verifyJWT, formula_chemistry);
