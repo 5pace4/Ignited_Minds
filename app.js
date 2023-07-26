@@ -95,7 +95,7 @@ app.post('/upload', upload.fields([
         console.error('Error inserting course details: ' + err.stack);
         return res.status(500).send('Error inserting course details.');
       }
-      return res.render("admin_view", {
+      return res.render("course_upload", {
         successMessage: "Course Uploaded Successfully!!!"
       });
     });
@@ -164,6 +164,21 @@ app.post('/upload', upload.fields([
       }
   
       res.render('admin_view', { courses: results });
+    });
+  });
+
+  app.get('/userCourses', (req, res) => {
+    const { id } = req.params;
+  
+    let query = 'SELECT id, heading, image1_path, semi_heading FROM courses';
+  
+    db.query(query, id, (err, results) => {
+      if (err) {
+        console.error('Error retrieving course details: ' + err.stack);
+        return res.status(500).send('Error retrieving course details.');
+      }
+  
+      res.render('dashboard', { courses: results });
     });
   });
   

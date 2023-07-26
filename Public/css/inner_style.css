@@ -1423,10 +1423,12 @@ img {
 .view_header{
     color: var(--main-color);
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 30px;
     font-weight: 600;
+    margin-bottom: 30px;
 }
+
 .view_cat{
     color: var(--main-color);
     text-align: center;
@@ -1536,28 +1538,36 @@ img {
   .course_content p,
   .course_content1 p{
     font-size: 15px;
+    
     text-align: justify;
   }
   .course_image{
     display: inline-block;
     width: 40%;
     text-align: right;
+    margin-left: 70px;
+    border-radius: 12px;
     vertical-align: top;
-    margin-top: 50px;
+    margin-top: 25%;
   }
   .course_image1{
     display: inline-block;
     width: 100%;
     text-align: center;
-    justify-content: center;
+    border-radius: 12px;
     vertical-align: top;
-    margin-top: 50px;
   }
 
-  .course_image img,
-  .course_image1 img{
+  .course_image img{
     max-width: 100%;
     height: auto;
+    border-radius: 12px;
+    margin-top: 25%;
+  }
+  .course_image1 img{
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
   }
   .course_download_link{
     text-decoration: none;

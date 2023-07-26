@@ -184,10 +184,10 @@
     <input type="file" name="image3"><br>
     <input type="file" name="image4"><br>
     <input type="text" name="semiHeading" placeholder="Semi Heading"><br>
-    <textarea name="content1" placeholder="Content 1"></textarea><br>
-    <textarea name="content2" placeholder="Content 2"></textarea><br>
-    <textarea name="content3" placeholder="Content 3"></textarea><br>
-    <textarea name="content4" placeholder="Content 4"></textarea><br>
+    <textarea name="content1" placeholder="Content 1" id="textInput" oninput="updateOutput()"></textarea><br>
+    <textarea name="content2" placeholder="Content 2" id="textInput" oninput="updateOutput()"></textarea><br>
+    <textarea name="content3" placeholder="Content 3" id="textInput" oninput="updateOutput()"></textarea><br>
+    <textarea name="content4" placeholder="Content 4" id="textInput" oninput="updateOutput()"></textarea><br>
     <input type="file" name="notes"><br>
     
     <!-- Add Category and Subcategory fields -->
@@ -400,6 +400,14 @@
     });
 
     generateCalendar();
+</script>
+
+<script>
+        function updateOutput() {
+            const textInput = document.getElementById("textInput").value;
+            const outputDiv = document.getElementById("output");
+            outputDiv.textContent = textInput;
+        }
 </script>
 
 </body>

@@ -101,29 +101,26 @@
 
 <div class="circle"></div>
 
-<section class="dashboard">
+<section class="dashboard" id="dashboard">
 <h3>Welcome, {{profile.name}}!</h3>
 
   <h2>Profile Information</h2>
   <p>Name: {{profile.name}}</p>
   <p>Email: {{profile.email}}</p>
+</section>
 
-  <h2>Recently Uploaded Courses</h2>
-  {{#if courses.length}}
-    <ul>
-      {{#each courses}}
-        <li>
-          <img src="{{this.image}}" alt="Course Image">
-          <h3>{{this.heading}}</h3>
-          <p>{{this.semi_heading}}</p>
-          <p>{{this.full_content}}</p>
-          <a href="#">Read More</a>
-        </li>
-      {{/each}}
-    </ul>
-  {{else}}
-    <p>No courses available.</p>
-  {{/if}}
+<section id="dashboard_1">
+  <a href="userCourses"><h4 class="view_header">-See Recently Uploaded Courses-</h4></a>
+
+  <div class="course_card_container">
+    {{#each courses}}
+    <div class="course_card">
+      <img src="/{{this.image1_path}}" alt="Image 1">
+      <h2>{{this.heading}}</h2>
+      <h3>{{this.semi_heading}}</h3>
+    </div>
+    {{/each}}
+  </div>
 </section>
 
   <!--Footer Section Starts Here-->
@@ -239,5 +236,16 @@
 <script>
   AOS.init();
 </script>
+{{!-- <script>
+  
+    function dashboard(){
+      const var1 = document.getElementById("dashboard");
+      const var2 = document.getElementById("dashboard_1");
+      var2.addEventListener("click", () => {
+        var1.style.display = "none";
+      });
+    }
+    dashboard();
+</script> --}}
 </body>
 </html>
