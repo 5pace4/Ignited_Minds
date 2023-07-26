@@ -1637,8 +1637,90 @@ img {
 /*programming for (5-8) end here*/
 
 
-/* QUiz Section Starts Here */
 
+/*calculator starts from here*/
+.calculator {
+    width: 400px;
+    border: 1px solid #f0e6e6;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #F4F1F1;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    box-shadow: 0 0 2px 1.5px gray;
+  }
+
+  .calculator .result {
+    font-size: 24px;
+    text-align: right;
+    padding: 5px;
+    border: 1.5px solid black;
+    background-color: rgb(255, 249, 249);
+    border-radius: 5px;
+    height: 90px;
+    font-weight: 600;
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 10px;
+  }
+
+  .button {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    font-weight: 700;
+  }
+  .button1 {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: orange;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    font-weight: 700;
+  }
+  .button2 {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(8, 210, 8);
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: 700;
+    color: black;
+  }
+  .button3 {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: 700;
+    color: black;
+  }
+  .button4 {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(221, 217, 217);
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: 700;
+    color: black;
+  }
+/* QUiz Section Starts Here */
 .quiz-title{
     text-align: center;
     font-size: 30px;
@@ -2046,87 +2128,4 @@ button:hover {
 @media(max-width: 575px){
     
 }
-
-/*calculator starts from here*/
-.calculator {
-    width: 400px;
-    border: 1px solid #f0e6e6;
-    padding: 10px;
-    margin: 0 auto;
-    background-color: #F4F1F1;
-    border-radius: 10px;
-    border: 2px solid black;
-    margin-bottom: 40px;
-    margin-top: 10px;
-    box-shadow: 0 0 2px 1px gray;
-  }
-
-  .result {
-    font-size: 24px;
-    text-align: right;
-    padding: 5px;
-    border: 1px solid black;
-    background-color: rgb(255, 249, 249);
-    border-radius: 5px;
-    height: 90px;
-    font-weight: 600;
-  }
-
-  .buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    margin-top: 10px;
-  }
-
-  .button {
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 5px;
-    color: black;
-    font-weight: 700;
-  }
-  .button1 {
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
-    background-color: orange;
-    border: 1px solid black;
-    border-radius: 5px;
-    color: black;
-    font-weight: 700;
-  }
-  .button2 {
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
-    background-color: rgb(8, 210, 8);
-    border: 1px solid black;
-    border-radius: 5px;
-    font-weight: 700;
-    color: black;
-  }
-  .button3 {
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
-    background-color: rgb(255, 0, 0);
-    border: 1px solid black;
-    border-radius: 5px;
-    font-weight: 700;
-    color: black;
-  }
-  .button4 {
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
-    background-color: rgb(221, 217, 217);
-    border: 1px solid black;
-    border-radius: 5px;
-    font-weight: 700;
-    color: black;
-  }
 

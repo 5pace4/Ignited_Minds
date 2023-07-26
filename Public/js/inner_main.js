@@ -29,6 +29,141 @@ let filter_btns = document.querySelectorAll('.filter-btn');
 function1();
 
 // Calculator Functionality
+//calculator section
+let displayValue = "0";
+
+    function updateDisplay() {
+      document.getElementById("result").textContent = displayValue;
+    }
+
+    function appendToDisplay(val) {
+      if (displayValue === "0" && val !== ".") {
+        displayValue = val;
+      } else {
+        displayValue += val;
+      }
+      updateDisplay();
+    }
+
+    function clearDisplay() {
+      displayValue = "0";
+      updateDisplay();
+    }
+
+    function clearLastEntry() {
+      if (displayValue !== "0") {
+        displayValue = displayValue.slice(0, -1);
+        if (displayValue === "") {
+          displayValue = "0";
+        }
+        updateDisplay();
+      }
+    }
+
+    function calculateResult() {
+      try {
+        // Check if the expression contains a percentage calculation
+        if (displayValue.includes("%")) {
+          const percentageValue = parseFloat(displayValue) / 100;
+          displayValue = percentageValue.toString();
+        } else {
+          // Using our custom expression parser and evaluator
+          const result = evaluateExpression(displayValue);
+          displayValue = result.toString();
+        }
+        updateDisplay();
+      } catch (error) {
+        displayValue = "Error";
+        updateDisplay();
+      }
+    }
+
+    function calculateSquareRoot() {
+      try {
+        const value = parseFloat(displayValue);
+        if (value >= 0) {
+          displayValue = Math.sqrt(value).toString();
+        } else {
+          displayValue = "Error";
+        }
+        updateDisplay();
+      } catch (error) {
+        displayValue = "Error";
+        updateDisplay();
+      }
+    }
+
+    function calculateCubeRoot() {
+      try {
+        const value = parseFloat(displayValue);
+        displayValue = Math.cbrt(value).toString();
+        updateDisplay();
+      } catch (error) {
+        displayValue = "Error";
+        updateDisplay();
+      }
+    }
+
+    function calculateSquare() {
+      try {
+        const value = parseFloat(displayValue);
+        displayValue = (value * value).toString();
+        updateDisplay();
+      } catch (error) {
+        displayValue = "Error";
+        updateDisplay();
+      }
+    }
+
+    function calculateSine() {
+        try {
+          const value = parseFloat(displayValue);
+          const radians = (value * Math.PI) / 180;
+          displayValue = Math.sin(radians).toString();
+          updateDisplay();
+        } catch (error) {
+          displayValue = "Error";
+          updateDisplay();
+        }
+      }
+  
+      function calculateCosine() {
+        try {
+          const value = parseFloat(displayValue);
+          const radians = (value * Math.PI) / 180;
+          displayValue = Math.cos(radians).toString();
+          updateDisplay();
+        } catch (error) {
+          displayValue = "Error";
+          updateDisplay();
+        }
+      }
+  
+      function calculateTangent() {
+        try {
+          const value = parseFloat(displayValue);
+          const radians = (value * Math.PI) / 180;
+          displayValue = Math.tan(radians).toString();
+          updateDisplay();
+        } catch (error) {
+          displayValue = "Error";
+          updateDisplay();
+        }
+      }
+    function calculateCube() {
+        try {
+          const value = parseFloat(displayValue);
+          displayValue = (value * value * value).toString();
+          updateDisplay();
+        } catch (error) {
+          displayValue = "Error";
+          updateDisplay();
+        }
+      }
+
+    function evaluateExpression(expression) {
+      return Function(`'use strict'; return (${expression})`)();
+    }
 
 // Science Section Selection
     function selectFact() {
@@ -193,140 +328,5 @@ function1();
         quoteResult.innerHTML = `<p> ${randomQuote} </p>`;
     });
 
-//calculator section
-let displayValue = "0";
-
-    function updateDisplay() {
-      document.getElementById("result").textContent = displayValue;
-    }
-
-    function appendToDisplay(val) {
-      if (displayValue === "0" && val !== ".") {
-        displayValue = val;
-      } else {
-        displayValue += val;
-      }
-      updateDisplay();
-    }
-
-    function clearDisplay() {
-      displayValue = "0";
-      updateDisplay();
-    }
-
-    function clearLastEntry() {
-      if (displayValue !== "0") {
-        displayValue = displayValue.slice(0, -1);
-        if (displayValue === "") {
-          displayValue = "0";
-        }
-        updateDisplay();
-      }
-    }
-
-    function calculateResult() {
-      try {
-        // Check if the expression contains a percentage calculation
-        if (displayValue.includes("%")) {
-          const percentageValue = parseFloat(displayValue) / 100;
-          displayValue = percentageValue.toString();
-        } else {
-          // Using our custom expression parser and evaluator
-          const result = evaluateExpression(displayValue);
-          displayValue = result.toString();
-        }
-        updateDisplay();
-      } catch (error) {
-        displayValue = "Error";
-        updateDisplay();
-      }
-    }
-
-    function calculateSquareRoot() {
-      try {
-        const value = parseFloat(displayValue);
-        if (value >= 0) {
-          displayValue = Math.sqrt(value).toString();
-        } else {
-          displayValue = "Error";
-        }
-        updateDisplay();
-      } catch (error) {
-        displayValue = "Error";
-        updateDisplay();
-      }
-    }
-
-    function calculateCubeRoot() {
-      try {
-        const value = parseFloat(displayValue);
-        displayValue = Math.cbrt(value).toString();
-        updateDisplay();
-      } catch (error) {
-        displayValue = "Error";
-        updateDisplay();
-      }
-    }
-
-    function calculateSquare() {
-      try {
-        const value = parseFloat(displayValue);
-        displayValue = (value * value).toString();
-        updateDisplay();
-      } catch (error) {
-        displayValue = "Error";
-        updateDisplay();
-      }
-    }
-
-    function calculateSine() {
-        try {
-          const value = parseFloat(displayValue);
-          const radians = (value * Math.PI) / 180;
-          displayValue = Math.sin(radians).toString();
-          updateDisplay();
-        } catch (error) {
-          displayValue = "Error";
-          updateDisplay();
-        }
-      }
-  
-      function calculateCosine() {
-        try {
-          const value = parseFloat(displayValue);
-          const radians = (value * Math.PI) / 180;
-          displayValue = Math.cos(radians).toString();
-          updateDisplay();
-        } catch (error) {
-          displayValue = "Error";
-          updateDisplay();
-        }
-      }
-  
-      function calculateTangent() {
-        try {
-          const value = parseFloat(displayValue);
-          const radians = (value * Math.PI) / 180;
-          displayValue = Math.tan(radians).toString();
-          updateDisplay();
-        } catch (error) {
-          displayValue = "Error";
-          updateDisplay();
-        }
-      }
-    function calculateCube() {
-        try {
-          const value = parseFloat(displayValue);
-          displayValue = (value * value * value).toString();
-          updateDisplay();
-        } catch (error) {
-          displayValue = "Error";
-          updateDisplay();
-        }
-      }
-
-    function evaluateExpression(expression) {
-      return Function(`'use strict'; return (${expression})`)();
-    }
 
     
