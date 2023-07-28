@@ -993,6 +993,147 @@ ul{
 
 /* contact section end here */
 
+/* Programming section styling */
+/* Facts Pages Styling */
+
+.all_facts_container h2{
+    margin: 30px 30px 10px 30px;
+    font-size: 30px;
+    padding: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--main-color);
+}
+.all_facts_container p{
+    text-align: center;
+    font-weight: 700;
+    color: var(--black-90);
+    margin-bottom: 35px;
+}
+.facts_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.facts_card {
+    background-color: var(--WHITE);
+    border-radius: 8px;
+    padding: 20px;
+    flex-basis: calc(33.33% - 62px);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.facts_card img,
+.science_card img{
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.facts_card h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.facts_card p{
+    color: var(--black-90);
+    font-weight: 500;
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .facts_card {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .facts_card {
+        flex-basis: 100%;
+    }
+}
+/* Ends Here */
+
+
+/* Common Facts Styling */
+.info_container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 45px;
+}
+
+.fact_text{
+    flex: 1 0 70%; /* Adjust the width as needed */
+    padding: 40px;
+    text-align: justify;
+}
+
+.fact_image {
+    flex: 1 0 30%; /* Adjust the width as needed */
+    text-align: center;
+    padding: 40px;
+    margin-top: 6%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .fact_text, .fact_image {
+        flex: 1 0 100%;
+    }
+}
+/* Ends Here */
+
+.video-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 5% 10px 5%;
+}
+
+.video-card {
+    width: 48%; /* Adjust this value as needed to create the desired gap between the cards */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+}
+.video-card h4{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 20px;
+    color: var(--main-color);
+    font-weight: 600;
+}
+.video-card p{
+    text-align: justify;
+    font-size: 14px;
+    color: var(--black-70);
+    margin-bottom: 15px;
+}
+
+/* Style the iframe to make the videos responsive */
+.video-card iframe {
+    display: block;
+    max-width: 100%;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+/* ends here */
+
+
    /* pop up message  start*/
 
    .popup {
@@ -2136,7 +2277,7 @@ ul{
         border-top: 1px solid var(--border-color-1);
     }
     .header .sub-menu{
-        position: absolute;
+        position: relative;
         width: 100%;
         opacity: 1;
         visibility: hidden;
@@ -2148,13 +2289,27 @@ ul{
         overflow: hidden;
         max-height: 0;
     }
-    .header .sub-menu.active{
+
+    .menu .sub-menu li {
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+      }
+      
+      .menu .sub-menu.open {
+        max-height: 500px;
+      }
+      .menu .sub-menu.open li {
+        opacity: 1;
+        transform: translateY(0);
         visibility: visible;
-    }
+      }
+
     .header .sub-menu-item a{
         padding: 12px 45px;
         border-bottom: 1px solid var(--border-color-1);
     }
+
     .sticky{
         width: 100%;
     }

@@ -163,7 +163,44 @@
 
 <section id="dashboard_1">
   <a href="userCourses"><h4 class="view_header" id="course_video">-See Recently Uploaded Courses-</h4></a>
-
+  <div class="video-card-container">
+        <div class="video-card">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/onWUsZ-dfiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+             <h4>CPU Scheduling Algorithm</h4>
+            <p>CPU scheduling algorithms are used in operating systems to determine which process should be allocated the CPU (Central Processing Unit) at any given time. The main goal of these algorithms is to optimize CPU utilization, 
+              throughput, turnaround time, and response time, while minimizing waiting time and ensuring fairness among processes. </p>
+        </div>
+        <div class="video-card">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Tbu9tVDGb0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4>Blockchain Technology</h4>
+            <p>Blockchain technology is a distributed and decentralized digital ledger that securely records transactions across multiple computers in a network. It was originally introduced as 
+              the underlying technology behind the cryptocurrency Bitcoin, but its potential applications go far beyond cryptocurrencies.</p>
+        </div>
+        <div class="video-card">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Tbu9tVDGb0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4>Blockchain Technology</h4>
+            <p>Blockchain technology is a distributed and decentralized digital ledger that securely records transactions across multiple computers in a network. It was originally introduced as 
+              the underlying technology behind the cryptocurrency Bitcoin, but its potential applications go far beyond cryptocurrencies.</p>
+        </div>
+        <div class="video-card">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Tbu9tVDGb0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4>Blockchain Technology</h4>
+            <p>Blockchain technology is a distributed and decentralized digital ledger that securely records transactions across multiple computers in a network. It was originally introduced as 
+              the underlying technology behind the cryptocurrency Bitcoin, but its potential applications go far beyond cryptocurrencies.</p>
+        </div>
+        <div class="video-card">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Tbu9tVDGb0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4>Blockchain Technology</h4>
+            <p>Blockchain technology is a distributed and decentralized digital ledger that securely records transactions across multiple computers in a network. It was originally introduced as 
+              the underlying technology behind the cryptocurrency Bitcoin, but its potential applications go far beyond cryptocurrencies.</p>
+        </div>
+        <div class="video-card">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Tbu9tVDGb0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4>Blockchain Technology</h4>
+            <p>Blockchain technology is a distributed and decentralized digital ledger that securely records transactions across multiple computers in a network. It was originally introduced as 
+              the underlying technology behind the cryptocurrency Bitcoin, but its potential applications go far beyond cryptocurrencies.</p>
+        </div>
+  </div>
   <div class="course_card_container">
     {{#each courses}}
     <div class="course_card">
@@ -175,6 +212,26 @@
   </div>
 </section>
 
+{{!-- <section class="notes_section">
+  <div class="n_container">
+    <h1>Note Taking App</h1>
+    <form action="/add" method="POST">
+      <input type="text" name="title" placeholder="Enter title" required>
+      <textarea name="n_content" placeholder="Enter your note" required></textarea>
+      <button type="submit">Add Note</button>
+    </form>
+    <div class="notes">
+      {{#each notes}}
+        <div class="note">
+          <h2>{{result.title}}</h2>
+          <p>{{result.content}}</p>
+          <a href="/edit/{{this.id}}">Edit</a>
+          <a href="/delete/{{this.id}}">Delete</a>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</section> --}}
   <!--Footer Section Starts Here-->
 
   <footer class="footer" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">

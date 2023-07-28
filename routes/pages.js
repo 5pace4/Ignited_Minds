@@ -175,6 +175,7 @@ router.get("/quiz_page", (req, res) => {
 router.get("/calculator", (req, res) =>{
     res.render("calculator");
 });
+
 router.get("/dashboard", verifyJWT, dashboard);
 
 router.get("/facts_animal", verifyJWT, facts_animal);

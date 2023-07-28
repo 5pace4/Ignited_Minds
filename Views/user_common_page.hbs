@@ -97,7 +97,22 @@
   <!--Main Section Ends Here-->
 
 <div class="circle"></div>
-
+<!-- Button trigger modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h4>Welcome back, {{profile.name}}</h4>
+      <p>For a better learning, follow the below process-</p>
+      <ul class="feedback_list">
+        <li>Navigate dashboard by hovering your profile name.</li>
+        <li>To view the courses, navigate your respective age contents.</li>
+        <li>To explore some interesting facts, scroll down in this page.</li>
+        <li>To get upto date news, hover the footer section.</li>
+        <li>To explore career related fields, explore our career exploration page.</li>
+      </ul>
+      <button type="button" class="understood" onclick="closeModal()">understood</button>
+    </div>
+  </div>
   <!--Banner Section Starts-->
     <section class="banner-section d-flex align-items-center">
 
@@ -248,9 +263,9 @@
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, architecto.
                   Lorem ipsum dolor sit amet consectetur adipisicing elit...
                 </p>
-                <button class="card-button">
+                <a href="/courses/science/5-8 Years"><button class="card-button">
                   Read More <i class="fas fa-chevron-right"></i>
-                </button>
+                </button></a>
               </div>
             </div>
           </div>
@@ -611,8 +626,67 @@
   </div>
   </section>
 
-
   {{!-- Facts Section Ends Here --}}
+
+<section class = "career_exploration_section1">
+      <div class="heading" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+        <h2>Succesful Stories</h2>
+        <p>-STEM Field Career From Bangladesh-</p>
+      </div>
+      <div class="career-container align-items-center">
+        <div class="career_left" data-aos="zoom-in-right" data-aos-delay="300" data-aos-duration="800">
+          <div class = "career_exploration_section1_para">
+            <p>
+              <span style="font-size: 16px; font-weight: 600; color: var(--main-color);"> Zahed Sabur </span> is the first Bangladeshi principal engineer at one of the world's leading technology companies, Google. He harboured an interest in electrical engineering from a young age, drawing circuit diagrams and building electronic circuits with the help of his mother from the age of 10. He graduated from AIUB as a computer engineering major, with a 4.0 CGPA, making a record in the university's history. Taking part in programming contests at AIUB helped him develop his analytical and problem-solving skills. He was spontaneously interviewed by representatives from Google at the final round of one such programming competition. A month later, he received a job offer from the company. "My initial days at Google were quite nerve wrecking.  It was important for me to get comfortable in my surroundings and to not lose faith in my abilities," says Zaheed. His determination and hard work paid off, as with time, he climbed up the ranks at Google. He started his career as a software engineer at Google's backend system development project in 2007 at India's Bangalore office, and six months later, in their office in California. In May 2019, he was promoted as the principal engineer and also a director at Google's Zurich office.  His work generally involves coming up with and implementing new and transformative ideas, hiring people, building teams and creating an environment where everyone is motivated to work towards shared goals.
+              Zaheed was also the engineering leader for the very first Google Assistant Smart Displays that were released last year. The product won over 20 awards at CES and had many positive reviews in the media.  In an attempt to build something new and valuable for users, he started working on the Next Generation Assistant, which was announced in 2019.  
+              <span class = "see-more-text">        
+                Zaheed believes that there are no shortcuts to success. His plans ahead include spending time on a weekly basis to share more of his experiences and the lessons he has learned at Google with young people, as he is already receiving many messages and questions from them on social media.
+              </span>
+            </p>
+            <span class="newspaper"> <a href="https://www.thedailystar.net/star-youth/news/zaheed-saburs-success-google-1744753" target="_blank"> <i class="fas fa-solid fa-newspaper"></i> &nbsp; The Daily Star &nbsp; <i class="fas fa-solid fa-calendar-days"></i> &nbsp; Thu May 16, 2019 12:00 AM </a> </span>
+          </div>
+        </div>
+        <div class="career_right" data-aos="zoom-in-left" data-aos-delay="300" data-aos-duration="800">
+          <div class = "career_exploration_section1_img">
+            <img src="img/career_exploration/1.png" alt="Image">
+            <h5>Zahed Sabur | <span class="designation">Principal Engineer, Google</span></h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section1 ends here-->
+    
+    <!--Section2 starts here-->
+    <section class = "career_exploration_section2">
+      <div class="career-container1 align-items-center">
+        <div class="career_left1" data-aos="zoom-in-right" data-aos-delay="300" data-aos-duration="800">
+          <div class = "career_exploration_section2_img">
+            <img src="img/career_exploration/2.png" alt="Image">
+            <h5>Mahjabin Haque | <span class="designation">Software Engineer, NASA</span></h5>
+          </div>
+        </div>
+
+        <div class="career_right1" data-aos="zoom-in-left" data-aos-delay="300" data-aos-duration="800">
+          <div class = "career_exploration_section2_para">
+            <p>
+              Through her perseverance and hard work, Bangladesh-born <span style="font-size: 16px; font-weight: 600; color: var(--main-color);"> Mahjabin Haque </span> has been recruited as a software engineer at National Aeronautics and Space Administration (NASA). Mahjabin completed her bachelor's degree in Computer Science and Engineering from Wayne State University, Michigan, this year.
+              During her time at Wayne State University, Mahjabin was an intern at two departments of NASA.
+              She first started working as a data analyst at NASA's Johnson Space Center which is situated in Houston,
+              Texas. After that, she started her internship as a software engineer in the Mission Control Center.
+              She worked in programming support, software design, testing, and maintenance at the centre. 
+              Her four-month internships in both positions earned her an impressive resume and work experience.
+              From a young age, Mahjabin dreamed of working for NASA. She gives credit for a lot of her success to her mother Ferdousi Chowdhury, who has always encouraged her.During her university days, she, along with her fellow Bangladeshi students, founded Bangladesh Student Association (BSA) in 2016. At first, she was the secretary of the organisation, and then, she was appointed as the president.
+              Skilled in painting and designing, Mahjabin first came to the US with her parents in 2009. Though her father Enamul Haque stayed in Bangladesh due to his profession, Mahjabin lives in Michigan with her mother and brother.
+            </p>
+            <span class="newspaper"> <a href="https://www.thedailystar.net/star-youth/news/mahjabin-haque-the-first-bangladeshi-woman-join-nasa-1806973" target="_blank"> <i class="fas fa-solid fa-newspaper"></i> &nbsp; The Daily Star &nbsp; <i class="fas fa-solid fa-calendar-days"></i> &nbsp; Sun Sep 29, 2019 04:48 PM</a> </span>
+          </div>
+        </div>
+      </div>   
+    </section>
+    <!--Section2 ends here-->
+    <p style="text-align: center; margin-bottom: 50px;" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+      <a href="/login" class="x_btn"> Explore More &nbsp; <i class="fas fa-chevron-right"></i></a>
+    </p>  
 
   <!--Footer Section Starts Here-->
 
@@ -746,6 +820,29 @@
 
 <script>
   AOS.init();
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  // Get the modal element
+  var modal = document.getElementById('myModal');
+
+  // Display the modal automatically when the page loads
+  modal.style.display = 'block';
+
+  // Function to close the modal when the 'x' button is clicked
+  window.closeModal = function() {
+    modal.style.display = 'none';
+  };
+
+  // Close the modal if the user clicks outside of it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  };
+});
+
 </script>
 
 </body>

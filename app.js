@@ -201,7 +201,51 @@ app.get('/adminCourses/delete/:heading', (req, res) => {
   
 
 
+  // app.get('/dashboard', (req, res) => {
+  //   db.query('SELECT * FROM notes', (err, result) => {
+  //     if (err) throw err;
+  //     res.render('dashboard', { notes: result });
+  //   });
+  // });
+  
 
+  // app.post('/add', (req, res) => {
+  //   const { title, content } = req.body;
+  //   const note = { title, content };
+  //   db.query('INSERT INTO notes SET ?', note, (err, result) => {
+  //     if (err) throw err;
+  //     res.render('dashboard');
+  //   });
+  // });
+  
+  // app.get('/edit/:id', (req, res) => {
+  //   const noteId = req.params.id;
+  //   db.query('SELECT * FROM notes WHERE id = ?', noteId, (err, result) => {
+  //     if (err) throw err;
+  //     res.render('edit_note', { note: result[0] });
+  //   });
+  // });
+  
+  // app.post('/update/:id', (req, res) => {
+  //   const noteId = req.params.id;
+  //   const { title, content } = req.body;
+  //   db.query(
+  //     'UPDATE notes SET title = ?, content = ? WHERE id = ?',
+  //     [title, content, noteId],
+  //     (err, result) => {
+  //       if (err) throw err;
+  //       res.redirect('/dashboard');
+  //     }
+  //   );
+  // });
+  
+  // app.get('/delete/:id', (req, res) => {
+  //   const noteId = req.params.id;
+  //   db.query('DELETE FROM notes WHERE id = ?', noteId, (err, result) => {
+  //     if (err) throw err;
+  //     res.redirect('/');
+  //   });
+  // });
 
 
 
