@@ -1,0 +1,896 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.2.30
+3 info using node@v0.8.28
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose read json D:\PASTE HERE\Ignited_Minds\package.json
+6 warn package.json ignited_minds@1.0.0 No repository field.
+7 verbose readDependencies using package.json deps
+8 verbose install where, deps [ 'D:\\PASTE HERE\\Ignited_Minds',
+8 verbose install   [ 'bcrypt',
+8 verbose install     'bcryptjs',
+8 verbose install     'body-parser',
+8 verbose install     'cookie-parser',
+8 verbose install     'dotenv',
+8 verbose install     'env',
+8 verbose install     'express',
+8 verbose install     'hbs',
+8 verbose install     'jsonwebtoken',
+8 verbose install     'multer',
+8 verbose install     'mysql',
+8 verbose install     'nodemon',
+8 verbose install     'package-name',
+8 verbose install     'lodash',
+8 verbose install     'coffee-script' ] ]
+9 verbose from cache D:\PASTE HERE\Ignited_Minds\package.json
+10 info preinstall ignited_minds@1.0.0
+11 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\@mapbox\package.json
+12 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\abbrev\package.json
+13 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\accepts\package.json
+14 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\agent-base\package.json
+15 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\ajv\package.json
+16 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\amdefine\package.json
+17 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\ansi-regex\package.json
+18 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\anymatch\package.json
+19 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\append-field\package.json
+20 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\aproba\package.json
+21 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\are-we-there-yet\package.json
+22 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\array-flatten\package.json
+23 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\asn1\package.json
+24 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\assert-plus\package.json
+25 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\asynckit\package.json
+26 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\auto-reload-brunch\package.json
+27 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\aws-sign2\package.json
+28 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\aws4\package.json
+29 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\balanced-match\package.json
+30 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\bcrypt\package.json
+31 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\bcrypt-pbkdf\package.json
+32 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\bcryptjs\package.json
+33 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\bignumber.js\package.json
+34 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\binary-extensions\package.json
+35 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\body-parser\package.json
+36 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\brace-expansion\package.json
+37 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\braces\package.json
+38 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\buffer-equal-constant-time\package.json
+39 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\buffer-from\package.json
+40 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\busboy\package.json
+41 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\bytes\package.json
+42 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\call-bind\package.json
+43 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\caseless\package.json
+44 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\chainsaw\package.json
+45 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\chokidar\package.json
+46 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\chownr\package.json
+47 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\clean-css\package.json
+48 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\clean-css-brunch\package.json
+49 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\coffee-script\package.json
+50 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\coffee-script-brunch\package.json
+51 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\coffeelint\package.json
+52 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\coffeelint-brunch\package.json
+53 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\coffeescript\package.json
+54 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\color-support\package.json
+55 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\combined-stream\package.json
+56 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\commander\package.json
+57 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\concat-map\package.json
+58 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\concat-stream\package.json
+59 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\console-control-strings\package.json
+60 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\content-disposition\package.json
+61 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\content-type\package.json
+62 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\cookie\package.json
+63 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\cookie-parser\package.json
+64 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\cookie-signature\package.json
+65 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\core-util-is\package.json
+66 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\css-brunch\package.json
+67 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\cssom\package.json
+68 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\cssstyle\package.json
+69 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\dashdash\package.json
+70 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\debug\package.json
+71 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\delayed-stream\package.json
+72 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\delegates\package.json
+73 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\depd\package.json
+74 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\destroy\package.json
+75 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\detect-libc\package.json
+76 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\dotenv\package.json
+77 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\ecc-jsbn\package.json
+78 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\ecdsa-sig-formatter\package.json
+79 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\ee-first\package.json
+80 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\emblem-brunch\package.json
+81 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\emoji-regex\package.json
+82 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\encodeurl\package.json
+83 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\env\package.json
+84 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\escape-html\package.json
+85 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\etag\package.json
+86 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\express\package.json
+87 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\extend\package.json
+88 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\extsprintf\package.json
+89 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\fast-deep-equal\package.json
+90 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\fast-json-stable-stringify\package.json
+91 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\fill-range\package.json
+92 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\finalhandler\package.json
+93 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\foreachasync\package.json
+94 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\forever-agent\package.json
+95 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\form-data\package.json
+96 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\forwarded\package.json
+97 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\fresh\package.json
+98 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\fs-minipass\package.json
+99 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\fs.realpath\package.json
+100 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\function-bind\package.json
+101 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\gauge\package.json
+102 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\get-intrinsic\package.json
+103 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\getpass\package.json
+104 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\glob\package.json
+105 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\glob-parent\package.json
+106 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\handlebars\package.json
+107 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\har-schema\package.json
+108 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\har-validator\package.json
+109 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\has\package.json
+110 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\has-flag\package.json
+111 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\has-proto\package.json
+112 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\has-symbols\package.json
+113 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\has-unicode\package.json
+114 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\hashish\package.json
+115 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\hbs\package.json
+116 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\htmlparser\package.json
+117 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\http-errors\package.json
+118 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\http-signature\package.json
+119 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\https-proxy-agent\package.json
+120 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\iconv-lite\package.json
+121 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\ignore\package.json
+122 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\ignore-by-default\package.json
+123 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\imagemagick\package.json
+124 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\inflight\package.json
+125 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\inherits\package.json
+126 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\ipaddr.js\package.json
+127 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\is-binary-path\package.json
+128 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\is-extglob\package.json
+129 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\is-fullwidth-code-point\package.json
+130 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\is-glob\package.json
+131 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\is-number\package.json
+132 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\is-typedarray\package.json
+133 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\isarray\package.json
+134 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\isstream\package.json
+135 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\javascript-brunch\package.json
+136 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\jsbn\package.json
+137 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\jsdom\package.json
+138 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\json-schema\package.json
+139 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\json-schema-traverse\package.json
+140 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\json-stringify-safe\package.json
+141 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\jsonwebtoken\package.json
+142 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\jsprim\package.json
+143 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\jwa\package.json
+144 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\jws\package.json
+145 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\keypress\package.json
+146 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\lodash\package.json
+147 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\lru-cache\package.json
+148 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\make-dir\package.json
+149 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\media-typer\package.json
+150 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\merge-descriptors\package.json
+151 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\methods\package.json
+152 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\mime\package.json
+153 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\mime-db\package.json
+154 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\mime-types\package.json
+155 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\minimatch\package.json
+156 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\minimist\package.json
+157 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\minipass\package.json
+158 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\minizlib\package.json
+159 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\mkdirp\package.json
+160 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\ms\package.json
+161 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\multer\package.json
+162 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\mysql\package.json
+163 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\negotiator\package.json
+164 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\neo-async\package.json
+165 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\nib\package.json
+166 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\node-addon-api\package.json
+167 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\node-fetch\package.json
+168 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\node-sprite\package.json
+169 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\nodemon\package.json
+170 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\nopt\package.json
+171 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\normalize-path\package.json
+172 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\npmlog\package.json
+173 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\oauth-sign\package.json
+174 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\object-assign\package.json
+175 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\object-inspect\package.json
+176 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\on-finished\package.json
+177 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\once\package.json
+178 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\optimist\package.json
+179 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\options\package.json
+180 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\package-name\package.json
+181 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\parseurl\package.json
+182 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\path-is-absolute\package.json
+183 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\path-to-regexp\package.json
+184 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\performance-now\package.json
+185 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\picomatch\package.json
+186 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\process-nextick-args\package.json
+187 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\proxy-addr\package.json
+188 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\psl\package.json
+189 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\pstree.remy\package.json
+190 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\punycode\package.json
+191 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\qs\package.json
+192 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\range-parser\package.json
+193 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\raw-body\package.json
+194 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\readable-stream\package.json
+195 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\readdirp\package.json
+196 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\request\package.json
+197 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\resolve\package.json
+198 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\rimraf\package.json
+199 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\rrweb-cssom\package.json
+200 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\safe-buffer\package.json
+201 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\safer-buffer\package.json
+202 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\semver\package.json
+203 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\send\package.json
+204 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\seq\package.json
+205 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\serve-static\package.json
+206 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\set-blocking\package.json
+207 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\setprototypeof\package.json
+208 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\side-channel\package.json
+209 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\signal-exit\package.json
+210 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\simple-update-notifier\package.json
+211 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\source-map\package.json
+212 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\sqlstring\package.json
+213 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\sshpk\package.json
+214 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\statuses\package.json
+215 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\streamsearch\package.json
+216 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\string-width\package.json
+217 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\string_decoder\package.json
+218 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\strip-ansi\package.json
+219 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\strip-json-comments\package.json
+220 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\stylus\package.json
+221 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\stylus-brunch\package.json
+222 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\supports-color\package.json
+223 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\tar\package.json
+224 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\tinycolor\package.json
+225 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\to-regex-range\package.json
+226 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\toidentifier\package.json
+227 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\touch\package.json
+228 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\tough-cookie\package.json
+229 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\tr46\package.json
+230 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\traverse\package.json
+231 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\tunnel-agent\package.json
+232 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\tweetnacl\package.json
+233 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\type-is\package.json
+234 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\typedarray\package.json
+235 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\uglify-js\package.json
+236 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\uglify-js-brunch\package.json
+237 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\undefsafe\package.json
+238 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\underscore\package.json
+239 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\unpipe\package.json
+240 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\uri-js\package.json
+241 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\util-deprecate\package.json
+242 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\utils-merge\package.json
+243 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\uuid\package.json
+244 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\vary\package.json
+245 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\verror\package.json
+246 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\walk\package.json
+247 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\watch\package.json
+248 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\webidl-conversions\package.json
+249 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\whatwg-url\package.json
+250 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\wide-align\package.json
+251 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\wordwrap\package.json
+252 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\wrappy\package.json
+253 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\ws\package.json
+254 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\xtend\package.json
+255 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\yallist\package.json
+256 warn package.json tr46@0.0.3 No readme data.
+257 warn package.json jsdom@0.2.19 No repository field.
+258 warn package.json jsdom@0.2.19 'repositories' (plural) Not supported.
+258 warn package.json Please pick one as the 'repository' field
+259 verbose from cache D:\PASTE HERE\Ignited_Minds\package.json
+260 verbose readDependencies using package.json deps
+261 verbose read json D:\PASTE HERE\Ignited_Minds\node_modules\@mapbox\package.json
+262 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\abbrev\package.json
+263 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\accepts\package.json
+264 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\agent-base\package.json
+265 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\ajv\package.json
+266 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\amdefine\package.json
+267 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\ansi-regex\package.json
+268 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\anymatch\package.json
+269 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\append-field\package.json
+270 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\aproba\package.json
+271 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\are-we-there-yet\package.json
+272 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\array-flatten\package.json
+273 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\asn1\package.json
+274 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\assert-plus\package.json
+275 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\asynckit\package.json
+276 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\auto-reload-brunch\package.json
+277 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\aws-sign2\package.json
+278 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\aws4\package.json
+279 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\balanced-match\package.json
+280 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\bcrypt\package.json
+281 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\bcrypt-pbkdf\package.json
+282 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\bcryptjs\package.json
+283 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\bignumber.js\package.json
+284 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\binary-extensions\package.json
+285 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\body-parser\package.json
+286 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\brace-expansion\package.json
+287 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\braces\package.json
+288 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\buffer-equal-constant-time\package.json
+289 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\buffer-from\package.json
+290 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\busboy\package.json
+291 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\bytes\package.json
+292 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\call-bind\package.json
+293 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\caseless\package.json
+294 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\chainsaw\package.json
+295 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\chokidar\package.json
+296 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\chownr\package.json
+297 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\clean-css\package.json
+298 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\clean-css-brunch\package.json
+299 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\coffee-script\package.json
+300 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\coffee-script-brunch\package.json
+301 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\coffeelint\package.json
+302 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\coffeelint-brunch\package.json
+303 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\coffeescript\package.json
+304 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\color-support\package.json
+305 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\combined-stream\package.json
+306 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\commander\package.json
+307 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\concat-map\package.json
+308 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\concat-stream\package.json
+309 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\console-control-strings\package.json
+310 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\content-disposition\package.json
+311 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\content-type\package.json
+312 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\cookie\package.json
+313 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\cookie-parser\package.json
+314 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\cookie-signature\package.json
+315 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\core-util-is\package.json
+316 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\css-brunch\package.json
+317 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\cssom\package.json
+318 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\cssstyle\package.json
+319 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\dashdash\package.json
+320 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\debug\package.json
+321 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\delayed-stream\package.json
+322 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\delegates\package.json
+323 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\depd\package.json
+324 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\destroy\package.json
+325 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\detect-libc\package.json
+326 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\dotenv\package.json
+327 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\ecc-jsbn\package.json
+328 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\ecdsa-sig-formatter\package.json
+329 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\ee-first\package.json
+330 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\emblem-brunch\package.json
+331 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\emoji-regex\package.json
+332 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\encodeurl\package.json
+333 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\env\package.json
+334 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\escape-html\package.json
+335 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\etag\package.json
+336 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\express\package.json
+337 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\extend\package.json
+338 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\extsprintf\package.json
+339 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\fast-deep-equal\package.json
+340 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\fast-json-stable-stringify\package.json
+341 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\fill-range\package.json
+342 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\finalhandler\package.json
+343 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\foreachasync\package.json
+344 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\forever-agent\package.json
+345 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\form-data\package.json
+346 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\forwarded\package.json
+347 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\fresh\package.json
+348 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\fs-minipass\package.json
+349 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\fs.realpath\package.json
+350 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\function-bind\package.json
+351 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\gauge\package.json
+352 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\get-intrinsic\package.json
+353 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\getpass\package.json
+354 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\glob\package.json
+355 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\glob-parent\package.json
+356 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\handlebars\package.json
+357 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\har-schema\package.json
+358 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\har-validator\package.json
+359 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\has\package.json
+360 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\has-flag\package.json
+361 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\has-proto\package.json
+362 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\has-symbols\package.json
+363 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\has-unicode\package.json
+364 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\hashish\package.json
+365 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\hbs\package.json
+366 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\htmlparser\package.json
+367 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\http-errors\package.json
+368 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\http-signature\package.json
+369 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\https-proxy-agent\package.json
+370 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\iconv-lite\package.json
+371 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\ignore\package.json
+372 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\ignore-by-default\package.json
+373 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\imagemagick\package.json
+374 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\inflight\package.json
+375 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\inherits\package.json
+376 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\ipaddr.js\package.json
+377 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\is-binary-path\package.json
+378 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\is-extglob\package.json
+379 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\is-fullwidth-code-point\package.json
+380 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\is-glob\package.json
+381 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\is-number\package.json
+382 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\is-typedarray\package.json
+383 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\isarray\package.json
+384 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\isstream\package.json
+385 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\javascript-brunch\package.json
+386 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\jsbn\package.json
+387 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\jsdom\package.json
+388 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\json-schema\package.json
+389 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\json-schema-traverse\package.json
+390 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\json-stringify-safe\package.json
+391 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\jsonwebtoken\package.json
+392 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\jsprim\package.json
+393 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\jwa\package.json
+394 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\jws\package.json
+395 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\keypress\package.json
+396 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\lodash\package.json
+397 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\lru-cache\package.json
+398 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\make-dir\package.json
+399 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\media-typer\package.json
+400 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\merge-descriptors\package.json
+401 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\methods\package.json
+402 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\mime\package.json
+403 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\mime-db\package.json
+404 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\mime-types\package.json
+405 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\minimatch\package.json
+406 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\minimist\package.json
+407 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\minipass\package.json
+408 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\minizlib\package.json
+409 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\mkdirp\package.json
+410 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\ms\package.json
+411 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\multer\package.json
+412 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\mysql\package.json
+413 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\negotiator\package.json
+414 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\neo-async\package.json
+415 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\nib\package.json
+416 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\node-addon-api\package.json
+417 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\node-fetch\package.json
+418 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\node-sprite\package.json
+419 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\nodemon\package.json
+420 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\nopt\package.json
+421 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\normalize-path\package.json
+422 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\npmlog\package.json
+423 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\oauth-sign\package.json
+424 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\object-assign\package.json
+425 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\object-inspect\package.json
+426 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\on-finished\package.json
+427 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\once\package.json
+428 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\optimist\package.json
+429 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\options\package.json
+430 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\package-name\package.json
+431 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\parseurl\package.json
+432 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\path-is-absolute\package.json
+433 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\path-to-regexp\package.json
+434 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\performance-now\package.json
+435 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\picomatch\package.json
+436 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\process-nextick-args\package.json
+437 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\proxy-addr\package.json
+438 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\psl\package.json
+439 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\pstree.remy\package.json
+440 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\punycode\package.json
+441 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\qs\package.json
+442 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\range-parser\package.json
+443 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\raw-body\package.json
+444 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\readable-stream\package.json
+445 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\readdirp\package.json
+446 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\request\package.json
+447 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\resolve\package.json
+448 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\rimraf\package.json
+449 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\rrweb-cssom\package.json
+450 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\safe-buffer\package.json
+451 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\safer-buffer\package.json
+452 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\semver\package.json
+453 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\send\package.json
+454 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\seq\package.json
+455 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\serve-static\package.json
+456 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\set-blocking\package.json
+457 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\setprototypeof\package.json
+458 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\side-channel\package.json
+459 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\signal-exit\package.json
+460 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\simple-update-notifier\package.json
+461 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\source-map\package.json
+462 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\sqlstring\package.json
+463 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\sshpk\package.json
+464 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\statuses\package.json
+465 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\streamsearch\package.json
+466 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\string-width\package.json
+467 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\string_decoder\package.json
+468 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\strip-ansi\package.json
+469 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\strip-json-comments\package.json
+470 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\stylus\package.json
+471 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\stylus-brunch\package.json
+472 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\supports-color\package.json
+473 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\tar\package.json
+474 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\tinycolor\package.json
+475 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\to-regex-range\package.json
+476 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\toidentifier\package.json
+477 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\touch\package.json
+478 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\tough-cookie\package.json
+479 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\tr46\package.json
+480 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\traverse\package.json
+481 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\tunnel-agent\package.json
+482 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\tweetnacl\package.json
+483 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\type-is\package.json
+484 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\typedarray\package.json
+485 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\uglify-js\package.json
+486 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\uglify-js-brunch\package.json
+487 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\undefsafe\package.json
+488 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\underscore\package.json
+489 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\unpipe\package.json
+490 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\uri-js\package.json
+491 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\util-deprecate\package.json
+492 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\utils-merge\package.json
+493 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\uuid\package.json
+494 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\vary\package.json
+495 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\verror\package.json
+496 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\walk\package.json
+497 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\watch\package.json
+498 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\webidl-conversions\package.json
+499 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\whatwg-url\package.json
+500 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\wide-align\package.json
+501 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\wordwrap\package.json
+502 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\wrappy\package.json
+503 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\ws\package.json
+504 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\xtend\package.json
+505 verbose from cache D:\PASTE HERE\Ignited_Minds\node_modules\yallist\package.json
+506 verbose cache add [ 'coffee-script@^1.3.3', null ]
+507 verbose cache add name=undefined spec="coffee-script@^1.3.3" args=["coffee-script@^1.3.3",null]
+508 verbose parsed url { pathname: 'coffee-script@^1.3.3',
+508 verbose parsed url   path: 'coffee-script@^1.3.3',
+508 verbose parsed url   href: 'coffee-script@^1.3.3' }
+509 verbose cache add name="coffee-script" spec="^1.3.3" args=["coffee-script","^1.3.3"]
+510 verbose parsed url { pathname: '^1.3.3', path: '^1.3.3', href: '^1.3.3' }
+511 verbose addNamed [ 'coffee-script', '^1.3.3' ]
+512 verbose addNamed [ null, null ]
+513 verbose cache add [ 'bcrypt@^5.1.0', null ]
+514 verbose cache add name=undefined spec="bcrypt@^5.1.0" args=["bcrypt@^5.1.0",null]
+515 verbose parsed url { pathname: 'bcrypt@^5.1.0',
+515 verbose parsed url   path: 'bcrypt@^5.1.0',
+515 verbose parsed url   href: 'bcrypt@^5.1.0' }
+516 verbose cache add name="bcrypt" spec="^5.1.0" args=["bcrypt","^5.1.0"]
+517 verbose parsed url { pathname: '^5.1.0', path: '^5.1.0', href: '^5.1.0' }
+518 verbose addNamed [ 'bcrypt', '^5.1.0' ]
+519 verbose addNamed [ null, null ]
+520 silly lockFile d47ee1a7-coffee-script-1-3-3 coffee-script@^1.3.3
+521 verbose lock coffee-script@^1.3.3 C:\Users\tofay\AppData\Roaming\npm-cache\d47ee1a7-coffee-script-1-3-3.lock
+522 silly lockFile 21a15f35-bcrypt-5-1-0 bcrypt@^5.1.0
+523 verbose lock bcrypt@^5.1.0 C:\Users\tofay\AppData\Roaming\npm-cache\21a15f35-bcrypt-5-1-0.lock
+524 info addNameTag [ 'coffee-script', '^1.3.3' ]
+525 verbose cache add [ 'bcryptjs@^2.4.3', null ]
+526 verbose cache add name=undefined spec="bcryptjs@^2.4.3" args=["bcryptjs@^2.4.3",null]
+527 verbose parsed url { pathname: 'bcryptjs@^2.4.3',
+527 verbose parsed url   path: 'bcryptjs@^2.4.3',
+527 verbose parsed url   href: 'bcryptjs@^2.4.3' }
+528 verbose cache add name="bcryptjs" spec="^2.4.3" args=["bcryptjs","^2.4.3"]
+529 verbose parsed url { pathname: '^2.4.3', path: '^2.4.3', href: '^2.4.3' }
+530 verbose addNamed [ 'bcryptjs', '^2.4.3' ]
+531 verbose addNamed [ null, null ]
+532 silly lockFile 0bcd462c-bcryptjs-2-4-3 bcryptjs@^2.4.3
+533 verbose lock bcryptjs@^2.4.3 C:\Users\tofay\AppData\Roaming\npm-cache\0bcd462c-bcryptjs-2-4-3.lock
+534 verbose cache add [ 'body-parser@^1.20.2', null ]
+535 verbose cache add name=undefined spec="body-parser@^1.20.2" args=["body-parser@^1.20.2",null]
+536 verbose parsed url { pathname: 'body-parser@^1.20.2',
+536 verbose parsed url   path: 'body-parser@^1.20.2',
+536 verbose parsed url   href: 'body-parser@^1.20.2' }
+537 verbose cache add name="body-parser" spec="^1.20.2" args=["body-parser","^1.20.2"]
+538 verbose parsed url { pathname: '^1.20.2', path: '^1.20.2', href: '^1.20.2' }
+539 verbose addNamed [ 'body-parser', '^1.20.2' ]
+540 verbose addNamed [ null, null ]
+541 silly lockFile 0622686e-body-parser-1-20-2 body-parser@^1.20.2
+542 verbose lock body-parser@^1.20.2 C:\Users\tofay\AppData\Roaming\npm-cache\0622686e-body-parser-1-20-2.lock
+543 verbose cache add [ 'cookie-parser@^1.4.6', null ]
+544 verbose cache add name=undefined spec="cookie-parser@^1.4.6" args=["cookie-parser@^1.4.6",null]
+545 verbose parsed url { pathname: 'cookie-parser@^1.4.6',
+545 verbose parsed url   path: 'cookie-parser@^1.4.6',
+545 verbose parsed url   href: 'cookie-parser@^1.4.6' }
+546 verbose cache add name="cookie-parser" spec="^1.4.6" args=["cookie-parser","^1.4.6"]
+547 verbose parsed url { pathname: '^1.4.6', path: '^1.4.6', href: '^1.4.6' }
+548 verbose addNamed [ 'cookie-parser', '^1.4.6' ]
+549 verbose addNamed [ null, null ]
+550 silly lockFile 5abdceb9-cookie-parser-1-4-6 cookie-parser@^1.4.6
+551 verbose lock cookie-parser@^1.4.6 C:\Users\tofay\AppData\Roaming\npm-cache\5abdceb9-cookie-parser-1-4-6.lock
+552 verbose cache add [ 'dotenv@^16.3.1', null ]
+553 verbose cache add name=undefined spec="dotenv@^16.3.1" args=["dotenv@^16.3.1",null]
+554 verbose parsed url { pathname: 'dotenv@^16.3.1',
+554 verbose parsed url   path: 'dotenv@^16.3.1',
+554 verbose parsed url   href: 'dotenv@^16.3.1' }
+555 verbose cache add name="dotenv" spec="^16.3.1" args=["dotenv","^16.3.1"]
+556 verbose parsed url { pathname: '^16.3.1', path: '^16.3.1', href: '^16.3.1' }
+557 verbose addNamed [ 'dotenv', '^16.3.1' ]
+558 verbose addNamed [ null, null ]
+559 silly lockFile 4947bf73-dotenv-16-3-1 dotenv@^16.3.1
+560 verbose lock dotenv@^16.3.1 C:\Users\tofay\AppData\Roaming\npm-cache\4947bf73-dotenv-16-3-1.lock
+561 verbose cache add [ 'env@^0.0.2', null ]
+562 verbose cache add name=undefined spec="env@^0.0.2" args=["env@^0.0.2",null]
+563 verbose parsed url { pathname: 'env@^0.0.2',
+563 verbose parsed url   path: 'env@^0.0.2',
+563 verbose parsed url   href: 'env@^0.0.2' }
+564 verbose cache add name="env" spec="^0.0.2" args=["env","^0.0.2"]
+565 verbose parsed url { pathname: '^0.0.2', path: '^0.0.2', href: '^0.0.2' }
+566 verbose addNamed [ 'env', '^0.0.2' ]
+567 verbose addNamed [ null, null ]
+568 silly lockFile 55dcd153-env-0-0-2 env@^0.0.2
+569 verbose lock env@^0.0.2 C:\Users\tofay\AppData\Roaming\npm-cache\55dcd153-env-0-0-2.lock
+570 verbose cache add [ 'express@^4.18.2', null ]
+571 verbose cache add name=undefined spec="express@^4.18.2" args=["express@^4.18.2",null]
+572 verbose parsed url { pathname: 'express@^4.18.2',
+572 verbose parsed url   path: 'express@^4.18.2',
+572 verbose parsed url   href: 'express@^4.18.2' }
+573 verbose cache add name="express" spec="^4.18.2" args=["express","^4.18.2"]
+574 verbose parsed url { pathname: '^4.18.2', path: '^4.18.2', href: '^4.18.2' }
+575 verbose addNamed [ 'express', '^4.18.2' ]
+576 verbose addNamed [ null, null ]
+577 silly lockFile c00c43a5-express-4-18-2 express@^4.18.2
+578 verbose lock express@^4.18.2 C:\Users\tofay\AppData\Roaming\npm-cache\c00c43a5-express-4-18-2.lock
+579 verbose cache add [ 'hbs@^4.2.0', null ]
+580 verbose cache add name=undefined spec="hbs@^4.2.0" args=["hbs@^4.2.0",null]
+581 verbose parsed url { pathname: 'hbs@^4.2.0',
+581 verbose parsed url   path: 'hbs@^4.2.0',
+581 verbose parsed url   href: 'hbs@^4.2.0' }
+582 verbose cache add name="hbs" spec="^4.2.0" args=["hbs","^4.2.0"]
+583 verbose parsed url { pathname: '^4.2.0', path: '^4.2.0', href: '^4.2.0' }
+584 verbose addNamed [ 'hbs', '^4.2.0' ]
+585 verbose addNamed [ null, null ]
+586 silly lockFile 9a137cfd-hbs-4-2-0 hbs@^4.2.0
+587 verbose lock hbs@^4.2.0 C:\Users\tofay\AppData\Roaming\npm-cache\9a137cfd-hbs-4-2-0.lock
+588 verbose cache add [ 'jsonwebtoken@^9.0.1', null ]
+589 verbose cache add name=undefined spec="jsonwebtoken@^9.0.1" args=["jsonwebtoken@^9.0.1",null]
+590 verbose parsed url { pathname: 'jsonwebtoken@^9.0.1',
+590 verbose parsed url   path: 'jsonwebtoken@^9.0.1',
+590 verbose parsed url   href: 'jsonwebtoken@^9.0.1' }
+591 verbose cache add name="jsonwebtoken" spec="^9.0.1" args=["jsonwebtoken","^9.0.1"]
+592 verbose parsed url { pathname: '^9.0.1', path: '^9.0.1', href: '^9.0.1' }
+593 verbose addNamed [ 'jsonwebtoken', '^9.0.1' ]
+594 verbose addNamed [ null, null ]
+595 silly lockFile 257cd39b-jsonwebtoken-9-0-1 jsonwebtoken@^9.0.1
+596 verbose lock jsonwebtoken@^9.0.1 C:\Users\tofay\AppData\Roaming\npm-cache\257cd39b-jsonwebtoken-9-0-1.lock
+597 verbose cache add [ 'multer@^1.4.5-lts.1', null ]
+598 verbose cache add name=undefined spec="multer@^1.4.5-lts.1" args=["multer@^1.4.5-lts.1",null]
+599 verbose parsed url { pathname: 'multer@^1.4.5-lts.1',
+599 verbose parsed url   path: 'multer@^1.4.5-lts.1',
+599 verbose parsed url   href: 'multer@^1.4.5-lts.1' }
+600 verbose cache add name="multer" spec="^1.4.5-lts.1" args=["multer","^1.4.5-lts.1"]
+601 verbose parsed url { pathname: '^1.4.5-lts.1',
+601 verbose parsed url   path: '^1.4.5-lts.1',
+601 verbose parsed url   href: '^1.4.5-lts.1' }
+602 verbose addNamed [ 'multer', '^1.4.5-lts.1' ]
+603 verbose addNamed [ null, null ]
+604 silly lockFile 73558a36-multer-1-4-5-lts-1 multer@^1.4.5-lts.1
+605 verbose lock multer@^1.4.5-lts.1 C:\Users\tofay\AppData\Roaming\npm-cache\73558a36-multer-1-4-5-lts-1.lock
+606 verbose cache add [ 'mysql@^2.18.1', null ]
+607 verbose cache add name=undefined spec="mysql@^2.18.1" args=["mysql@^2.18.1",null]
+608 verbose parsed url { pathname: 'mysql@^2.18.1',
+608 verbose parsed url   path: 'mysql@^2.18.1',
+608 verbose parsed url   href: 'mysql@^2.18.1' }
+609 verbose cache add name="mysql" spec="^2.18.1" args=["mysql","^2.18.1"]
+610 verbose parsed url { pathname: '^2.18.1', path: '^2.18.1', href: '^2.18.1' }
+611 verbose addNamed [ 'mysql', '^2.18.1' ]
+612 verbose addNamed [ null, null ]
+613 silly lockFile 90d9db08-mysql-2-18-1 mysql@^2.18.1
+614 verbose lock mysql@^2.18.1 C:\Users\tofay\AppData\Roaming\npm-cache\90d9db08-mysql-2-18-1.lock
+615 verbose cache add [ 'nodemon@^3.0.1', null ]
+616 verbose cache add name=undefined spec="nodemon@^3.0.1" args=["nodemon@^3.0.1",null]
+617 verbose parsed url { pathname: 'nodemon@^3.0.1',
+617 verbose parsed url   path: 'nodemon@^3.0.1',
+617 verbose parsed url   href: 'nodemon@^3.0.1' }
+618 verbose cache add name="nodemon" spec="^3.0.1" args=["nodemon","^3.0.1"]
+619 verbose parsed url { pathname: '^3.0.1', path: '^3.0.1', href: '^3.0.1' }
+620 verbose addNamed [ 'nodemon', '^3.0.1' ]
+621 verbose addNamed [ null, null ]
+622 silly lockFile a67658cf-nodemon-3-0-1 nodemon@^3.0.1
+623 verbose lock nodemon@^3.0.1 C:\Users\tofay\AppData\Roaming\npm-cache\a67658cf-nodemon-3-0-1.lock
+624 verbose cache add [ 'package-name@^0.1.0', null ]
+625 verbose cache add name=undefined spec="package-name@^0.1.0" args=["package-name@^0.1.0",null]
+626 verbose parsed url { pathname: 'package-name@^0.1.0',
+626 verbose parsed url   path: 'package-name@^0.1.0',
+626 verbose parsed url   href: 'package-name@^0.1.0' }
+627 verbose cache add name="package-name" spec="^0.1.0" args=["package-name","^0.1.0"]
+628 verbose parsed url { pathname: '^0.1.0', path: '^0.1.0', href: '^0.1.0' }
+629 verbose addNamed [ 'package-name', '^0.1.0' ]
+630 verbose addNamed [ null, null ]
+631 silly lockFile c275a996-package-name-0-1-0 package-name@^0.1.0
+632 verbose lock package-name@^0.1.0 C:\Users\tofay\AppData\Roaming\npm-cache\c275a996-package-name-0-1-0.lock
+633 verbose cache add [ 'lodash@^4.17.20', null ]
+634 verbose cache add name=undefined spec="lodash@^4.17.20" args=["lodash@^4.17.20",null]
+635 verbose parsed url { pathname: 'lodash@^4.17.20',
+635 verbose parsed url   path: 'lodash@^4.17.20',
+635 verbose parsed url   href: 'lodash@^4.17.20' }
+636 verbose cache add name="lodash" spec="^4.17.20" args=["lodash","^4.17.20"]
+637 verbose parsed url { pathname: '^4.17.20', path: '^4.17.20', href: '^4.17.20' }
+638 verbose addNamed [ 'lodash', '^4.17.20' ]
+639 verbose addNamed [ null, null ]
+640 silly lockFile 4cac277c-lodash-4-17-20 lodash@^4.17.20
+641 verbose lock lodash@^4.17.20 C:\Users\tofay\AppData\Roaming\npm-cache\4cac277c-lodash-4-17-20.lock
+642 verbose url raw coffee-script
+643 verbose url resolving [ 'https://registry.npmjs.org/', './coffee-script' ]
+644 verbose url resolved https://registry.npmjs.org/coffee-script
+645 info trying registry request attempt 1 at 01:17:33
+646 http GET https://registry.npmjs.org/coffee-script
+647 info addNameTag [ 'bcrypt', '^5.1.0' ]
+648 info addNameTag [ 'bcryptjs', '^2.4.3' ]
+649 info addNameTag [ 'body-parser', '^1.20.2' ]
+650 info addNameTag [ 'cookie-parser', '^1.4.6' ]
+651 info addNameTag [ 'dotenv', '^16.3.1' ]
+652 info addNameTag [ 'env', '^0.0.2' ]
+653 info addNameTag [ 'express', '^4.18.2' ]
+654 info addNameTag [ 'hbs', '^4.2.0' ]
+655 info addNameTag [ 'jsonwebtoken', '^9.0.1' ]
+656 info addNameTag [ 'multer', '^1.4.5-lts.1' ]
+657 info addNameTag [ 'mysql', '^2.18.1' ]
+658 info addNameTag [ 'nodemon', '^3.0.1' ]
+659 info addNameTag [ 'package-name', '^0.1.0' ]
+660 info addNameTag [ 'lodash', '^4.17.20' ]
+661 verbose url raw bcrypt
+662 verbose url resolving [ 'https://registry.npmjs.org/', './bcrypt' ]
+663 verbose url resolved https://registry.npmjs.org/bcrypt
+664 info trying registry request attempt 1 at 01:17:33
+665 http GET https://registry.npmjs.org/bcrypt
+666 verbose url raw bcryptjs
+667 verbose url resolving [ 'https://registry.npmjs.org/', './bcryptjs' ]
+668 verbose url resolved https://registry.npmjs.org/bcryptjs
+669 info trying registry request attempt 1 at 01:17:33
+670 http GET https://registry.npmjs.org/bcryptjs
+671 verbose url raw body-parser
+672 verbose url resolving [ 'https://registry.npmjs.org/', './body-parser' ]
+673 verbose url resolved https://registry.npmjs.org/body-parser
+674 info trying registry request attempt 1 at 01:17:33
+675 http GET https://registry.npmjs.org/body-parser
+676 verbose url raw cookie-parser
+677 verbose url resolving [ 'https://registry.npmjs.org/', './cookie-parser' ]
+678 verbose url resolved https://registry.npmjs.org/cookie-parser
+679 info trying registry request attempt 1 at 01:17:33
+680 http GET https://registry.npmjs.org/cookie-parser
+681 verbose url raw dotenv
+682 verbose url resolving [ 'https://registry.npmjs.org/', './dotenv' ]
+683 verbose url resolved https://registry.npmjs.org/dotenv
+684 info trying registry request attempt 1 at 01:17:33
+685 http GET https://registry.npmjs.org/dotenv
+686 verbose url raw env
+687 verbose url resolving [ 'https://registry.npmjs.org/', './env' ]
+688 verbose url resolved https://registry.npmjs.org/env
+689 info trying registry request attempt 1 at 01:17:33
+690 http GET https://registry.npmjs.org/env
+691 verbose url raw express
+692 verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+693 verbose url resolved https://registry.npmjs.org/express
+694 info trying registry request attempt 1 at 01:17:33
+695 http GET https://registry.npmjs.org/express
+696 verbose url raw hbs
+697 verbose url resolving [ 'https://registry.npmjs.org/', './hbs' ]
+698 verbose url resolved https://registry.npmjs.org/hbs
+699 info trying registry request attempt 1 at 01:17:33
+700 http GET https://registry.npmjs.org/hbs
+701 verbose url raw jsonwebtoken
+702 verbose url resolving [ 'https://registry.npmjs.org/', './jsonwebtoken' ]
+703 verbose url resolved https://registry.npmjs.org/jsonwebtoken
+704 info trying registry request attempt 1 at 01:17:33
+705 http GET https://registry.npmjs.org/jsonwebtoken
+706 verbose url raw multer
+707 verbose url resolving [ 'https://registry.npmjs.org/', './multer' ]
+708 verbose url resolved https://registry.npmjs.org/multer
+709 info trying registry request attempt 1 at 01:17:33
+710 http GET https://registry.npmjs.org/multer
+711 verbose url raw mysql
+712 verbose url resolving [ 'https://registry.npmjs.org/', './mysql' ]
+713 verbose url resolved https://registry.npmjs.org/mysql
+714 info trying registry request attempt 1 at 01:17:33
+715 http GET https://registry.npmjs.org/mysql
+716 verbose url raw nodemon
+717 verbose url resolving [ 'https://registry.npmjs.org/', './nodemon' ]
+718 verbose url resolved https://registry.npmjs.org/nodemon
+719 info trying registry request attempt 1 at 01:17:33
+720 http GET https://registry.npmjs.org/nodemon
+721 verbose url raw package-name
+722 verbose url resolving [ 'https://registry.npmjs.org/', './package-name' ]
+723 verbose url resolved https://registry.npmjs.org/package-name
+724 info trying registry request attempt 1 at 01:17:33
+725 http GET https://registry.npmjs.org/package-name
+726 verbose url raw lodash
+727 verbose url resolving [ 'https://registry.npmjs.org/', './lodash' ]
+728 verbose url resolved https://registry.npmjs.org/lodash
+729 info trying registry request attempt 1 at 01:17:33
+730 http GET https://registry.npmjs.org/lodash
+731 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+732 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+733 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+734 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+735 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+736 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+737 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+738 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+739 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+740 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+741 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+742 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+743 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+744 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+745 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+746 info trying registry request attempt 2 at 01:17:43
+747 http GET https://registry.npmjs.org/bcrypt
+748 info trying registry request attempt 2 at 01:17:43
+749 http GET https://registry.npmjs.org/coffee-script
+750 info trying registry request attempt 2 at 01:17:43
+751 http GET https://registry.npmjs.org/cookie-parser
+752 info trying registry request attempt 2 at 01:17:43
+753 http GET https://registry.npmjs.org/body-parser
+754 info trying registry request attempt 2 at 01:17:43
+755 http GET https://registry.npmjs.org/bcryptjs
+756 info trying registry request attempt 2 at 01:17:43
+757 http GET https://registry.npmjs.org/dotenv
+758 info trying registry request attempt 2 at 01:17:43
+759 http GET https://registry.npmjs.org/express
+760 info trying registry request attempt 2 at 01:17:43
+761 http GET https://registry.npmjs.org/jsonwebtoken
+762 info trying registry request attempt 2 at 01:17:43
+763 http GET https://registry.npmjs.org/env
+764 info trying registry request attempt 2 at 01:17:43
+765 http GET https://registry.npmjs.org/hbs
+766 info trying registry request attempt 2 at 01:17:43
+767 http GET https://registry.npmjs.org/multer
+768 info trying registry request attempt 2 at 01:17:43
+769 http GET https://registry.npmjs.org/lodash
+770 info trying registry request attempt 2 at 01:17:43
+771 http GET https://registry.npmjs.org/nodemon
+772 info trying registry request attempt 2 at 01:17:43
+773 http GET https://registry.npmjs.org/package-name
+774 info trying registry request attempt 2 at 01:17:43
+775 http GET https://registry.npmjs.org/mysql
+776 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+777 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+778 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+779 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+780 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+781 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+782 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+783 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+784 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+785 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+786 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+787 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+788 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+789 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+790 info retry will retry, error on last attempt: Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+791 info trying registry request attempt 3 at 01:18:43
+792 http GET https://registry.npmjs.org/bcrypt
+793 info trying registry request attempt 3 at 01:18:43
+794 http GET https://registry.npmjs.org/coffee-script
+795 info trying registry request attempt 3 at 01:18:43
+796 http GET https://registry.npmjs.org/cookie-parser
+797 info trying registry request attempt 3 at 01:18:43
+798 http GET https://registry.npmjs.org/body-parser
+799 info trying registry request attempt 3 at 01:18:43
+800 http GET https://registry.npmjs.org/bcryptjs
+801 info trying registry request attempt 3 at 01:18:43
+802 http GET https://registry.npmjs.org/dotenv
+803 info trying registry request attempt 3 at 01:18:43
+804 http GET https://registry.npmjs.org/express
+805 info trying registry request attempt 3 at 01:18:43
+806 http GET https://registry.npmjs.org/jsonwebtoken
+807 info trying registry request attempt 3 at 01:18:43
+808 http GET https://registry.npmjs.org/env
+809 info trying registry request attempt 3 at 01:18:43
+810 http GET https://registry.npmjs.org/hbs
+811 info trying registry request attempt 3 at 01:18:43
+812 http GET https://registry.npmjs.org/multer
+813 info trying registry request attempt 3 at 01:18:43
+814 http GET https://registry.npmjs.org/nodemon
+815 info trying registry request attempt 3 at 01:18:43
+816 http GET https://registry.npmjs.org/mysql
+817 info trying registry request attempt 3 at 01:18:43
+818 http GET https://registry.npmjs.org/lodash
+819 info trying registry request attempt 3 at 01:18:43
+820 http GET https://registry.npmjs.org/package-name
+821 silly lockFile 21a15f35-bcrypt-5-1-0 bcrypt@^5.1.0
+822 silly lockFile 21a15f35-bcrypt-5-1-0 bcrypt@^5.1.0
+823 silly lockFile d47ee1a7-coffee-script-1-3-3 coffee-script@^1.3.3
+824 silly lockFile d47ee1a7-coffee-script-1-3-3 coffee-script@^1.3.3
+825 silly lockFile 5abdceb9-cookie-parser-1-4-6 cookie-parser@^1.4.6
+826 silly lockFile 5abdceb9-cookie-parser-1-4-6 cookie-parser@^1.4.6
+827 error Error: 21320:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:openssl\ssl\s23_clnt.c:658:
+827 error
+827 error     at CleartextStream._puller (tls.js:670:24)
+827 error     at CleartextStream.CryptoStream._pull (tls.js:604:19)
+827 error     at SecurePair.cycle (tls.js:894:20)
+827 error     at EncryptedStream.CryptoStream.write (tls.js:285:13)
+827 error     at Socket.ondata (stream.js:38:26)
+827 error     at Socket.EventEmitter.emit (events.js:96:17)
+827 error     at TCP.onread (net.js:397:14)
+828 error If you need help, you may report this log at:
+828 error     <http://github.com/isaacs/npm/issues>
+828 error or email it to:
+828 error     <npm-@googlegroups.com>
+829 error System Windows_NT 6.2.9200
+830 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+831 error cwd D:\PASTE HERE\Ignited_Minds
+832 error node -v v0.8.28
+833 error npm -v 1.2.30
+834 verbose exit [ 1, true ]
