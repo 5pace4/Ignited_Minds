@@ -13,7 +13,7 @@ dotenv.config({
 
 const app = express();
 
-// Creating DB Connection
+// Creating DB Connection for db
 let db;
 
 try {
